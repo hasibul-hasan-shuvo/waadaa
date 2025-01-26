@@ -1,0 +1,27 @@
+version: 2
+updates:
+  - package-ecosystem: "pub"
+    directory: "/"
+    schedule:
+      interval: weekly
+      time: "09:00"
+      timezone: "Asia/Dhaka"
+    open-pull-requests-limit: 5
+
+  # For Data packages
+  - package-ecosystem: "pub"
+    directory: "/data"
+    schedule:
+      interval: weekly
+      time: "09:00"
+      timezone: "Asia/Dhaka"
+    open-pull-requests-limit: 5
+
+  # For Domain packages
+  - package-ecosystem: "pub"
+    directory: "/domain"
+    schedule:
+      interval: weekly
+      time: "09:00"
+      timezone: "Asia/Dhaka"
+    open-pull-requests-limit: 5
