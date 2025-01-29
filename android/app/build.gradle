@@ -20,10 +20,7 @@ android {
     }
 
     defaultConfig {
-        // TODO: Specify your own unique Application ID (https://developer.android.com/studio/build/application-id.html).
         applicationId = "com.example.hasibul.flutter_clean_mvvm"
-        // You can update the following values to match your application needs.
-        // For more information, see: https://flutter.dev/to/review-gradle-config.
         minSdk = flutter.minSdkVersion
         targetSdk = flutter.targetSdkVersion
         versionCode = flutter.versionCode
@@ -37,6 +34,33 @@ android {
             signingConfig = signingConfigs.debug
         }
     }
+
+    flavorDimensions += "env"
+
+    productFlavors {
+    create("flavor_dev") {
+        dimension = "env"
+        resValue("string", "app_name", "Waada Dev")
+        applicationIdSuffix = ".dev"
+    }
+
+    create("flavor_staging") {
+        dimension = "env"
+        resValue("string", "app_name", "Waada Staging")
+        applicationIdSuffix = ".staging"
+    }
+
+     create("flavor_test") {
+        dimension = "env"
+        resValue("string", "app_name", "Waada Test")
+        applicationIdSuffix = ".test"
+    }
+
+    create("flavor_prod") {
+        dimension = "env"
+        resValue("string", "app_name", "Waada")
+    }
+}
 }
 
 flutter {
