@@ -1,13 +1,20 @@
-# Uncomment this line to define a global platform for your project
-# platform :ios, '12.0'
+platform :ios, '12.0'
 
-# CocoaPods analytics sends network stats synchronously affecting flutter build latency.
 ENV['COCOAPODS_DISABLE_STATS'] = 'true'
 
 project 'Runner', {
-  'Debug' => :debug,
-  'Profile' => :release,
-  'Release' => :release,
+  'Debug-flavor_prod' => :debug,
+  'Profile-flavor_prod' => :release,
+  'Release-flavor_prod' => :release,
+  'Debug-flavor_dev' => :debug,
+  'Profile-flavor_dev' => :release,
+  'Release-flavor_dev' => :release,
+  'Debug-flavor_test' => :debug,
+  'Profile-flavor_test' => :release,
+  'Release-flavor_test' => :release,
+  'Debug-flavor_staging' => :debug,
+  'Profile-flavor_staging' => :release,
+  'Release-flavor_staging' => :release,
 }
 
 def flutter_root
@@ -27,13 +34,13 @@ require File.expand_path(File.join('packages', 'flutter_tools', 'bin', 'podhelpe
 
 flutter_ios_podfile_setup
 
-target 'Runner' do
-  use_frameworks!
-  use_modular_headers!
+# Define targets for each flavor
+['flavor_prod', 'flavor_dev', 'flavor_test', 'flavor_staging'].each do |flavor|
+  target flavor do
+    use_frameworks!
+    use_modular_headers!
 
-  flutter_install_all_ios_pods File.dirname(File.realpath(__FILE__))
-  target 'RunnerTests' do
-    inherit! :search_paths
+    flutter_install_all_ios_pods File.dirname(File.realpath(__FILE__))
   end
 end
 

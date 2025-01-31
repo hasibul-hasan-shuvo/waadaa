@@ -8,24 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		1498D2341E8E89220040F4C2 /* GeneratedPluginRegistrant.m in Sources */ = {isa = PBXBuildFile; fileRef = 1498D2331E8E89220040F4C2 /* GeneratedPluginRegistrant.m */; };
+		1C664E4474E8707BB532D4C0 /* Pods_flavor_staging.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CF5910D2A735606057300F0 /* Pods_flavor_staging.framework */; };
+		2F8A116D2229A7F119E86927 /* Pods_flavor_test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DEA4DE6AA02D503538F225A /* Pods_flavor_test.framework */; };
 		331C808B294A63AB00263BE5 /* RunnerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 331C807B294A618700263BE5 /* RunnerTests.swift */; };
 		35E1E95D2D4B9D41005F99CD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74858FAE1ED2DC5600515810 /* AppDelegate.swift */; };
 		35E1E95E2D4B9D41005F99CD /* GeneratedPluginRegistrant.m in Sources */ = {isa = PBXBuildFile; fileRef = 1498D2331E8E89220040F4C2 /* GeneratedPluginRegistrant.m */; };
-		35E1E9602D4B9D41005F99CD /* Pods_Runner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B41A7A29D66EFCCA209F9491 /* Pods_Runner.framework */; };
 		35E1E9622D4B9D41005F99CD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97C146FF1CF9000F007C117D /* LaunchScreen.storyboard */; };
 		35E1E9632D4B9D41005F99CD /* AppFrameworkInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3B3967151E833CAA004F5970 /* AppFrameworkInfo.plist */; };
 		35E1E9642D4B9D41005F99CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97C146FD1CF9000F007C117D /* Assets.xcassets */; };
 		35E1E9652D4B9D41005F99CD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97C146FA1CF9000F007C117D /* Main.storyboard */; };
 		35E1E9732D4B9D6A005F99CD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74858FAE1ED2DC5600515810 /* AppDelegate.swift */; };
 		35E1E9742D4B9D6A005F99CD /* GeneratedPluginRegistrant.m in Sources */ = {isa = PBXBuildFile; fileRef = 1498D2331E8E89220040F4C2 /* GeneratedPluginRegistrant.m */; };
-		35E1E9762D4B9D6A005F99CD /* Pods_Runner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B41A7A29D66EFCCA209F9491 /* Pods_Runner.framework */; };
 		35E1E9782D4B9D6A005F99CD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97C146FF1CF9000F007C117D /* LaunchScreen.storyboard */; };
 		35E1E9792D4B9D6A005F99CD /* AppFrameworkInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3B3967151E833CAA004F5970 /* AppFrameworkInfo.plist */; };
 		35E1E97A2D4B9D6A005F99CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97C146FD1CF9000F007C117D /* Assets.xcassets */; };
 		35E1E97B2D4B9D6A005F99CD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97C146FA1CF9000F007C117D /* Main.storyboard */; };
 		35E1E9892D4B9D71005F99CD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74858FAE1ED2DC5600515810 /* AppDelegate.swift */; };
 		35E1E98A2D4B9D71005F99CD /* GeneratedPluginRegistrant.m in Sources */ = {isa = PBXBuildFile; fileRef = 1498D2331E8E89220040F4C2 /* GeneratedPluginRegistrant.m */; };
-		35E1E98C2D4B9D71005F99CD /* Pods_Runner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B41A7A29D66EFCCA209F9491 /* Pods_Runner.framework */; };
 		35E1E98E2D4B9D71005F99CD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97C146FF1CF9000F007C117D /* LaunchScreen.storyboard */; };
 		35E1E98F2D4B9D71005F99CD /* AppFrameworkInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3B3967151E833CAA004F5970 /* AppFrameworkInfo.plist */; };
 		35E1E9902D4B9D71005F99CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97C146FD1CF9000F007C117D /* Assets.xcassets */; };
@@ -35,8 +34,8 @@
 		97C146FC1CF9000F007C117D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97C146FA1CF9000F007C117D /* Main.storyboard */; };
 		97C146FE1CF9000F007C117D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97C146FD1CF9000F007C117D /* Assets.xcassets */; };
 		97C147011CF9000F007C117D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97C146FF1CF9000F007C117D /* LaunchScreen.storyboard */; };
-		9D7C2A73B58DE4E6C997342B /* Pods_Runner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B41A7A29D66EFCCA209F9491 /* Pods_Runner.framework */; };
-		B08FB35C9CC294C0DB553AD0 /* Pods_RunnerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E76D5639914FE3C7518F42F1 /* Pods_RunnerTests.framework */; };
+		B6C5573A729D3CA60C71F396 /* Pods_flavor_dev.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33A162728C574E0502612D0E /* Pods_flavor_dev.framework */; };
+		DC2C9EAE70902EF8E0CFB754 /* Pods_flavor_prod.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C409F65E1DB77794A0B72086 /* Pods_flavor_prod.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,11 +92,24 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		0CC1A570C402D0025E063DD8 /* Pods-Runner.profile.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Runner.profile.xcconfig"; path = "Target Support Files/Pods-Runner/Pods-Runner.profile.xcconfig"; sourceTree = "<group>"; };
+		02F3576A45A4EFFD4E6C47D8 /* Pods-flavor_dev.profile-flavor_prod.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-flavor_dev.profile-flavor_prod.xcconfig"; path = "Target Support Files/Pods-flavor_dev/Pods-flavor_dev.profile-flavor_prod.xcconfig"; sourceTree = "<group>"; };
+		0573EBA5ADE30F7570A53E60 /* Pods-flavor_prod.profile.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-flavor_prod.profile.xcconfig"; path = "Target Support Files/Pods-flavor_prod/Pods-flavor_prod.profile.xcconfig"; sourceTree = "<group>"; };
+		0D72D97FC32F3704A382EA77 /* Pods-flavor_dev.profile-flavor_dev.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-flavor_dev.profile-flavor_dev.xcconfig"; path = "Target Support Files/Pods-flavor_dev/Pods-flavor_dev.profile-flavor_dev.xcconfig"; sourceTree = "<group>"; };
+		107F5F7ABA3D4F15250FA86B /* Pods-flavor_staging.profile-flavor_test.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-flavor_staging.profile-flavor_test.xcconfig"; path = "Target Support Files/Pods-flavor_staging/Pods-flavor_staging.profile-flavor_test.xcconfig"; sourceTree = "<group>"; };
+		1370841415684D2CA9759BD1 /* Pods-flavor_dev.debug-flavor_prod.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-flavor_dev.debug-flavor_prod.xcconfig"; path = "Target Support Files/Pods-flavor_dev/Pods-flavor_dev.debug-flavor_prod.xcconfig"; sourceTree = "<group>"; };
 		1498D2321E8E86230040F4C2 /* GeneratedPluginRegistrant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GeneratedPluginRegistrant.h; sourceTree = "<group>"; };
 		1498D2331E8E89220040F4C2 /* GeneratedPluginRegistrant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeneratedPluginRegistrant.m; sourceTree = "<group>"; };
+		16A150CB0EDF0DA53978E74F /* Pods-flavor_staging.debug-flavor_staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-flavor_staging.debug-flavor_staging.xcconfig"; path = "Target Support Files/Pods-flavor_staging/Pods-flavor_staging.debug-flavor_staging.xcconfig"; sourceTree = "<group>"; };
+		175E254036486FFEEE6E7E9F /* Pods-flavor_prod.debug-flavor_prod.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-flavor_prod.debug-flavor_prod.xcconfig"; path = "Target Support Files/Pods-flavor_prod/Pods-flavor_prod.debug-flavor_prod.xcconfig"; sourceTree = "<group>"; };
+		1B23539EF4D5915809A081F3 /* Pods-flavor_prod.release-flavor_dev.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-flavor_prod.release-flavor_dev.xcconfig"; path = "Target Support Files/Pods-flavor_prod/Pods-flavor_prod.release-flavor_dev.xcconfig"; sourceTree = "<group>"; };
+		2C64B38E0FD80108109057E7 /* Pods-flavor_test.release-flavor_dev.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-flavor_test.release-flavor_dev.xcconfig"; path = "Target Support Files/Pods-flavor_test/Pods-flavor_test.release-flavor_dev.xcconfig"; sourceTree = "<group>"; };
+		2CF5910D2A735606057300F0 /* Pods_flavor_staging.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_flavor_staging.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D16A7F9660501430CF53488 /* Pods-flavor_prod.debug-flavor_staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-flavor_prod.debug-flavor_staging.xcconfig"; path = "Target Support Files/Pods-flavor_prod/Pods-flavor_prod.debug-flavor_staging.xcconfig"; sourceTree = "<group>"; };
+		2E298E759A9A4123CD02C83C /* Pods-flavor_dev.debug-flavor_staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-flavor_dev.debug-flavor_staging.xcconfig"; path = "Target Support Files/Pods-flavor_dev/Pods-flavor_dev.debug-flavor_staging.xcconfig"; sourceTree = "<group>"; };
 		331C807B294A618700263BE5 /* RunnerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunnerTests.swift; sourceTree = "<group>"; };
 		331C8081294A63A400263BE5 /* RunnerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RunnerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		33A162728C574E0502612D0E /* Pods_flavor_dev.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_flavor_dev.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		33C04E5F6B6E2187A9106B29 /* Pods-flavor_dev.release-flavor_staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-flavor_dev.release-flavor_staging.xcconfig"; path = "Target Support Files/Pods-flavor_dev/Pods-flavor_dev.release-flavor_staging.xcconfig"; sourceTree = "<group>"; };
 		35E1E96D2D4B9D41005F99CD /* flavor_dev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = flavor_dev.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		35E1E96E2D4B9D42005F99CD /* Runner copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Runner copy-Info.plist"; path = "/Users/bs1101/Work/1.Projects/waada-app/waadaa-b2c-mobile-flutter/ios/Runner copy-Info.plist"; sourceTree = "<absolute>"; };
 		35E1E9832D4B9D6A005F99CD /* flavor_test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = flavor_test.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -105,12 +117,32 @@
 		35E1E9992D4B9D71005F99CD /* flavor_staging.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = flavor_staging.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		35E1E99A2D4B9D72005F99CD /* Runner copy3-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Runner copy3-Info.plist"; path = "/Users/bs1101/Work/1.Projects/waada-app/waadaa-b2c-mobile-flutter/ios/Runner copy3-Info.plist"; sourceTree = "<absolute>"; };
 		35E1E9B02D4B9D7B005F99CD /* Runner copy4-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Runner copy4-Info.plist"; path = "/Users/bs1101/Work/1.Projects/waada-app/waadaa-b2c-mobile-flutter/ios/Runner copy4-Info.plist"; sourceTree = "<absolute>"; };
+		36F3F186DA5824DB220C7E75 /* Pods-flavor_staging.profile.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-flavor_staging.profile.xcconfig"; path = "Target Support Files/Pods-flavor_staging/Pods-flavor_staging.profile.xcconfig"; sourceTree = "<group>"; };
+		3948AAA5AC4804763AEA4FA5 /* Pods-flavor_test.debug-flavor_test.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-flavor_test.debug-flavor_test.xcconfig"; path = "Target Support Files/Pods-flavor_test/Pods-flavor_test.debug-flavor_test.xcconfig"; sourceTree = "<group>"; };
 		3B3967151E833CAA004F5970 /* AppFrameworkInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = AppFrameworkInfo.plist; path = Flutter/AppFrameworkInfo.plist; sourceTree = "<group>"; };
-		43415094D298CBD0DC2B7F27 /* Pods-RunnerTests.profile.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RunnerTests.profile.xcconfig"; path = "Target Support Files/Pods-RunnerTests/Pods-RunnerTests.profile.xcconfig"; sourceTree = "<group>"; };
-		58A6E824028F07C32833D703 /* Pods-Runner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Runner.release.xcconfig"; path = "Target Support Files/Pods-Runner/Pods-Runner.release.xcconfig"; sourceTree = "<group>"; };
+		3DEA4DE6AA02D503538F225A /* Pods_flavor_test.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_flavor_test.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		47A21EF3427A596440A1D9E7 /* Pods-flavor_staging.debug-flavor_test.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-flavor_staging.debug-flavor_test.xcconfig"; path = "Target Support Files/Pods-flavor_staging/Pods-flavor_staging.debug-flavor_test.xcconfig"; sourceTree = "<group>"; };
+		4C4D2226D8527A3D4642E261 /* Pods-flavor_staging.profile-flavor_prod.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-flavor_staging.profile-flavor_prod.xcconfig"; path = "Target Support Files/Pods-flavor_staging/Pods-flavor_staging.profile-flavor_prod.xcconfig"; sourceTree = "<group>"; };
+		4CD56440FBB811801E096DD0 /* Pods-flavor_prod.release-flavor_staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-flavor_prod.release-flavor_staging.xcconfig"; path = "Target Support Files/Pods-flavor_prod/Pods-flavor_prod.release-flavor_staging.xcconfig"; sourceTree = "<group>"; };
+		50A98D0115849A8308744082 /* Pods-flavor_prod.profile-flavor_staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-flavor_prod.profile-flavor_staging.xcconfig"; path = "Target Support Files/Pods-flavor_prod/Pods-flavor_prod.profile-flavor_staging.xcconfig"; sourceTree = "<group>"; };
+		51CD79659AB201600501E494 /* Pods-flavor_dev.debug-flavor_dev.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-flavor_dev.debug-flavor_dev.xcconfig"; path = "Target Support Files/Pods-flavor_dev/Pods-flavor_dev.debug-flavor_dev.xcconfig"; sourceTree = "<group>"; };
+		5891AC970F8772E1AE7DE3EC /* Pods-flavor_dev.release-flavor_test.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-flavor_dev.release-flavor_test.xcconfig"; path = "Target Support Files/Pods-flavor_dev/Pods-flavor_dev.release-flavor_test.xcconfig"; sourceTree = "<group>"; };
+		5A2A50F18B3CF49C4DE360E2 /* Pods-flavor_test.debug-flavor_prod.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-flavor_test.debug-flavor_prod.xcconfig"; path = "Target Support Files/Pods-flavor_test/Pods-flavor_test.debug-flavor_prod.xcconfig"; sourceTree = "<group>"; };
+		5D9D27C23874E1E1BB8D4104 /* Pods-flavor_prod.debug-flavor_dev.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-flavor_prod.debug-flavor_dev.xcconfig"; path = "Target Support Files/Pods-flavor_prod/Pods-flavor_prod.debug-flavor_dev.xcconfig"; sourceTree = "<group>"; };
+		610309F92E1F09A59A017612 /* Pods-flavor_test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-flavor_test.debug.xcconfig"; path = "Target Support Files/Pods-flavor_test/Pods-flavor_test.debug.xcconfig"; sourceTree = "<group>"; };
+		632AC70AA80BB5D3EAA47AA9 /* Pods-flavor_prod.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-flavor_prod.debug.xcconfig"; path = "Target Support Files/Pods-flavor_prod/Pods-flavor_prod.debug.xcconfig"; sourceTree = "<group>"; };
+		6F25F96B2C15B0A185193B4E /* Pods-flavor_prod.profile-flavor_test.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-flavor_prod.profile-flavor_test.xcconfig"; path = "Target Support Files/Pods-flavor_prod/Pods-flavor_prod.profile-flavor_test.xcconfig"; sourceTree = "<group>"; };
 		74858FAD1ED2DC5600515810 /* Runner-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Runner-Bridging-Header.h"; sourceTree = "<group>"; };
 		74858FAE1ED2DC5600515810 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		75290682C4B1A3DC0ADD26FE /* Pods-flavor_test.release-flavor_test.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-flavor_test.release-flavor_test.xcconfig"; path = "Target Support Files/Pods-flavor_test/Pods-flavor_test.release-flavor_test.xcconfig"; sourceTree = "<group>"; };
 		7AFA3C8E1D35360C0083082E /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = Release.xcconfig; path = Flutter/Release.xcconfig; sourceTree = "<group>"; };
+		7D3ACC8BCF9E57558CF26591 /* Pods-flavor_test.profile-flavor_prod.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-flavor_test.profile-flavor_prod.xcconfig"; path = "Target Support Files/Pods-flavor_test/Pods-flavor_test.profile-flavor_prod.xcconfig"; sourceTree = "<group>"; };
+		7DD2954B760E83EC78C71F2B /* Pods-flavor_test.profile.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-flavor_test.profile.xcconfig"; path = "Target Support Files/Pods-flavor_test/Pods-flavor_test.profile.xcconfig"; sourceTree = "<group>"; };
+		89BBE67D24225AA9F54D7079 /* Pods-flavor_staging.release-flavor_test.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-flavor_staging.release-flavor_test.xcconfig"; path = "Target Support Files/Pods-flavor_staging/Pods-flavor_staging.release-flavor_test.xcconfig"; sourceTree = "<group>"; };
+		8BB731FE8E9F6E9FA42A459D /* Pods-flavor_prod.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-flavor_prod.release.xcconfig"; path = "Target Support Files/Pods-flavor_prod/Pods-flavor_prod.release.xcconfig"; sourceTree = "<group>"; };
+		955FF5281BBFA8D8EA1E5301 /* Pods-flavor_prod.profile-flavor_dev.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-flavor_prod.profile-flavor_dev.xcconfig"; path = "Target Support Files/Pods-flavor_prod/Pods-flavor_prod.profile-flavor_dev.xcconfig"; sourceTree = "<group>"; };
+		958F4CA08D37AEF6CE352B83 /* Pods-flavor_dev.profile.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-flavor_dev.profile.xcconfig"; path = "Target Support Files/Pods-flavor_dev/Pods-flavor_dev.profile.xcconfig"; sourceTree = "<group>"; };
+		95CA18F9A5F22E682A6C250B /* Pods-flavor_staging.profile-flavor_dev.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-flavor_staging.profile-flavor_dev.xcconfig"; path = "Target Support Files/Pods-flavor_staging/Pods-flavor_staging.profile-flavor_dev.xcconfig"; sourceTree = "<group>"; };
 		9740EEB21CF90195004384FC /* Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Debug.xcconfig; path = Flutter/Debug.xcconfig; sourceTree = "<group>"; };
 		9740EEB31CF90195004384FC /* Generated.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Generated.xcconfig; path = Flutter/Generated.xcconfig; sourceTree = "<group>"; };
 		97C146EE1CF9000F007C117D /* flavor_prod.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = flavor_prod.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -118,11 +150,34 @@
 		97C146FD1CF9000F007C117D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		97C147001CF9000F007C117D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		97C147021CF9000F007C117D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AA591510B56DD2C645C0DF23 /* Pods-RunnerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RunnerTests.debug.xcconfig"; path = "Target Support Files/Pods-RunnerTests/Pods-RunnerTests.debug.xcconfig"; sourceTree = "<group>"; };
-		B41A7A29D66EFCCA209F9491 /* Pods_Runner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Runner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E76D5639914FE3C7518F42F1 /* Pods_RunnerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RunnerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		EA61C771BE0FE82FC7FA88FE /* Pods-Runner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Runner.debug.xcconfig"; path = "Target Support Files/Pods-Runner/Pods-Runner.debug.xcconfig"; sourceTree = "<group>"; };
-		F8A6F4E08A956425A7E2A3D0 /* Pods-RunnerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RunnerTests.release.xcconfig"; path = "Target Support Files/Pods-RunnerTests/Pods-RunnerTests.release.xcconfig"; sourceTree = "<group>"; };
+		9BABF1F695116B19C743DE57 /* Pods-flavor_prod.release-flavor_test.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-flavor_prod.release-flavor_test.xcconfig"; path = "Target Support Files/Pods-flavor_prod/Pods-flavor_prod.release-flavor_test.xcconfig"; sourceTree = "<group>"; };
+		9DC689C7FF36C529DF813D42 /* Pods-flavor_dev.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-flavor_dev.release.xcconfig"; path = "Target Support Files/Pods-flavor_dev/Pods-flavor_dev.release.xcconfig"; sourceTree = "<group>"; };
+		A5CD125D7660C7DB547F46A9 /* Pods-flavor_dev.debug-flavor_test.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-flavor_dev.debug-flavor_test.xcconfig"; path = "Target Support Files/Pods-flavor_dev/Pods-flavor_dev.debug-flavor_test.xcconfig"; sourceTree = "<group>"; };
+		A6D418330A2F3B741D7AE15B /* Pods-flavor_dev.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-flavor_dev.debug.xcconfig"; path = "Target Support Files/Pods-flavor_dev/Pods-flavor_dev.debug.xcconfig"; sourceTree = "<group>"; };
+		A9D1B4D494744DCA6FD28132 /* Pods-flavor_staging.release-flavor_staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-flavor_staging.release-flavor_staging.xcconfig"; path = "Target Support Files/Pods-flavor_staging/Pods-flavor_staging.release-flavor_staging.xcconfig"; sourceTree = "<group>"; };
+		AC0E107B7702BD1D4230E26F /* Pods-flavor_dev.release-flavor_prod.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-flavor_dev.release-flavor_prod.xcconfig"; path = "Target Support Files/Pods-flavor_dev/Pods-flavor_dev.release-flavor_prod.xcconfig"; sourceTree = "<group>"; };
+		B344582C43CBA5C119A41299 /* Pods-flavor_test.debug-flavor_staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-flavor_test.debug-flavor_staging.xcconfig"; path = "Target Support Files/Pods-flavor_test/Pods-flavor_test.debug-flavor_staging.xcconfig"; sourceTree = "<group>"; };
+		B531D11BD25ECCADF55E9757 /* Pods-flavor_staging.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-flavor_staging.debug.xcconfig"; path = "Target Support Files/Pods-flavor_staging/Pods-flavor_staging.debug.xcconfig"; sourceTree = "<group>"; };
+		B753CAC9F1FDDA00D2EE42B1 /* Pods-flavor_test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-flavor_test.release.xcconfig"; path = "Target Support Files/Pods-flavor_test/Pods-flavor_test.release.xcconfig"; sourceTree = "<group>"; };
+		BC48F57FCC39BA6F68A8602B /* Pods-flavor_dev.release-flavor_dev.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-flavor_dev.release-flavor_dev.xcconfig"; path = "Target Support Files/Pods-flavor_dev/Pods-flavor_dev.release-flavor_dev.xcconfig"; sourceTree = "<group>"; };
+		BC939913D9B8FCAC6900B195 /* Pods-flavor_test.profile-flavor_dev.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-flavor_test.profile-flavor_dev.xcconfig"; path = "Target Support Files/Pods-flavor_test/Pods-flavor_test.profile-flavor_dev.xcconfig"; sourceTree = "<group>"; };
+		C162EE1BE3D422276D13AF0D /* Pods-flavor_test.profile-flavor_test.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-flavor_test.profile-flavor_test.xcconfig"; path = "Target Support Files/Pods-flavor_test/Pods-flavor_test.profile-flavor_test.xcconfig"; sourceTree = "<group>"; };
+		C409F65E1DB77794A0B72086 /* Pods_flavor_prod.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_flavor_prod.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC8985D80EFFAC69FE99D217 /* Pods-flavor_prod.profile-flavor_prod.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-flavor_prod.profile-flavor_prod.xcconfig"; path = "Target Support Files/Pods-flavor_prod/Pods-flavor_prod.profile-flavor_prod.xcconfig"; sourceTree = "<group>"; };
+		D1CA3C582216F29F2A431058 /* Pods-flavor_test.profile-flavor_staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-flavor_test.profile-flavor_staging.xcconfig"; path = "Target Support Files/Pods-flavor_test/Pods-flavor_test.profile-flavor_staging.xcconfig"; sourceTree = "<group>"; };
+		D502AB94BFA477F91C593FD6 /* Pods-flavor_staging.debug-flavor_prod.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-flavor_staging.debug-flavor_prod.xcconfig"; path = "Target Support Files/Pods-flavor_staging/Pods-flavor_staging.debug-flavor_prod.xcconfig"; sourceTree = "<group>"; };
+		DCB0A5D6BABC3529FAC12111 /* Pods-flavor_prod.release-flavor_prod.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-flavor_prod.release-flavor_prod.xcconfig"; path = "Target Support Files/Pods-flavor_prod/Pods-flavor_prod.release-flavor_prod.xcconfig"; sourceTree = "<group>"; };
+		DE146B91C21C092443040394 /* Pods-flavor_staging.release-flavor_dev.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-flavor_staging.release-flavor_dev.xcconfig"; path = "Target Support Files/Pods-flavor_staging/Pods-flavor_staging.release-flavor_dev.xcconfig"; sourceTree = "<group>"; };
+		E12E3BD55B23402192D01005 /* Pods-flavor_test.release-flavor_staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-flavor_test.release-flavor_staging.xcconfig"; path = "Target Support Files/Pods-flavor_test/Pods-flavor_test.release-flavor_staging.xcconfig"; sourceTree = "<group>"; };
+		E40277ED00A347E13A64C59A /* Pods-flavor_prod.debug-flavor_test.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-flavor_prod.debug-flavor_test.xcconfig"; path = "Target Support Files/Pods-flavor_prod/Pods-flavor_prod.debug-flavor_test.xcconfig"; sourceTree = "<group>"; };
+		EC8FA1788D239FEEC017CF67 /* Pods-flavor_dev.profile-flavor_staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-flavor_dev.profile-flavor_staging.xcconfig"; path = "Target Support Files/Pods-flavor_dev/Pods-flavor_dev.profile-flavor_staging.xcconfig"; sourceTree = "<group>"; };
+		F115449FBEB42DC65B3A6272 /* Pods-flavor_staging.debug-flavor_dev.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-flavor_staging.debug-flavor_dev.xcconfig"; path = "Target Support Files/Pods-flavor_staging/Pods-flavor_staging.debug-flavor_dev.xcconfig"; sourceTree = "<group>"; };
+		F44F0EC018B09AB462830FB1 /* Pods-flavor_staging.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-flavor_staging.release.xcconfig"; path = "Target Support Files/Pods-flavor_staging/Pods-flavor_staging.release.xcconfig"; sourceTree = "<group>"; };
+		F5873D88311EA281C4BA9EBA /* Pods-flavor_dev.profile-flavor_test.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-flavor_dev.profile-flavor_test.xcconfig"; path = "Target Support Files/Pods-flavor_dev/Pods-flavor_dev.profile-flavor_test.xcconfig"; sourceTree = "<group>"; };
+		F96ADE40C0E6BD3800B3DBE6 /* Pods-flavor_test.debug-flavor_dev.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-flavor_test.debug-flavor_dev.xcconfig"; path = "Target Support Files/Pods-flavor_test/Pods-flavor_test.debug-flavor_dev.xcconfig"; sourceTree = "<group>"; };
+		FA1B28E6B60BE4E1C35F40D2 /* Pods-flavor_staging.release-flavor_prod.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-flavor_staging.release-flavor_prod.xcconfig"; path = "Target Support Files/Pods-flavor_staging/Pods-flavor_staging.release-flavor_prod.xcconfig"; sourceTree = "<group>"; };
+		FCC4CDA73F12B0639B445D91 /* Pods-flavor_test.release-flavor_prod.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-flavor_test.release-flavor_prod.xcconfig"; path = "Target Support Files/Pods-flavor_test/Pods-flavor_test.release-flavor_prod.xcconfig"; sourceTree = "<group>"; };
+		FCF5C15612803C904280384B /* Pods-flavor_staging.profile-flavor_staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-flavor_staging.profile-flavor_staging.xcconfig"; path = "Target Support Files/Pods-flavor_staging/Pods-flavor_staging.profile-flavor_staging.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,7 +185,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				35E1E9602D4B9D41005F99CD /* Pods_Runner.framework in Frameworks */,
+				B6C5573A729D3CA60C71F396 /* Pods_flavor_dev.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,7 +193,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				35E1E9762D4B9D6A005F99CD /* Pods_Runner.framework in Frameworks */,
+				2F8A116D2229A7F119E86927 /* Pods_flavor_test.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -146,7 +201,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				35E1E98C2D4B9D71005F99CD /* Pods_Runner.framework in Frameworks */,
+				1C664E4474E8707BB532D4C0 /* Pods_flavor_staging.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -154,7 +209,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B08FB35C9CC294C0DB553AD0 /* Pods_RunnerTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -162,7 +216,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9D7C2A73B58DE4E6C997342B /* Pods_Runner.framework in Frameworks */,
+				DC2C9EAE70902EF8E0CFB754 /* Pods_flavor_prod.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -172,12 +226,66 @@
 		11FF995E62BC8C5F64FE85B5 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				EA61C771BE0FE82FC7FA88FE /* Pods-Runner.debug.xcconfig */,
-				58A6E824028F07C32833D703 /* Pods-Runner.release.xcconfig */,
-				0CC1A570C402D0025E063DD8 /* Pods-Runner.profile.xcconfig */,
-				AA591510B56DD2C645C0DF23 /* Pods-RunnerTests.debug.xcconfig */,
-				F8A6F4E08A956425A7E2A3D0 /* Pods-RunnerTests.release.xcconfig */,
-				43415094D298CBD0DC2B7F27 /* Pods-RunnerTests.profile.xcconfig */,
+				632AC70AA80BB5D3EAA47AA9 /* Pods-flavor_prod.debug.xcconfig */,
+				5D9D27C23874E1E1BB8D4104 /* Pods-flavor_prod.debug-flavor_dev.xcconfig */,
+				8BB731FE8E9F6E9FA42A459D /* Pods-flavor_prod.release.xcconfig */,
+				1B23539EF4D5915809A081F3 /* Pods-flavor_prod.release-flavor_dev.xcconfig */,
+				0573EBA5ADE30F7570A53E60 /* Pods-flavor_prod.profile.xcconfig */,
+				955FF5281BBFA8D8EA1E5301 /* Pods-flavor_prod.profile-flavor_dev.xcconfig */,
+				A6D418330A2F3B741D7AE15B /* Pods-flavor_dev.debug.xcconfig */,
+				2E298E759A9A4123CD02C83C /* Pods-flavor_dev.debug-flavor_staging.xcconfig */,
+				A5CD125D7660C7DB547F46A9 /* Pods-flavor_dev.debug-flavor_test.xcconfig */,
+				1370841415684D2CA9759BD1 /* Pods-flavor_dev.debug-flavor_prod.xcconfig */,
+				51CD79659AB201600501E494 /* Pods-flavor_dev.debug-flavor_dev.xcconfig */,
+				9DC689C7FF36C529DF813D42 /* Pods-flavor_dev.release.xcconfig */,
+				33C04E5F6B6E2187A9106B29 /* Pods-flavor_dev.release-flavor_staging.xcconfig */,
+				5891AC970F8772E1AE7DE3EC /* Pods-flavor_dev.release-flavor_test.xcconfig */,
+				AC0E107B7702BD1D4230E26F /* Pods-flavor_dev.release-flavor_prod.xcconfig */,
+				BC48F57FCC39BA6F68A8602B /* Pods-flavor_dev.release-flavor_dev.xcconfig */,
+				958F4CA08D37AEF6CE352B83 /* Pods-flavor_dev.profile.xcconfig */,
+				EC8FA1788D239FEEC017CF67 /* Pods-flavor_dev.profile-flavor_staging.xcconfig */,
+				F5873D88311EA281C4BA9EBA /* Pods-flavor_dev.profile-flavor_test.xcconfig */,
+				02F3576A45A4EFFD4E6C47D8 /* Pods-flavor_dev.profile-flavor_prod.xcconfig */,
+				0D72D97FC32F3704A382EA77 /* Pods-flavor_dev.profile-flavor_dev.xcconfig */,
+				2D16A7F9660501430CF53488 /* Pods-flavor_prod.debug-flavor_staging.xcconfig */,
+				E40277ED00A347E13A64C59A /* Pods-flavor_prod.debug-flavor_test.xcconfig */,
+				175E254036486FFEEE6E7E9F /* Pods-flavor_prod.debug-flavor_prod.xcconfig */,
+				4CD56440FBB811801E096DD0 /* Pods-flavor_prod.release-flavor_staging.xcconfig */,
+				9BABF1F695116B19C743DE57 /* Pods-flavor_prod.release-flavor_test.xcconfig */,
+				DCB0A5D6BABC3529FAC12111 /* Pods-flavor_prod.release-flavor_prod.xcconfig */,
+				50A98D0115849A8308744082 /* Pods-flavor_prod.profile-flavor_staging.xcconfig */,
+				6F25F96B2C15B0A185193B4E /* Pods-flavor_prod.profile-flavor_test.xcconfig */,
+				CC8985D80EFFAC69FE99D217 /* Pods-flavor_prod.profile-flavor_prod.xcconfig */,
+				B531D11BD25ECCADF55E9757 /* Pods-flavor_staging.debug.xcconfig */,
+				16A150CB0EDF0DA53978E74F /* Pods-flavor_staging.debug-flavor_staging.xcconfig */,
+				47A21EF3427A596440A1D9E7 /* Pods-flavor_staging.debug-flavor_test.xcconfig */,
+				D502AB94BFA477F91C593FD6 /* Pods-flavor_staging.debug-flavor_prod.xcconfig */,
+				F115449FBEB42DC65B3A6272 /* Pods-flavor_staging.debug-flavor_dev.xcconfig */,
+				F44F0EC018B09AB462830FB1 /* Pods-flavor_staging.release.xcconfig */,
+				A9D1B4D494744DCA6FD28132 /* Pods-flavor_staging.release-flavor_staging.xcconfig */,
+				89BBE67D24225AA9F54D7079 /* Pods-flavor_staging.release-flavor_test.xcconfig */,
+				FA1B28E6B60BE4E1C35F40D2 /* Pods-flavor_staging.release-flavor_prod.xcconfig */,
+				DE146B91C21C092443040394 /* Pods-flavor_staging.release-flavor_dev.xcconfig */,
+				36F3F186DA5824DB220C7E75 /* Pods-flavor_staging.profile.xcconfig */,
+				FCF5C15612803C904280384B /* Pods-flavor_staging.profile-flavor_staging.xcconfig */,
+				107F5F7ABA3D4F15250FA86B /* Pods-flavor_staging.profile-flavor_test.xcconfig */,
+				4C4D2226D8527A3D4642E261 /* Pods-flavor_staging.profile-flavor_prod.xcconfig */,
+				95CA18F9A5F22E682A6C250B /* Pods-flavor_staging.profile-flavor_dev.xcconfig */,
+				610309F92E1F09A59A017612 /* Pods-flavor_test.debug.xcconfig */,
+				B344582C43CBA5C119A41299 /* Pods-flavor_test.debug-flavor_staging.xcconfig */,
+				3948AAA5AC4804763AEA4FA5 /* Pods-flavor_test.debug-flavor_test.xcconfig */,
+				5A2A50F18B3CF49C4DE360E2 /* Pods-flavor_test.debug-flavor_prod.xcconfig */,
+				F96ADE40C0E6BD3800B3DBE6 /* Pods-flavor_test.debug-flavor_dev.xcconfig */,
+				B753CAC9F1FDDA00D2EE42B1 /* Pods-flavor_test.release.xcconfig */,
+				E12E3BD55B23402192D01005 /* Pods-flavor_test.release-flavor_staging.xcconfig */,
+				75290682C4B1A3DC0ADD26FE /* Pods-flavor_test.release-flavor_test.xcconfig */,
+				FCC4CDA73F12B0639B445D91 /* Pods-flavor_test.release-flavor_prod.xcconfig */,
+				2C64B38E0FD80108109057E7 /* Pods-flavor_test.release-flavor_dev.xcconfig */,
+				7DD2954B760E83EC78C71F2B /* Pods-flavor_test.profile.xcconfig */,
+				D1CA3C582216F29F2A431058 /* Pods-flavor_test.profile-flavor_staging.xcconfig */,
+				C162EE1BE3D422276D13AF0D /* Pods-flavor_test.profile-flavor_test.xcconfig */,
+				7D3ACC8BCF9E57558CF26591 /* Pods-flavor_test.profile-flavor_prod.xcconfig */,
+				BC939913D9B8FCAC6900B195 /* Pods-flavor_test.profile-flavor_dev.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -209,11 +317,11 @@
 				97C146EF1CF9000F007C117D /* Products */,
 				331C8082294A63A400263BE5 /* RunnerTests */,
 				11FF995E62BC8C5F64FE85B5 /* Pods */,
-				C8698C225087FA9C8E9E61A4 /* Frameworks */,
 				35E1E96E2D4B9D42005F99CD /* Runner copy-Info.plist */,
 				35E1E9842D4B9D6A005F99CD /* Runner copy2-Info.plist */,
 				35E1E99A2D4B9D72005F99CD /* Runner copy3-Info.plist */,
 				35E1E9B02D4B9D7B005F99CD /* Runner copy4-Info.plist */,
+				DEE54AB27503AB15DDDCF629 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -244,11 +352,13 @@
 			path = Runner;
 			sourceTree = "<group>";
 		};
-		C8698C225087FA9C8E9E61A4 /* Frameworks */ = {
+		DEE54AB27503AB15DDDCF629 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				B41A7A29D66EFCCA209F9491 /* Pods_Runner.framework */,
-				E76D5639914FE3C7518F42F1 /* Pods_RunnerTests.framework */,
+				C409F65E1DB77794A0B72086 /* Pods_flavor_prod.framework */,
+				33A162728C574E0502612D0E /* Pods_flavor_dev.framework */,
+				2CF5910D2A735606057300F0 /* Pods_flavor_staging.framework */,
+				3DEA4DE6AA02D503538F225A /* Pods_flavor_test.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -260,7 +370,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 331C8087294A63A400263BE5 /* Build configuration list for PBXNativeTarget "RunnerTests" */;
 			buildPhases = (
-				5D308AA97CF27BF52ABE3577 /* [CP] Check Pods Manifest.lock */,
 				331C807D294A63A400263BE5 /* Sources */,
 				331C807F294A63A400263BE5 /* Resources */,
 				90C77F3B0654BC2F10187AC1 /* Frameworks */,
@@ -279,14 +388,14 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 35E1E9692D4B9D41005F99CD /* Build configuration list for PBXNativeTarget "flavor_dev" */;
 			buildPhases = (
-				35E1E95A2D4B9D41005F99CD /* [CP] Check Pods Manifest.lock */,
+				0C991F4C93DAD342E607F1BA /* [CP] Check Pods Manifest.lock */,
 				35E1E95B2D4B9D41005F99CD /* Run Script */,
 				35E1E95C2D4B9D41005F99CD /* Sources */,
 				35E1E95F2D4B9D41005F99CD /* Frameworks */,
 				35E1E9612D4B9D41005F99CD /* Resources */,
 				35E1E9662D4B9D41005F99CD /* Embed Frameworks */,
 				35E1E9672D4B9D41005F99CD /* Thin Binary */,
-				35E1E9682D4B9D41005F99CD /* [CP] Embed Pods Frameworks */,
+				F9966A17D88BABA5D45F94C4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -301,14 +410,14 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 35E1E97F2D4B9D6A005F99CD /* Build configuration list for PBXNativeTarget "flavor_test" */;
 			buildPhases = (
-				35E1E9702D4B9D6A005F99CD /* [CP] Check Pods Manifest.lock */,
+				3C76C734225F39D1839686E0 /* [CP] Check Pods Manifest.lock */,
 				35E1E9712D4B9D6A005F99CD /* Run Script */,
 				35E1E9722D4B9D6A005F99CD /* Sources */,
 				35E1E9752D4B9D6A005F99CD /* Frameworks */,
 				35E1E9772D4B9D6A005F99CD /* Resources */,
 				35E1E97C2D4B9D6A005F99CD /* Embed Frameworks */,
 				35E1E97D2D4B9D6A005F99CD /* Thin Binary */,
-				35E1E97E2D4B9D6A005F99CD /* [CP] Embed Pods Frameworks */,
+				0857101E5E15699D00663D62 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -323,14 +432,14 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 35E1E9952D4B9D71005F99CD /* Build configuration list for PBXNativeTarget "flavor_staging" */;
 			buildPhases = (
-				35E1E9862D4B9D71005F99CD /* [CP] Check Pods Manifest.lock */,
+				8FCB4D8FB1A124F0300F65F0 /* [CP] Check Pods Manifest.lock */,
 				35E1E9872D4B9D71005F99CD /* Run Script */,
 				35E1E9882D4B9D71005F99CD /* Sources */,
 				35E1E98B2D4B9D71005F99CD /* Frameworks */,
 				35E1E98D2D4B9D71005F99CD /* Resources */,
 				35E1E9922D4B9D71005F99CD /* Embed Frameworks */,
 				35E1E9932D4B9D71005F99CD /* Thin Binary */,
-				35E1E9942D4B9D71005F99CD /* [CP] Embed Pods Frameworks */,
+				DAE6EA5F481A985640812FBD /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -345,14 +454,14 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 97C147051CF9000F007C117D /* Build configuration list for PBXNativeTarget "flavor_prod" */;
 			buildPhases = (
-				C38729F67456713962B3B85B /* [CP] Check Pods Manifest.lock */,
+				AC3103D8412CEAB56DFF4557 /* [CP] Check Pods Manifest.lock */,
 				9740EEB61CF901F6004384FC /* Run Script */,
 				97C146EA1CF9000F007C117D /* Sources */,
 				97C146EB1CF9000F007C117D /* Frameworks */,
 				97C146EC1CF9000F007C117D /* Resources */,
 				9705A1C41CF9048500538489 /* Embed Frameworks */,
 				3B06AD1E1E4923F5004D2608 /* Thin Binary */,
-				1CE9562531164D0ED6DA421C /* [CP] Embed Pods Frameworks */,
+				99C0460A5A1566B141C7EB53 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -370,7 +479,7 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
-				LastUpgradeCheck = 1620;
+				LastUpgradeCheck = 1510;
 				ORGANIZATIONNAME = "";
 				TargetAttributes = {
 					331C8080294A63A400263BE5 = {
@@ -460,24 +569,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		1CE9562531164D0ED6DA421C /* [CP] Embed Pods Frameworks */ = {
+		0857101E5E15699D00663D62 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Runner/Pods-Runner-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-flavor_test/Pods-flavor_test-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Runner/Pods-Runner-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-flavor_test/Pods-flavor_test-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Runner/Pods-Runner-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-flavor_test/Pods-flavor_test-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		35E1E95A2D4B9D41005F99CD /* [CP] Check Pods Manifest.lock */ = {
+		0C991F4C93DAD342E607F1BA /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -492,7 +601,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Runner-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-flavor_dev-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -530,45 +639,6 @@
 			shellPath = /bin/sh;
 			shellScript = "/bin/sh \"$FLUTTER_ROOT/packages/flutter_tools/bin/xcode_backend.sh\" embed_and_thin";
 		};
-		35E1E9682D4B9D41005F99CD /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Runner/Pods-Runner-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Runner/Pods-Runner-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Runner/Pods-Runner-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		35E1E9702D4B9D6A005F99CD /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Runner-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 		35E1E9712D4B9D6A005F99CD /* Run Script */ = {
 			isa = PBXShellScriptBuildPhase;
 			alwaysOutOfDate = 1;
@@ -599,45 +669,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "/bin/sh \"$FLUTTER_ROOT/packages/flutter_tools/bin/xcode_backend.sh\" embed_and_thin";
-		};
-		35E1E97E2D4B9D6A005F99CD /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Runner/Pods-Runner-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Runner/Pods-Runner-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Runner/Pods-Runner-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		35E1E9862D4B9D71005F99CD /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Runner-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
 		};
 		35E1E9872D4B9D71005F99CD /* Run Script */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -670,23 +701,6 @@
 			shellPath = /bin/sh;
 			shellScript = "/bin/sh \"$FLUTTER_ROOT/packages/flutter_tools/bin/xcode_backend.sh\" embed_and_thin";
 		};
-		35E1E9942D4B9D71005F99CD /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Runner/Pods-Runner-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Runner/Pods-Runner-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Runner/Pods-Runner-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		3B06AD1E1E4923F5004D2608 /* Thin Binary */ = {
 			isa = PBXShellScriptBuildPhase;
 			alwaysOutOfDate = 1;
@@ -703,7 +717,7 @@
 			shellPath = /bin/sh;
 			shellScript = "/bin/sh \"$FLUTTER_ROOT/packages/flutter_tools/bin/xcode_backend.sh\" embed_and_thin";
 		};
-		5D308AA97CF27BF52ABE3577 /* [CP] Check Pods Manifest.lock */ = {
+		3C76C734225F39D1839686E0 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -718,7 +732,29 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-RunnerTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-flavor_test-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8FCB4D8FB1A124F0300F65F0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-flavor_staging-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -740,7 +776,24 @@
 			shellPath = /bin/sh;
 			shellScript = "/bin/sh \"$FLUTTER_ROOT/packages/flutter_tools/bin/xcode_backend.sh\" build";
 		};
-		C38729F67456713962B3B85B /* [CP] Check Pods Manifest.lock */ = {
+		99C0460A5A1566B141C7EB53 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-flavor_prod/Pods-flavor_prod-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-flavor_prod/Pods-flavor_prod-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-flavor_prod/Pods-flavor_prod-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AC3103D8412CEAB56DFF4557 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -755,11 +808,45 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Runner-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-flavor_prod-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DAE6EA5F481A985640812FBD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-flavor_staging/Pods-flavor_staging-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-flavor_staging/Pods-flavor_staging-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-flavor_staging/Pods-flavor_staging-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F9966A17D88BABA5D45F94C4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-flavor_dev/Pods-flavor_dev-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-flavor_dev/Pods-flavor_dev-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-flavor_dev/Pods-flavor_dev-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -918,7 +1005,6 @@
 		};
 		331C8088294A63A400263BE5 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AA591510B56DD2C645C0DF23 /* Pods-RunnerTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -936,7 +1022,6 @@
 		};
 		331C8089294A63A400263BE5 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F8A6F4E08A956425A7E2A3D0 /* Pods-RunnerTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -952,7 +1037,6 @@
 		};
 		331C808A294A63A400263BE5 /* Profile */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 43415094D298CBD0DC2B7F27 /* Pods-RunnerTests.profile.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -1270,7 +1354,6 @@
 		};
 		35E1E9B32D4B9EC8005F99CD /* Debug-flavor_dev */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AA591510B56DD2C645C0DF23 /* Pods-RunnerTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -1442,7 +1525,6 @@
 		};
 		35E1E9B92D4BA004005F99CD /* Release-flavor_dev */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F8A6F4E08A956425A7E2A3D0 /* Pods-RunnerTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -1607,7 +1689,6 @@
 		};
 		35E1E9BF2D4BA011005F99CD /* Profile-flavor_dev */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 43415094D298CBD0DC2B7F27 /* Pods-RunnerTests.profile.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -1692,6 +1773,1521 @@
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = "Profile-flavor_dev";
+		};
+		35E1E9C32D4DCFA0005F99CD /* Debug-flavor_prod */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = "Debug-flavor_prod";
+		};
+		35E1E9C42D4DCFA0005F99CD /* Debug-flavor_prod */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9740EEB21CF90195004384FC /* Debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
+				DEVELOPMENT_TEAM = MG2L3YQ533;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = Runner/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Waadaa;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.hasibul.flutterCleanMvvm.prod;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Runner/Runner-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = "Debug-flavor_prod";
+		};
+		35E1E9C52D4DCFA0005F99CD /* Debug-flavor_prod */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.hasibul.flutterCleanMvvm.RunnerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Runner.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Runner";
+			};
+			name = "Debug-flavor_prod";
+		};
+		35E1E9C62D4DCFA0005F99CD /* Debug-flavor_prod */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9740EEB21CF90195004384FC /* Debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIconDev;
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
+				DEVELOPMENT_TEAM = SCSJ8HSN3T;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = "Runner copy-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Waadaa Dev";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.hasibul.flutterCleanMvvm.dev;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Runner/Runner-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = "Debug-flavor_prod";
+		};
+		35E1E9C72D4DCFA0005F99CD /* Debug-flavor_prod */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9740EEB21CF90195004384FC /* Debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIconTest;
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
+				DEVELOPMENT_TEAM = SCSJ8HSN3T;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = "Runner copy2-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Waadaa Test";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.hasibul.flutterCleanMvvm.test;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Runner/Runner-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = "Debug-flavor_prod";
+		};
+		35E1E9C82D4DCFA0005F99CD /* Debug-flavor_prod */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9740EEB21CF90195004384FC /* Debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIconStaging;
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
+				DEVELOPMENT_TEAM = SCSJ8HSN3T;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = "Runner copy3-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Waadaa Staging";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.hasibul.flutterCleanMvvm.staging;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Runner/Runner-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = "Debug-flavor_prod";
+		};
+		35E1E9C92D4DCFB5005F99CD /* Release-flavor_prod */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = "Release-flavor_prod";
+		};
+		35E1E9CA2D4DCFB5005F99CD /* Release-flavor_prod */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7AFA3C8E1D35360C0083082E /* Release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
+				DEVELOPMENT_TEAM = MG2L3YQ533;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = Runner/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Waadaa;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.hasibul.flutterCleanMvvm.prod;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Runner/Runner-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = "Release-flavor_prod";
+		};
+		35E1E9CB2D4DCFB5005F99CD /* Release-flavor_prod */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.hasibul.flutterCleanMvvm.RunnerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Runner.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Runner";
+			};
+			name = "Release-flavor_prod";
+		};
+		35E1E9CC2D4DCFB5005F99CD /* Release-flavor_prod */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7AFA3C8E1D35360C0083082E /* Release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIconDev;
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
+				DEVELOPMENT_TEAM = SCSJ8HSN3T;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = "Runner copy-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Waadaa Dev";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.hasibul.flutterCleanMvvm.dev;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Runner/Runner-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = "Release-flavor_prod";
+		};
+		35E1E9CD2D4DCFB5005F99CD /* Release-flavor_prod */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7AFA3C8E1D35360C0083082E /* Release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIconTest;
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
+				DEVELOPMENT_TEAM = SCSJ8HSN3T;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = "Runner copy2-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Waadaa Test";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.hasibul.flutterCleanMvvm.test;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Runner/Runner-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = "Release-flavor_prod";
+		};
+		35E1E9CE2D4DCFB5005F99CD /* Release-flavor_prod */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7AFA3C8E1D35360C0083082E /* Release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIconStaging;
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
+				DEVELOPMENT_TEAM = SCSJ8HSN3T;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = "Runner copy3-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Waadaa Staging";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.hasibul.flutterCleanMvvm.staging;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Runner/Runner-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = "Release-flavor_prod";
+		};
+		35E1E9CF2D4DCFC1005F99CD /* Profile-flavor_prod */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = "Profile-flavor_prod";
+		};
+		35E1E9D02D4DCFC1005F99CD /* Profile-flavor_prod */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7AFA3C8E1D35360C0083082E /* Release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
+				DEVELOPMENT_TEAM = MG2L3YQ533;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = Runner/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Waadaa;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.hasibul.flutterCleanMvvm.prod;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Runner/Runner-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = "Profile-flavor_prod";
+		};
+		35E1E9D12D4DCFC1005F99CD /* Profile-flavor_prod */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.hasibul.flutterCleanMvvm.RunnerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Runner.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Runner";
+			};
+			name = "Profile-flavor_prod";
+		};
+		35E1E9D22D4DCFC1005F99CD /* Profile-flavor_prod */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7AFA3C8E1D35360C0083082E /* Release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIconDev;
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
+				DEVELOPMENT_TEAM = SCSJ8HSN3T;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = "Runner copy-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Waadaa Dev";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.hasibul.flutterCleanMvvm.dev;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Runner/Runner-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = "Profile-flavor_prod";
+		};
+		35E1E9D32D4DCFC1005F99CD /* Profile-flavor_prod */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7AFA3C8E1D35360C0083082E /* Release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIconTest;
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
+				DEVELOPMENT_TEAM = SCSJ8HSN3T;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = "Runner copy2-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Waadaa Test";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.hasibul.flutterCleanMvvm.test;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Runner/Runner-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = "Profile-flavor_prod";
+		};
+		35E1E9D42D4DCFC1005F99CD /* Profile-flavor_prod */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7AFA3C8E1D35360C0083082E /* Release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIconStaging;
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
+				DEVELOPMENT_TEAM = SCSJ8HSN3T;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = "Runner copy3-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Waadaa Staging";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.hasibul.flutterCleanMvvm.staging;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Runner/Runner-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = "Profile-flavor_prod";
+		};
+		35E1E9D52D4DCFCE005F99CD /* Debug-flavor_test */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = "Debug-flavor_test";
+		};
+		35E1E9D62D4DCFCE005F99CD /* Debug-flavor_test */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9740EEB21CF90195004384FC /* Debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
+				DEVELOPMENT_TEAM = MG2L3YQ533;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = Runner/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Waadaa;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.hasibul.flutterCleanMvvm.prod;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Runner/Runner-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = "Debug-flavor_test";
+		};
+		35E1E9D72D4DCFCE005F99CD /* Debug-flavor_test */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.hasibul.flutterCleanMvvm.RunnerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Runner.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Runner";
+			};
+			name = "Debug-flavor_test";
+		};
+		35E1E9D82D4DCFCE005F99CD /* Debug-flavor_test */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9740EEB21CF90195004384FC /* Debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIconDev;
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
+				DEVELOPMENT_TEAM = SCSJ8HSN3T;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = "Runner copy-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Waadaa Dev";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.hasibul.flutterCleanMvvm.dev;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Runner/Runner-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = "Debug-flavor_test";
+		};
+		35E1E9D92D4DCFCE005F99CD /* Debug-flavor_test */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9740EEB21CF90195004384FC /* Debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIconTest;
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
+				DEVELOPMENT_TEAM = SCSJ8HSN3T;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = "Runner copy2-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Waadaa Test";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.hasibul.flutterCleanMvvm.test;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Runner/Runner-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = "Debug-flavor_test";
+		};
+		35E1E9DA2D4DCFCE005F99CD /* Debug-flavor_test */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9740EEB21CF90195004384FC /* Debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIconStaging;
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
+				DEVELOPMENT_TEAM = SCSJ8HSN3T;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = "Runner copy3-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Waadaa Staging";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.hasibul.flutterCleanMvvm.staging;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Runner/Runner-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = "Debug-flavor_test";
+		};
+		35E1E9DB2D4DCFD9005F99CD /* Release-flavor_test */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = "Release-flavor_test";
+		};
+		35E1E9DC2D4DCFD9005F99CD /* Release-flavor_test */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7AFA3C8E1D35360C0083082E /* Release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
+				DEVELOPMENT_TEAM = MG2L3YQ533;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = Runner/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Waadaa;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.hasibul.flutterCleanMvvm.prod;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Runner/Runner-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = "Release-flavor_test";
+		};
+		35E1E9DD2D4DCFD9005F99CD /* Release-flavor_test */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.hasibul.flutterCleanMvvm.RunnerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Runner.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Runner";
+			};
+			name = "Release-flavor_test";
+		};
+		35E1E9DE2D4DCFD9005F99CD /* Release-flavor_test */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7AFA3C8E1D35360C0083082E /* Release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIconDev;
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
+				DEVELOPMENT_TEAM = SCSJ8HSN3T;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = "Runner copy-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Waadaa Dev";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.hasibul.flutterCleanMvvm.dev;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Runner/Runner-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = "Release-flavor_test";
+		};
+		35E1E9DF2D4DCFD9005F99CD /* Release-flavor_test */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7AFA3C8E1D35360C0083082E /* Release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIconTest;
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
+				DEVELOPMENT_TEAM = SCSJ8HSN3T;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = "Runner copy2-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Waadaa Test";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.hasibul.flutterCleanMvvm.test;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Runner/Runner-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = "Release-flavor_test";
+		};
+		35E1E9E02D4DCFD9005F99CD /* Release-flavor_test */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7AFA3C8E1D35360C0083082E /* Release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIconStaging;
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
+				DEVELOPMENT_TEAM = SCSJ8HSN3T;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = "Runner copy3-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Waadaa Staging";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.hasibul.flutterCleanMvvm.staging;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Runner/Runner-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = "Release-flavor_test";
+		};
+		35E1E9E12D4DCFE6005F99CD /* Profile-flavor_test */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = "Profile-flavor_test";
+		};
+		35E1E9E22D4DCFE6005F99CD /* Profile-flavor_test */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7AFA3C8E1D35360C0083082E /* Release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
+				DEVELOPMENT_TEAM = MG2L3YQ533;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = Runner/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Waadaa;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.hasibul.flutterCleanMvvm.prod;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Runner/Runner-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = "Profile-flavor_test";
+		};
+		35E1E9E32D4DCFE6005F99CD /* Profile-flavor_test */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.hasibul.flutterCleanMvvm.RunnerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Runner.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Runner";
+			};
+			name = "Profile-flavor_test";
+		};
+		35E1E9E42D4DCFE6005F99CD /* Profile-flavor_test */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7AFA3C8E1D35360C0083082E /* Release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIconDev;
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
+				DEVELOPMENT_TEAM = SCSJ8HSN3T;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = "Runner copy-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Waadaa Dev";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.hasibul.flutterCleanMvvm.dev;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Runner/Runner-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = "Profile-flavor_test";
+		};
+		35E1E9E52D4DCFE6005F99CD /* Profile-flavor_test */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7AFA3C8E1D35360C0083082E /* Release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIconTest;
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
+				DEVELOPMENT_TEAM = SCSJ8HSN3T;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = "Runner copy2-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Waadaa Test";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.hasibul.flutterCleanMvvm.test;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Runner/Runner-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = "Profile-flavor_test";
+		};
+		35E1E9E62D4DCFE6005F99CD /* Profile-flavor_test */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7AFA3C8E1D35360C0083082E /* Release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIconStaging;
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
+				DEVELOPMENT_TEAM = SCSJ8HSN3T;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = "Runner copy3-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Waadaa Staging";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.hasibul.flutterCleanMvvm.staging;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Runner/Runner-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = "Profile-flavor_test";
+		};
+		35E1E9E72D4DCFF5005F99CD /* Debug-flavor_staging */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = "Debug-flavor_staging";
+		};
+		35E1E9E82D4DCFF5005F99CD /* Debug-flavor_staging */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9740EEB21CF90195004384FC /* Debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
+				DEVELOPMENT_TEAM = MG2L3YQ533;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = Runner/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Waadaa;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.hasibul.flutterCleanMvvm.prod;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Runner/Runner-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = "Debug-flavor_staging";
+		};
+		35E1E9E92D4DCFF5005F99CD /* Debug-flavor_staging */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.hasibul.flutterCleanMvvm.RunnerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Runner.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Runner";
+			};
+			name = "Debug-flavor_staging";
+		};
+		35E1E9EA2D4DCFF5005F99CD /* Debug-flavor_staging */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9740EEB21CF90195004384FC /* Debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIconDev;
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
+				DEVELOPMENT_TEAM = SCSJ8HSN3T;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = "Runner copy-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Waadaa Dev";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.hasibul.flutterCleanMvvm.dev;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Runner/Runner-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = "Debug-flavor_staging";
+		};
+		35E1E9EB2D4DCFF5005F99CD /* Debug-flavor_staging */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9740EEB21CF90195004384FC /* Debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIconTest;
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
+				DEVELOPMENT_TEAM = SCSJ8HSN3T;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = "Runner copy2-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Waadaa Test";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.hasibul.flutterCleanMvvm.test;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Runner/Runner-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = "Debug-flavor_staging";
+		};
+		35E1E9EC2D4DCFF5005F99CD /* Debug-flavor_staging */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9740EEB21CF90195004384FC /* Debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIconStaging;
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
+				DEVELOPMENT_TEAM = SCSJ8HSN3T;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = "Runner copy3-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Waadaa Staging";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.hasibul.flutterCleanMvvm.staging;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Runner/Runner-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = "Debug-flavor_staging";
+		};
+		35E1E9ED2D4DD002005F99CD /* Release-flavor_staging */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = "Release-flavor_staging";
+		};
+		35E1E9EE2D4DD002005F99CD /* Release-flavor_staging */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7AFA3C8E1D35360C0083082E /* Release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
+				DEVELOPMENT_TEAM = MG2L3YQ533;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = Runner/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Waadaa;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.hasibul.flutterCleanMvvm.prod;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Runner/Runner-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = "Release-flavor_staging";
+		};
+		35E1E9EF2D4DD002005F99CD /* Release-flavor_staging */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.hasibul.flutterCleanMvvm.RunnerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Runner.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Runner";
+			};
+			name = "Release-flavor_staging";
+		};
+		35E1E9F02D4DD002005F99CD /* Release-flavor_staging */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7AFA3C8E1D35360C0083082E /* Release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIconDev;
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
+				DEVELOPMENT_TEAM = SCSJ8HSN3T;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = "Runner copy-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Waadaa Dev";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.hasibul.flutterCleanMvvm.dev;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Runner/Runner-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = "Release-flavor_staging";
+		};
+		35E1E9F12D4DD002005F99CD /* Release-flavor_staging */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7AFA3C8E1D35360C0083082E /* Release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIconTest;
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
+				DEVELOPMENT_TEAM = SCSJ8HSN3T;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = "Runner copy2-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Waadaa Test";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.hasibul.flutterCleanMvvm.test;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Runner/Runner-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = "Release-flavor_staging";
+		};
+		35E1E9F22D4DD002005F99CD /* Release-flavor_staging */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7AFA3C8E1D35360C0083082E /* Release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIconStaging;
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
+				DEVELOPMENT_TEAM = SCSJ8HSN3T;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = "Runner copy3-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Waadaa Staging";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.hasibul.flutterCleanMvvm.staging;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Runner/Runner-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = "Release-flavor_staging";
+		};
+		35E1E9F32D4DD00C005F99CD /* Profile-flavor_staging */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = "Profile-flavor_staging";
+		};
+		35E1E9F42D4DD00C005F99CD /* Profile-flavor_staging */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7AFA3C8E1D35360C0083082E /* Release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
+				DEVELOPMENT_TEAM = MG2L3YQ533;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = Runner/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Waadaa;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.hasibul.flutterCleanMvvm.prod;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Runner/Runner-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = "Profile-flavor_staging";
+		};
+		35E1E9F52D4DD00C005F99CD /* Profile-flavor_staging */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.hasibul.flutterCleanMvvm.RunnerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Runner.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Runner";
+			};
+			name = "Profile-flavor_staging";
+		};
+		35E1E9F62D4DD00C005F99CD /* Profile-flavor_staging */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7AFA3C8E1D35360C0083082E /* Release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIconDev;
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
+				DEVELOPMENT_TEAM = SCSJ8HSN3T;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = "Runner copy-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Waadaa Dev";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.hasibul.flutterCleanMvvm.dev;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Runner/Runner-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = "Profile-flavor_staging";
+		};
+		35E1E9F72D4DD00C005F99CD /* Profile-flavor_staging */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7AFA3C8E1D35360C0083082E /* Release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIconTest;
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
+				DEVELOPMENT_TEAM = SCSJ8HSN3T;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = "Runner copy2-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Waadaa Test";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.hasibul.flutterCleanMvvm.test;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Runner/Runner-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = "Profile-flavor_staging";
+		};
+		35E1E9F82D4DD00C005F99CD /* Profile-flavor_staging */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7AFA3C8E1D35360C0083082E /* Release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIconStaging;
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
+				DEVELOPMENT_TEAM = SCSJ8HSN3T;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = "Runner copy3-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Waadaa Staging";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.hasibul.flutterCleanMvvm.staging;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Runner/Runner-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = "Profile-flavor_staging";
 		};
 		97C147031CF9000F007C117D /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -1862,10 +3458,19 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				331C8088294A63A400263BE5 /* Debug */,
+				35E1E9E92D4DCFF5005F99CD /* Debug-flavor_staging */,
+				35E1E9D72D4DCFCE005F99CD /* Debug-flavor_test */,
+				35E1E9C52D4DCFA0005F99CD /* Debug-flavor_prod */,
 				35E1E9B32D4B9EC8005F99CD /* Debug-flavor_dev */,
 				331C8089294A63A400263BE5 /* Release */,
+				35E1E9EF2D4DD002005F99CD /* Release-flavor_staging */,
+				35E1E9DD2D4DCFD9005F99CD /* Release-flavor_test */,
+				35E1E9CB2D4DCFB5005F99CD /* Release-flavor_prod */,
 				35E1E9B92D4BA004005F99CD /* Release-flavor_dev */,
 				331C808A294A63A400263BE5 /* Profile */,
+				35E1E9F52D4DD00C005F99CD /* Profile-flavor_staging */,
+				35E1E9E32D4DCFE6005F99CD /* Profile-flavor_test */,
+				35E1E9D12D4DCFC1005F99CD /* Profile-flavor_prod */,
 				35E1E9BF2D4BA011005F99CD /* Profile-flavor_dev */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -1875,10 +3480,19 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				35E1E96A2D4B9D41005F99CD /* Debug */,
+				35E1E9EA2D4DCFF5005F99CD /* Debug-flavor_staging */,
+				35E1E9D82D4DCFCE005F99CD /* Debug-flavor_test */,
+				35E1E9C62D4DCFA0005F99CD /* Debug-flavor_prod */,
 				35E1E9B42D4B9EC8005F99CD /* Debug-flavor_dev */,
 				35E1E96B2D4B9D41005F99CD /* Release */,
+				35E1E9F02D4DD002005F99CD /* Release-flavor_staging */,
+				35E1E9DE2D4DCFD9005F99CD /* Release-flavor_test */,
+				35E1E9CC2D4DCFB5005F99CD /* Release-flavor_prod */,
 				35E1E9BA2D4BA004005F99CD /* Release-flavor_dev */,
 				35E1E96C2D4B9D41005F99CD /* Profile */,
+				35E1E9F62D4DD00C005F99CD /* Profile-flavor_staging */,
+				35E1E9E42D4DCFE6005F99CD /* Profile-flavor_test */,
+				35E1E9D22D4DCFC1005F99CD /* Profile-flavor_prod */,
 				35E1E9C02D4BA011005F99CD /* Profile-flavor_dev */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -1888,10 +3502,19 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				35E1E9802D4B9D6A005F99CD /* Debug */,
+				35E1E9EB2D4DCFF5005F99CD /* Debug-flavor_staging */,
+				35E1E9D92D4DCFCE005F99CD /* Debug-flavor_test */,
+				35E1E9C72D4DCFA0005F99CD /* Debug-flavor_prod */,
 				35E1E9B52D4B9EC8005F99CD /* Debug-flavor_dev */,
 				35E1E9812D4B9D6A005F99CD /* Release */,
+				35E1E9F12D4DD002005F99CD /* Release-flavor_staging */,
+				35E1E9DF2D4DCFD9005F99CD /* Release-flavor_test */,
+				35E1E9CD2D4DCFB5005F99CD /* Release-flavor_prod */,
 				35E1E9BB2D4BA004005F99CD /* Release-flavor_dev */,
 				35E1E9822D4B9D6A005F99CD /* Profile */,
+				35E1E9F72D4DD00C005F99CD /* Profile-flavor_staging */,
+				35E1E9E52D4DCFE6005F99CD /* Profile-flavor_test */,
+				35E1E9D32D4DCFC1005F99CD /* Profile-flavor_prod */,
 				35E1E9C12D4BA011005F99CD /* Profile-flavor_dev */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -1901,10 +3524,19 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				35E1E9962D4B9D71005F99CD /* Debug */,
+				35E1E9EC2D4DCFF5005F99CD /* Debug-flavor_staging */,
+				35E1E9DA2D4DCFCE005F99CD /* Debug-flavor_test */,
+				35E1E9C82D4DCFA0005F99CD /* Debug-flavor_prod */,
 				35E1E9B62D4B9EC8005F99CD /* Debug-flavor_dev */,
 				35E1E9972D4B9D71005F99CD /* Release */,
+				35E1E9F22D4DD002005F99CD /* Release-flavor_staging */,
+				35E1E9E02D4DCFD9005F99CD /* Release-flavor_test */,
+				35E1E9CE2D4DCFB5005F99CD /* Release-flavor_prod */,
 				35E1E9BC2D4BA004005F99CD /* Release-flavor_dev */,
 				35E1E9982D4B9D71005F99CD /* Profile */,
+				35E1E9F82D4DD00C005F99CD /* Profile-flavor_staging */,
+				35E1E9E62D4DCFE6005F99CD /* Profile-flavor_test */,
+				35E1E9D42D4DCFC1005F99CD /* Profile-flavor_prod */,
 				35E1E9C22D4BA011005F99CD /* Profile-flavor_dev */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -1914,10 +3546,19 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				97C147031CF9000F007C117D /* Debug */,
+				35E1E9E72D4DCFF5005F99CD /* Debug-flavor_staging */,
+				35E1E9D52D4DCFCE005F99CD /* Debug-flavor_test */,
+				35E1E9C32D4DCFA0005F99CD /* Debug-flavor_prod */,
 				35E1E9B12D4B9EC8005F99CD /* Debug-flavor_dev */,
 				97C147041CF9000F007C117D /* Release */,
+				35E1E9ED2D4DD002005F99CD /* Release-flavor_staging */,
+				35E1E9DB2D4DCFD9005F99CD /* Release-flavor_test */,
+				35E1E9C92D4DCFB5005F99CD /* Release-flavor_prod */,
 				35E1E9B72D4BA004005F99CD /* Release-flavor_dev */,
 				249021D3217E4FDB00AE95B9 /* Profile */,
+				35E1E9F32D4DD00C005F99CD /* Profile-flavor_staging */,
+				35E1E9E12D4DCFE6005F99CD /* Profile-flavor_test */,
+				35E1E9CF2D4DCFC1005F99CD /* Profile-flavor_prod */,
 				35E1E9BD2D4BA011005F99CD /* Profile-flavor_dev */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -1927,10 +3568,19 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				97C147061CF9000F007C117D /* Debug */,
+				35E1E9E82D4DCFF5005F99CD /* Debug-flavor_staging */,
+				35E1E9D62D4DCFCE005F99CD /* Debug-flavor_test */,
+				35E1E9C42D4DCFA0005F99CD /* Debug-flavor_prod */,
 				35E1E9B22D4B9EC8005F99CD /* Debug-flavor_dev */,
 				97C147071CF9000F007C117D /* Release */,
+				35E1E9EE2D4DD002005F99CD /* Release-flavor_staging */,
+				35E1E9DC2D4DCFD9005F99CD /* Release-flavor_test */,
+				35E1E9CA2D4DCFB5005F99CD /* Release-flavor_prod */,
 				35E1E9B82D4BA004005F99CD /* Release-flavor_dev */,
 				249021D4217E4FDB00AE95B9 /* Profile */,
+				35E1E9F42D4DD00C005F99CD /* Profile-flavor_staging */,
+				35E1E9E22D4DCFE6005F99CD /* Profile-flavor_test */,
+				35E1E9D02D4DCFC1005F99CD /* Profile-flavor_prod */,
 				35E1E9BE2D4BA011005F99CD /* Profile-flavor_dev */,
 			);
 			defaultConfigurationIsVisible = 0;
