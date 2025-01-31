@@ -34,19 +34,22 @@ class AppSecondaryButton extends StatelessWidget {
       ),
       onPressed: onPressed,
       child: Row(
-        mainAxisSize: MainAxisSize.min,
+        // mainAxisSize: MainAxisSize.min,
+        mainAxisAlignment: MainAxisAlignment.center,
         children: [
           icon ?? const SizedBox(),
-          Flexible(
-            child: Text(
-              title,
-              style: context.theme.outlinedButtonTheme.style?.textStyle
-                  ?.resolve(onPressed != null
-                      ? {WidgetState.focused}
-                      : {WidgetState.disabled}),
-              maxLines: 1,
-              overflow: TextOverflow.ellipsis,
+          Text(
+            title,
+            style: TextStyle(
+              color: Colors.black,
+              fontSize: 16,
             ),
+            // style: context.theme.outlinedButtonTheme.style?.textStyle
+            //     ?.resolve(onPressed != null
+            //         ? {WidgetState.focused}
+            //         : {WidgetState.disabled}),
+            maxLines: 1,
+            overflow: TextOverflow.ellipsis,
           ),
         ],
       ).paddingSymmetric(vertical: Dimens.paddingSmall),

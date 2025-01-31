@@ -1,5 +1,5 @@
 {
-  "homeTitle": "Home",
+  "homeTitle": "Hi there!",
   "messageJsonFormatException": "Error parsing JSON",
   "messageNetworkException": "No internet connection",
   "messageNotFoundException": "Data not found",
