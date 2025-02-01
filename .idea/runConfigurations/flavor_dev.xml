@@ -1,0 +1,8 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration name="flavor_dev" type="FlutterRunConfigurationType" factoryName="Flutter">
+    <option name="filePath" value="$PROJECT_DIR$/lib/main_flavor_dev.dart" />
+    <option name="additionalArgs" value="--flavor flavor_dev --target lib/main_flavor_dev.dart" />
+    <option name="buildFlavor" value="flavor_dev" />
+    <method v="2" />
+  </configuration>
+</component>
