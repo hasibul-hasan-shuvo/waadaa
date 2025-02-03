@@ -12,7 +12,7 @@ import 'package:waadaa/app/modules/home/widgets/home_counter_view.dart';
 import 'package:waadaa/app/modules/home/widgets/home_message_view.dart';
 
 class HomePage extends BasePage<HomeViewModel, HomeState> {
-  HomePage({super.key});
+  const HomePage({super.key});
 
   @override
   PreferredSizeWidget? appBar(BuildContext context) {
@@ -30,13 +30,14 @@ class HomePage extends BasePage<HomeViewModel, HomeState> {
         Center(
           child: AppPrimaryButton(
             title: "Increment",
-            onPressed: () => viewModel.increment(),
+            onPressed: () => context.getViewModel<HomeViewModel>().increment(),
           ),
         ),
         Center(
           child: AppSecondaryButton(
             title: "Update message",
-            onPressed: () => viewModel.updateMessage(),
+            onPressed: () =>
+                context.getViewModel<HomeViewModel>().updateMessage(),
           ),
         ),
       ],
