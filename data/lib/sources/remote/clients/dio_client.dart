@@ -1,3 +1,4 @@
+import 'package:core/config/build_config.dart';
 import 'package:data/sources/remote/clients/interceptors/error_handlers.dart';
 import 'package:data/sources/remote/clients/interceptors/pretty_dio_logger.dart';
 import 'package:data/sources/remote/clients/interceptors/request_headers.dart';
@@ -9,8 +10,7 @@ import 'package:flutter/foundation.dart';
 
 @LazySingleton(as: NetworkClient)
 class DioClient implements NetworkClient {
-  static final String _baseUrl =
-      'https://google.com'; // TODO: Add base url here
+  static final String _baseUrl = BuildConfig.instance.config.baseUrl;
   final Dio _dio;
   final _prettyDioLogger = PrettyDioLogger(
     requestHeader: kDebugMode,

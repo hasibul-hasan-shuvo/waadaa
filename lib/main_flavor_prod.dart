@@ -1,6 +1,15 @@
-import 'package:waadaa/flavors.dart';
-import 'package:waadaa/main.dart';
+import 'package:core/config/build_config.dart';
+import 'package:core/config/environment_config.dart';
+import 'package:core/config/environments.dart';
+import 'package:waadaa/app/main.dart';
 
 void main() {
-  appMain(appFlavor: AppFlavor.prod);
+  BuildConfig.init(
+    envType: Environment.dev,
+    envConfig: EnvironmentConfig(
+      appName: String.fromEnvironment('appName'),
+      baseUrl: String.fromEnvironment('baseUrl'),
+    ),
+  );
+  appMain();
 }
