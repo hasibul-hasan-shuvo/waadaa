@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'theme_color_extension.dart';
 
 part 'color/dark_color_palette.dart';
+
 part 'color/light_color_palette.dart';
 
 class AppTheme with ChangeNotifier {

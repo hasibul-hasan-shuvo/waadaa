@@ -29,4 +29,5 @@ final _lightColorPalette = ThemeColorExtension(
   scrim: const Color(0xFF000000),
   shadow: const Color(0xFF000000),
   surfaceTint: const Color(0xFFD32F2F),
+  baalsaal: Colors.green,
 );

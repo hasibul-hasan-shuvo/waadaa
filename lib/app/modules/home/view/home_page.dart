@@ -1,5 +1,6 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:core/assets/dimens.dart';
+import 'package:core/extensions/context_extension.dart';
 import 'package:core/extensions/widget_extension.dart';
 import 'package:core/widgets/buttons/app_primary_button.dart';
 import 'package:core/widgets/buttons/app_secondary_button.dart';
@@ -70,7 +71,11 @@ class HomePage extends BasePage<HomeViewModel, HomeState> {
           ),
           rewardSection(),
           shopBySection(),
-          productListSection(),
+          productListSection(title: "Latest fashion arrivals"),
+          singleBanner(),
+          offerCategorySection(),
+          singleBanner(),
+          productListSection(title: "Recommended for you"),
           // HomeMessageView(),
           // HomeCounterView(),
           // Center(
@@ -135,7 +140,7 @@ class HomePage extends BasePage<HomeViewModel, HomeState> {
                 return const SizedBox(width: 12.0);
               },
               itemBuilder: (BuildContext context, int index) {
-                return categoryItem(
+                return shopByItem(
                   name: "Brands",
                   imageUrl: (index % 2 == 0)
                       ? "https://i.imgur.com/ZlueaNs.png"
@@ -149,7 +154,7 @@ class HomePage extends BasePage<HomeViewModel, HomeState> {
     );
   }
 
-  Widget categoryItem({
+  Widget shopByItem({
     required String name,
     required String imageUrl,
   }) {
@@ -186,14 +191,16 @@ class HomePage extends BasePage<HomeViewModel, HomeState> {
     );
   }
 
-  Widget productListSection() {
+  Widget productListSection({
+    required String title,
+  }) {
     return Container(
       color: Colors.white,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(
-            "Latest fashion arrivals",
+            title,
             style: TextStyle(
               fontSize: 20,
               fontWeight: FontWeight.bold,
@@ -211,7 +218,7 @@ class HomePage extends BasePage<HomeViewModel, HomeState> {
           GridView.builder(
             shrinkWrap: true,
             physics: NeverScrollableScrollPhysics(),
-            itemCount: 6,
+            itemCount: 4,
             gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
               crossAxisCount: 2,
               childAspectRatio: 0.70,
@@ -265,6 +272,73 @@ class HomePage extends BasePage<HomeViewModel, HomeState> {
           ),
         ),
       ],
+    );
+  }
+
+  Widget offerCategorySection() {
+    return Container(
+      color: Colors.white,
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Text(
+            "Offer on categories",
+            style: TextStyle(
+              fontSize: 20,
+              fontWeight: FontWeight.bold,
+            ),
+          ).paddingOnly(top: 10),
+          SizedBox(height: 10),
+          GridView.builder(
+            shrinkWrap: true,
+            physics: NeverScrollableScrollPhysics(),
+            itemCount: 6,
+            gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+              crossAxisCount: 2,
+              childAspectRatio: 0.8,
+              crossAxisSpacing: 10,
+              mainAxisSpacing: 10,
+            ),
+            itemBuilder: (context, index) {
+              return categoryItem();
+            },
+          ),
+          AppSecondaryButton(
+            title: "VIEW ALL",
+            onPressed: () {},
+          ).paddingSymmetric(vertical: 10),
+        ],
+      ).paddingSymmetric(horizontal: 15),
+    );
+  }
+
+  Widget categoryItem() {
+    return Column(
+      children: [
+        Container(
+          color: Color(0xFFF7F5F2),
+          padding: EdgeInsets.all(4),
+          child: Image.network(
+            "https://s3-alpha-sig.figma.com/img/eae2/361c/c958aaaadc2d38f86dcb170a73cf843b?Expires=1739145600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=SD6~f34pDUqSx7kvm1hGSQZmr89iPCdTr0sw8ERFO1dStVfFXIuoxdNv2N3Z2SU9MqQV8bhZ8WZkro2qTypXq0UhP3I7FfNXe7L84YdszILHNY63a7xMheiBKHqSDlDEQBcfAmop8XI2x-8JhJPtiT8ond3prA6Ql1AReH8MAUpE9-HjdzbviuS1i7H-kSzsKXvz7qScUxmmFR8vKRgJATuOJiZuDxXmUBkz4s7d7Q-T4jk~U8~vQDXL4dTi21Yjl7uPti2qfkQI9cfjUeyiybZXOd4DEQ2yRoOKLYaafX9Rsy9eLktlrgdVbdnAxjK~GRix8iXewByMdvuKla~Euw__",
+          ),
+        ),
+        SizedBox(height: 12),
+        Text(
+          "Beauty & Grooming",
+          style: TextStyle(
+            fontSize: 14,
+            fontWeight: FontWeight.w500,
+          ),
+        ),
+      ],
+    );
+  }
+
+  Widget singleBanner() {
+    return InkWell(
+      onTap: () {},
+      child: Image.network("https://i.imgur.com/FVvYyeT.png")
+          .paddingOnly(top: 4, bottom: 10),
     );
   }
 }
