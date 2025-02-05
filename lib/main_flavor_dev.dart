@@ -7,8 +7,8 @@ void main() {
   BuildConfig.init(
     envType: Environment.dev,
     envConfig: EnvironmentConfig(
-      appName: String.fromEnvironment('appName'),
-      baseUrl: String.fromEnvironment('baseUrl'),
+      appName: const String.fromEnvironment('appName'),
+      baseUrl: const String.fromEnvironment('baseUrl'),
     ),
   );
   appMain();
