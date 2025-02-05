@@ -111,12 +111,12 @@
 		33A162728C574E0502612D0E /* Pods_flavor_dev.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_flavor_dev.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		33C04E5F6B6E2187A9106B29 /* Pods-flavor_dev.release-flavor_staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-flavor_dev.release-flavor_staging.xcconfig"; path = "Target Support Files/Pods-flavor_dev/Pods-flavor_dev.release-flavor_staging.xcconfig"; sourceTree = "<group>"; };
 		35E1E96D2D4B9D41005F99CD /* flavor_dev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = flavor_dev.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		35E1E96E2D4B9D42005F99CD /* Runner copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Runner copy-Info.plist"; path = "/Users/bs1101/Work/1.Projects/waada-app/waadaa-b2c-mobile-flutter/ios/Runner copy-Info.plist"; sourceTree = "<absolute>"; };
+		35E1E96E2D4B9D42005F99CD /* Runner-flavor-dev.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Runner-flavor-dev.plist"; path = "/Users/bs1101/Work/1.Projects/waada-app/waadaa-b2c-mobile-flutter/ios/Runner-flavor-dev.plist"; sourceTree = "<absolute>"; };
 		35E1E9832D4B9D6A005F99CD /* flavor_test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = flavor_test.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		35E1E9842D4B9D6A005F99CD /* Runner copy2-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Runner copy2-Info.plist"; path = "/Users/bs1101/Work/1.Projects/waada-app/waadaa-b2c-mobile-flutter/ios/Runner copy2-Info.plist"; sourceTree = "<absolute>"; };
+		35E1E9842D4B9D6A005F99CD /* Runner-flavor-test.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Runner-flavor-test.plist"; path = "/Users/bs1101/Work/1.Projects/waada-app/waadaa-b2c-mobile-flutter/ios/Runner-flavor-test.plist"; sourceTree = "<absolute>"; };
 		35E1E9992D4B9D71005F99CD /* flavor_staging.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = flavor_staging.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		35E1E99A2D4B9D72005F99CD /* Runner copy3-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Runner copy3-Info.plist"; path = "/Users/bs1101/Work/1.Projects/waada-app/waadaa-b2c-mobile-flutter/ios/Runner copy3-Info.plist"; sourceTree = "<absolute>"; };
-		35E1E9B02D4B9D7B005F99CD /* Runner copy4-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Runner copy4-Info.plist"; path = "/Users/bs1101/Work/1.Projects/waada-app/waadaa-b2c-mobile-flutter/ios/Runner copy4-Info.plist"; sourceTree = "<absolute>"; };
+		35E1E99A2D4B9D72005F99CD /* Runner-flavor-staging.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Runner-flavor-staging.plist"; path = "/Users/bs1101/Work/1.Projects/waada-app/waadaa-b2c-mobile-flutter/ios/Runner-flavor-staging.plist"; sourceTree = "<absolute>"; };
+		35E1E9B02D4B9D7B005F99CD /* Runner-flavor-prod.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Runner-flavor-prod.plist"; path = "/Users/bs1101/Work/1.Projects/waada-app/waadaa-b2c-mobile-flutter/ios/Runner-flavor-prod.plist"; sourceTree = "<absolute>"; };
 		36F3F186DA5824DB220C7E75 /* Pods-flavor_staging.profile.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-flavor_staging.profile.xcconfig"; path = "Target Support Files/Pods-flavor_staging/Pods-flavor_staging.profile.xcconfig"; sourceTree = "<group>"; };
 		3948AAA5AC4804763AEA4FA5 /* Pods-flavor_test.debug-flavor_test.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-flavor_test.debug-flavor_test.xcconfig"; path = "Target Support Files/Pods-flavor_test/Pods-flavor_test.debug-flavor_test.xcconfig"; sourceTree = "<group>"; };
 		3B3967151E833CAA004F5970 /* AppFrameworkInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = AppFrameworkInfo.plist; path = Flutter/AppFrameworkInfo.plist; sourceTree = "<group>"; };
@@ -317,10 +317,10 @@
 				97C146EF1CF9000F007C117D /* Products */,
 				331C8082294A63A400263BE5 /* RunnerTests */,
 				11FF995E62BC8C5F64FE85B5 /* Pods */,
-				35E1E96E2D4B9D42005F99CD /* Runner copy-Info.plist */,
-				35E1E9842D4B9D6A005F99CD /* Runner copy2-Info.plist */,
-				35E1E99A2D4B9D72005F99CD /* Runner copy3-Info.plist */,
-				35E1E9B02D4B9D7B005F99CD /* Runner copy4-Info.plist */,
+				35E1E96E2D4B9D42005F99CD /* Runner-flavor-dev.plist */,
+				35E1E9842D4B9D6A005F99CD /* Runner-flavor-test.plist */,
+				35E1E99A2D4B9D72005F99CD /* Runner-flavor-staging.plist */,
+				35E1E9B02D4B9D7B005F99CD /* Runner-flavor-prod.plist */,
 				DEE54AB27503AB15DDDCF629 /* Frameworks */,
 			);
 			sourceTree = "<group>";
@@ -1059,7 +1059,7 @@
 				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
 				DEVELOPMENT_TEAM = SCSJ8HSN3T;
 				ENABLE_BITCODE = NO;
-				INFOPLIST_FILE = "Runner copy-Info.plist";
+				INFOPLIST_FILE = "Runner-flavor-dev.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Waadaa Dev";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1084,7 +1084,7 @@
 				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
 				DEVELOPMENT_TEAM = SCSJ8HSN3T;
 				ENABLE_BITCODE = NO;
-				INFOPLIST_FILE = "Runner copy-Info.plist";
+				INFOPLIST_FILE = "Runner-flavor-dev.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Waadaa Dev";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1108,7 +1108,7 @@
 				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
 				DEVELOPMENT_TEAM = SCSJ8HSN3T;
 				ENABLE_BITCODE = NO;
-				INFOPLIST_FILE = "Runner copy-Info.plist";
+				INFOPLIST_FILE = "Runner-flavor-dev.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Waadaa Dev";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1132,7 +1132,7 @@
 				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
 				DEVELOPMENT_TEAM = SCSJ8HSN3T;
 				ENABLE_BITCODE = NO;
-				INFOPLIST_FILE = "Runner copy2-Info.plist";
+				INFOPLIST_FILE = "Runner-flavor-test.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Waadaa Test";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1157,7 +1157,7 @@
 				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
 				DEVELOPMENT_TEAM = SCSJ8HSN3T;
 				ENABLE_BITCODE = NO;
-				INFOPLIST_FILE = "Runner copy2-Info.plist";
+				INFOPLIST_FILE = "Runner-flavor-test.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Waadaa Test";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1181,7 +1181,7 @@
 				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
 				DEVELOPMENT_TEAM = SCSJ8HSN3T;
 				ENABLE_BITCODE = NO;
-				INFOPLIST_FILE = "Runner copy2-Info.plist";
+				INFOPLIST_FILE = "Runner-flavor-test.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Waadaa Test";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1205,7 +1205,7 @@
 				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
 				DEVELOPMENT_TEAM = SCSJ8HSN3T;
 				ENABLE_BITCODE = NO;
-				INFOPLIST_FILE = "Runner copy3-Info.plist";
+				INFOPLIST_FILE = "Runner-flavor-staging.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Waadaa Staging";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1230,7 +1230,7 @@
 				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
 				DEVELOPMENT_TEAM = SCSJ8HSN3T;
 				ENABLE_BITCODE = NO;
-				INFOPLIST_FILE = "Runner copy3-Info.plist";
+				INFOPLIST_FILE = "Runner-flavor-staging.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Waadaa Staging";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1254,7 +1254,7 @@
 				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
 				DEVELOPMENT_TEAM = SCSJ8HSN3T;
 				ENABLE_BITCODE = NO;
-				INFOPLIST_FILE = "Runner copy3-Info.plist";
+				INFOPLIST_FILE = "Runner-flavor-staging.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Waadaa Staging";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1378,7 +1378,7 @@
 				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
 				DEVELOPMENT_TEAM = SCSJ8HSN3T;
 				ENABLE_BITCODE = NO;
-				INFOPLIST_FILE = "Runner copy-Info.plist";
+				INFOPLIST_FILE = "Runner-flavor-dev.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Waadaa Dev";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1403,7 +1403,7 @@
 				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
 				DEVELOPMENT_TEAM = SCSJ8HSN3T;
 				ENABLE_BITCODE = NO;
-				INFOPLIST_FILE = "Runner copy2-Info.plist";
+				INFOPLIST_FILE = "Runner-flavor-test.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Waadaa Test";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1428,7 +1428,7 @@
 				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
 				DEVELOPMENT_TEAM = SCSJ8HSN3T;
 				ENABLE_BITCODE = NO;
-				INFOPLIST_FILE = "Runner copy3-Info.plist";
+				INFOPLIST_FILE = "Runner-flavor-staging.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Waadaa Staging";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1547,7 +1547,7 @@
 				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
 				DEVELOPMENT_TEAM = SCSJ8HSN3T;
 				ENABLE_BITCODE = NO;
-				INFOPLIST_FILE = "Runner copy-Info.plist";
+				INFOPLIST_FILE = "Runner-flavor-dev.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Waadaa Dev";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1571,7 +1571,7 @@
 				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
 				DEVELOPMENT_TEAM = SCSJ8HSN3T;
 				ENABLE_BITCODE = NO;
-				INFOPLIST_FILE = "Runner copy2-Info.plist";
+				INFOPLIST_FILE = "Runner-flavor-test.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Waadaa Test";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1595,7 +1595,7 @@
 				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
 				DEVELOPMENT_TEAM = SCSJ8HSN3T;
 				ENABLE_BITCODE = NO;
-				INFOPLIST_FILE = "Runner copy3-Info.plist";
+				INFOPLIST_FILE = "Runner-flavor-staging.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Waadaa Staging";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1711,7 +1711,7 @@
 				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
 				DEVELOPMENT_TEAM = SCSJ8HSN3T;
 				ENABLE_BITCODE = NO;
-				INFOPLIST_FILE = "Runner copy-Info.plist";
+				INFOPLIST_FILE = "Runner-flavor-dev.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Waadaa Dev";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1735,7 +1735,7 @@
 				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
 				DEVELOPMENT_TEAM = SCSJ8HSN3T;
 				ENABLE_BITCODE = NO;
-				INFOPLIST_FILE = "Runner copy2-Info.plist";
+				INFOPLIST_FILE = "Runner-flavor-test.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Waadaa Test";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1759,7 +1759,7 @@
 				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
 				DEVELOPMENT_TEAM = SCSJ8HSN3T;
 				ENABLE_BITCODE = NO;
-				INFOPLIST_FILE = "Runner copy3-Info.plist";
+				INFOPLIST_FILE = "Runner-flavor-staging.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Waadaa Staging";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1883,7 +1883,7 @@
 				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
 				DEVELOPMENT_TEAM = SCSJ8HSN3T;
 				ENABLE_BITCODE = NO;
-				INFOPLIST_FILE = "Runner copy-Info.plist";
+				INFOPLIST_FILE = "Runner-flavor-dev.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Waadaa Dev";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1908,7 +1908,7 @@
 				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
 				DEVELOPMENT_TEAM = SCSJ8HSN3T;
 				ENABLE_BITCODE = NO;
-				INFOPLIST_FILE = "Runner copy2-Info.plist";
+				INFOPLIST_FILE = "Runner-flavor-test.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Waadaa Test";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1933,7 +1933,7 @@
 				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
 				DEVELOPMENT_TEAM = SCSJ8HSN3T;
 				ENABLE_BITCODE = NO;
-				INFOPLIST_FILE = "Runner copy3-Info.plist";
+				INFOPLIST_FILE = "Runner-flavor-staging.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Waadaa Staging";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2052,7 +2052,7 @@
 				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
 				DEVELOPMENT_TEAM = SCSJ8HSN3T;
 				ENABLE_BITCODE = NO;
-				INFOPLIST_FILE = "Runner copy-Info.plist";
+				INFOPLIST_FILE = "Runner-flavor-dev.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Waadaa Dev";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2076,7 +2076,7 @@
 				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
 				DEVELOPMENT_TEAM = SCSJ8HSN3T;
 				ENABLE_BITCODE = NO;
-				INFOPLIST_FILE = "Runner copy2-Info.plist";
+				INFOPLIST_FILE = "Runner-flavor-test.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Waadaa Test";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2100,7 +2100,7 @@
 				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
 				DEVELOPMENT_TEAM = SCSJ8HSN3T;
 				ENABLE_BITCODE = NO;
-				INFOPLIST_FILE = "Runner copy3-Info.plist";
+				INFOPLIST_FILE = "Runner-flavor-staging.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Waadaa Staging";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2216,7 +2216,7 @@
 				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
 				DEVELOPMENT_TEAM = SCSJ8HSN3T;
 				ENABLE_BITCODE = NO;
-				INFOPLIST_FILE = "Runner copy-Info.plist";
+				INFOPLIST_FILE = "Runner-flavor-dev.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Waadaa Dev";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2240,7 +2240,7 @@
 				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
 				DEVELOPMENT_TEAM = SCSJ8HSN3T;
 				ENABLE_BITCODE = NO;
-				INFOPLIST_FILE = "Runner copy2-Info.plist";
+				INFOPLIST_FILE = "Runner-flavor-test.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Waadaa Test";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2264,7 +2264,7 @@
 				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
 				DEVELOPMENT_TEAM = SCSJ8HSN3T;
 				ENABLE_BITCODE = NO;
-				INFOPLIST_FILE = "Runner copy3-Info.plist";
+				INFOPLIST_FILE = "Runner-flavor-staging.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Waadaa Staging";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2388,7 +2388,7 @@
 				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
 				DEVELOPMENT_TEAM = SCSJ8HSN3T;
 				ENABLE_BITCODE = NO;
-				INFOPLIST_FILE = "Runner copy-Info.plist";
+				INFOPLIST_FILE = "Runner-flavor-dev.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Waadaa Dev";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2413,7 +2413,7 @@
 				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
 				DEVELOPMENT_TEAM = SCSJ8HSN3T;
 				ENABLE_BITCODE = NO;
-				INFOPLIST_FILE = "Runner copy2-Info.plist";
+				INFOPLIST_FILE = "Runner-flavor-test.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Waadaa Test";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2438,7 +2438,7 @@
 				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
 				DEVELOPMENT_TEAM = SCSJ8HSN3T;
 				ENABLE_BITCODE = NO;
-				INFOPLIST_FILE = "Runner copy3-Info.plist";
+				INFOPLIST_FILE = "Runner-flavor-staging.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Waadaa Staging";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2557,7 +2557,7 @@
 				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
 				DEVELOPMENT_TEAM = SCSJ8HSN3T;
 				ENABLE_BITCODE = NO;
-				INFOPLIST_FILE = "Runner copy-Info.plist";
+				INFOPLIST_FILE = "Runner-flavor-dev.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Waadaa Dev";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2581,7 +2581,7 @@
 				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
 				DEVELOPMENT_TEAM = SCSJ8HSN3T;
 				ENABLE_BITCODE = NO;
-				INFOPLIST_FILE = "Runner copy2-Info.plist";
+				INFOPLIST_FILE = "Runner-flavor-test.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Waadaa Test";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2605,7 +2605,7 @@
 				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
 				DEVELOPMENT_TEAM = SCSJ8HSN3T;
 				ENABLE_BITCODE = NO;
-				INFOPLIST_FILE = "Runner copy3-Info.plist";
+				INFOPLIST_FILE = "Runner-flavor-staging.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Waadaa Staging";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2721,7 +2721,7 @@
 				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
 				DEVELOPMENT_TEAM = SCSJ8HSN3T;
 				ENABLE_BITCODE = NO;
-				INFOPLIST_FILE = "Runner copy-Info.plist";
+				INFOPLIST_FILE = "Runner-flavor-dev.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Waadaa Dev";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2745,7 +2745,7 @@
 				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
 				DEVELOPMENT_TEAM = SCSJ8HSN3T;
 				ENABLE_BITCODE = NO;
-				INFOPLIST_FILE = "Runner copy2-Info.plist";
+				INFOPLIST_FILE = "Runner-flavor-test.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Waadaa Test";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2769,7 +2769,7 @@
 				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
 				DEVELOPMENT_TEAM = SCSJ8HSN3T;
 				ENABLE_BITCODE = NO;
-				INFOPLIST_FILE = "Runner copy3-Info.plist";
+				INFOPLIST_FILE = "Runner-flavor-staging.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Waadaa Staging";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2893,7 +2893,7 @@
 				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
 				DEVELOPMENT_TEAM = SCSJ8HSN3T;
 				ENABLE_BITCODE = NO;
-				INFOPLIST_FILE = "Runner copy-Info.plist";
+				INFOPLIST_FILE = "Runner-flavor-dev.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Waadaa Dev";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2918,7 +2918,7 @@
 				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
 				DEVELOPMENT_TEAM = SCSJ8HSN3T;
 				ENABLE_BITCODE = NO;
-				INFOPLIST_FILE = "Runner copy2-Info.plist";
+				INFOPLIST_FILE = "Runner-flavor-test.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Waadaa Test";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2943,7 +2943,7 @@
 				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
 				DEVELOPMENT_TEAM = SCSJ8HSN3T;
 				ENABLE_BITCODE = NO;
-				INFOPLIST_FILE = "Runner copy3-Info.plist";
+				INFOPLIST_FILE = "Runner-flavor-staging.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Waadaa Staging";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -3062,7 +3062,7 @@
 				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
 				DEVELOPMENT_TEAM = SCSJ8HSN3T;
 				ENABLE_BITCODE = NO;
-				INFOPLIST_FILE = "Runner copy-Info.plist";
+				INFOPLIST_FILE = "Runner-flavor-dev.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Waadaa Dev";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -3086,7 +3086,7 @@
 				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
 				DEVELOPMENT_TEAM = SCSJ8HSN3T;
 				ENABLE_BITCODE = NO;
-				INFOPLIST_FILE = "Runner copy2-Info.plist";
+				INFOPLIST_FILE = "Runner-flavor-test.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Waadaa Test";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -3110,7 +3110,7 @@
 				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
 				DEVELOPMENT_TEAM = SCSJ8HSN3T;
 				ENABLE_BITCODE = NO;
-				INFOPLIST_FILE = "Runner copy3-Info.plist";
+				INFOPLIST_FILE = "Runner-flavor-staging.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Waadaa Staging";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -3226,7 +3226,7 @@
 				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
 				DEVELOPMENT_TEAM = SCSJ8HSN3T;
 				ENABLE_BITCODE = NO;
-				INFOPLIST_FILE = "Runner copy-Info.plist";
+				INFOPLIST_FILE = "Runner-flavor-dev.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Waadaa Dev";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -3250,7 +3250,7 @@
 				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
 				DEVELOPMENT_TEAM = SCSJ8HSN3T;
 				ENABLE_BITCODE = NO;
-				INFOPLIST_FILE = "Runner copy2-Info.plist";
+				INFOPLIST_FILE = "Runner-flavor-test.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Waadaa Test";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -3274,7 +3274,7 @@
 				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
 				DEVELOPMENT_TEAM = SCSJ8HSN3T;
 				ENABLE_BITCODE = NO;
-				INFOPLIST_FILE = "Runner copy3-Info.plist";
+				INFOPLIST_FILE = "Runner-flavor-staging.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Waadaa Staging";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
