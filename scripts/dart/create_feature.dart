@@ -48,7 +48,7 @@ import 'package:waadaa/app/modules/$featureName/viewmodel/${featureName}_state.d
 import 'package:waadaa/app/modules/$featureName/viewmodel/${featureName}_view_model.dart';
 
 class ${_snakeCaseToPascalCase(featureName)}Page extends BasePage<${_snakeCaseToPascalCase(featureName)}ViewModel, ${_snakeCaseToPascalCase(featureName)}State> {
-  ${_snakeCaseToPascalCase(featureName)}Page({super.key});
+  const ${_snakeCaseToPascalCase(featureName)}Page({super.key});
 
   @override
   Widget body(BuildContext context) {
@@ -183,7 +183,7 @@ String _addRouteToRouter(String featureName, String routerContent) {
     AppRoute(
       path: _Paths.${_snakeCaseToCamelCase(featureName)},
       name: AppRoutes.${_snakeCaseToCamelCase(featureName)},
-      buildPage: (context, state) => ${_snakeCaseToPascalCase(featureName)}Page(),
+      buildPage: (context, state) => const ${_snakeCaseToPascalCase(featureName)}Page(),
     ),
 ''';
 

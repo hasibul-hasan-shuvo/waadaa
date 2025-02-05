@@ -1,2 +1,25 @@
-#include? "Pods/Target Support Files/Pods-Runner/Pods-Runner.debug.xcconfig"
+#include "Pods/Target Support Files/Pods-flavor_dev/Pods-flavor_dev.debug.xcconfig"
+#include "Pods/Target Support Files/Pods-flavor_dev/Pods-flavor_dev.debug-flavor_staging.xcconfig"
+#include "Pods/Target Support Files/Pods-flavor_dev/Pods-flavor_dev.debug-flavor_test.xcconfig"
+#include "Pods/Target Support Files/Pods-flavor_dev/Pods-flavor_dev.debug-flavor_prod.xcconfig"
+#include "Pods/Target Support Files/Pods-flavor_dev/Pods-flavor_dev.debug-flavor_dev.xcconfig"
+
+#include "Pods/Target Support Files/Pods-flavor_prod/Pods-flavor_prod.debug.xcconfig"
+#include "Pods/Target Support Files/Pods-flavor_prod/Pods-flavor_prod.debug-flavor_staging.xcconfig"
+#include "Pods/Target Support Files/Pods-flavor_prod/Pods-flavor_prod.debug-flavor_test.xcconfig"
+#include "Pods/Target Support Files/Pods-flavor_prod/Pods-flavor_prod.debug-flavor_prod.xcconfig"
+#include "Pods/Target Support Files/Pods-flavor_prod/Pods-flavor_prod.debug-flavor_dev.xcconfig"
+
+#include "Pods/Target Support Files/Pods-flavor_staging/Pods-flavor_staging.debug.xcconfig"
+#include "Pods/Target Support Files/Pods-flavor_staging/Pods-flavor_staging.debug-flavor_staging.xcconfig"
+#include "Pods/Target Support Files/Pods-flavor_staging/Pods-flavor_staging.debug-flavor_test.xcconfig"
+#include "Pods/Target Support Files/Pods-flavor_staging/Pods-flavor_staging.debug-flavor_prod.xcconfig"
+#include "Pods/Target Support Files/Pods-flavor_staging/Pods-flavor_staging.debug-flavor_dev.xcconfig"
+
+#include "Pods/Target Support Files/Pods-flavor_test/Pods-flavor_test.debug.xcconfig"
+#include "Pods/Target Support Files/Pods-flavor_test/Pods-flavor_test.debug-flavor_staging.xcconfig"
+#include "Pods/Target Support Files/Pods-flavor_test/Pods-flavor_test.debug-flavor_test.xcconfig"
+#include "Pods/Target Support Files/Pods-flavor_test/Pods-flavor_test.debug-flavor_prod.xcconfig"
+#include "Pods/Target Support Files/Pods-flavor_test/Pods-flavor_test.debug-flavor_dev.xcconfig"
+
 #include "Generated.xcconfig"

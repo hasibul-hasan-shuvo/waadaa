@@ -1,32 +1,39 @@
 part of '../app_theme.dart';
 
 final _darkColorPalette = ThemeColorExtension(
-  primary: const Color(0xFFD32F2F),
-  onPrimary: const Color(0xFFFFFFFF),
-  primaryContainer: const Color(0xFFFF6659),
-  onPrimaryContainer: const Color(0xFF410003),
-  secondary: const Color(0xFFFF867C),
-  onSecondary: const Color(0xFF5A1B1B),
-  secondaryContainer: const Color(0xFF93000A),
-  onSecondaryContainer: const Color(0xFFFFDAD4),
-  tertiary: const Color(0xFFD84315),
-  onTertiary: const Color(0xFFFFFFFF),
-  tertiaryContainer: const Color(0xFF5D1E00),
-  onTertiaryContainer: const Color(0xFFFFDCC4),
-  error: const Color(0xFFFFB4A9),
-  onError: const Color(0xFF680003),
-  errorContainer: const Color(0xFF930006),
-  onErrorContainer: const Color(0xFFFFDAD4),
-  surface: const Color(0xFF2C0000),
-  onSurface: const Color(0xFFFFB4A9),
-  surfaceContainerHighest: const Color(0xFF534341),
-  onSurfaceVariant: const Color(0xFFD8C2C0),
-  outline: const Color(0xFF9D8A87),
-  outlineVariant: const Color(0xFF534341),
-  inversePrimary: const Color(0xFFFF6659),
-  inverseSurface: const Color(0xFFFFB4A9),
-  onInverseSurface: const Color(0xFF410003),
-  scrim: const Color(0xFF000000),
-  shadow: const Color(0xFF000000),
-  surfaceTint: const Color(0xFFD32F2F),
+  primary: Color(0xFFFFFFFF), // White for primary text/icons
+  onPrimary: Color(0xFF1A1A1A), // Dark background for contrast
+  primaryContainer: Color(0xFF333333), // Dark gray container
+  onPrimaryContainer: Color(0xFFFFFFFF), // White text on primary container
+
+  secondary: Color(0xFFD4A373), // Beige/Brown accent color
+  onSecondary: Color(0xFF1A1A1A), // Dark text/icons on secondary
+  secondaryContainer: Color(0xFF444444), // Slightly lighter dark gray
+  onSecondaryContainer: Color(0xFFFFFFFF), // White text/icons
+
+  tertiary: Color(0xFF8ECAE6), // Light blue accent
+  onTertiary: Color(0xFF1A1A1A), // Dark for contrast
+  tertiaryContainer:
+      Color(0xFF2A2A2A), // Deep gray/black for tertiary background
+  onTertiaryContainer: Color(0xFFFFFFFF), // White text/icons
+
+  error: Color(0xFFCF6679), // Red for errors
+  onError: Color(0xFF1A1A1A), // Dark text/icons on error
+  errorContainer: Color(0xFFB00020), // Dark red container
+  onErrorContainer: Color(0xFFFFFFFF), // White text/icons
+
+  surface: Color(0xFF121212), // Deep black background
+  onSurface: Color(0xFFFFFFFF), // White text/icons
+  surfaceContainerHighest: Color(0xFF1E1E1E), // Slightly lighter dark
+  onSurfaceVariant: Color(0xFFB3B3B3), // Grayish text/icons
+
+  outline: Color(0xFF666666), // Soft border color
+  outlineVariant: Color(0xFF444444), // Darker border color
+  inversePrimary: Color(0xFF222222), // Inverse color for contrast
+  inverseSurface: Color(0xFFE5E5E5), // Light gray for contrast
+  onInverseSurface: Color(0xFF121212), // Dark text/icons
+
+  scrim: Color(0x99000000), // Semi-transparent black
+  shadow: Color(0xFF000000), // Black shadows
+  surfaceTint: Color(0xFF8ECAE6), // Light blue tint effect
 );
