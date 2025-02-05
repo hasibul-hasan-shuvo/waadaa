@@ -1,7 +1,6 @@
 import 'dart:developer';
 
 import 'package:cached_network_image/cached_network_image.dart';
-import 'package:carousel_slider/carousel_slider.dart';
 import 'package:core/assets/dimens.dart';
 import 'package:core/extensions/context_extension.dart';
 import 'package:core/extensions/widget_extension.dart';
@@ -18,7 +17,7 @@ import 'package:waadaa/app/modules/home/widgets/home_message_view.dart';
 import 'package:waadaa/app/modules/home/widgets/image_slider.dart';
 
 class HomePage extends BasePage<HomeViewModel, HomeState> {
-  HomePage({super.key});
+  const HomePage({super.key});
 
   @override
   PreferredSizeWidget? appBar(BuildContext context) {
