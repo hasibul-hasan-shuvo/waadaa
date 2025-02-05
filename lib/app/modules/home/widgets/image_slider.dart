@@ -1,5 +1,6 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:carousel_slider/carousel_slider.dart';
+import 'package:core/assets/dimens.dart';
 import 'package:flutter/material.dart';
 
 class ImageSlider extends StatefulWidget {
@@ -75,25 +76,25 @@ class _ImageSliderState extends State<ImageSlider> {
       mainAxisAlignment: MainAxisAlignment.center,
       children: List.generate(count, (index) {
         return Container(
-          width: 22.0,
-          height: 7.0,
+          width: Dimens.indicatorWidth,
+          height: Dimens.indicatorHeight,
           margin: EdgeInsets.symmetric(vertical: 10.0),
           decoration: BoxDecoration(
             shape: BoxShape.rectangle,
             color: activeIndex == index ? Colors.black : Colors.white70,
             borderRadius: BorderRadius.only(
               topLeft: (activeIndex == index || index == 0)
-                  ? Radius.circular(8)
-                  : Radius.circular(0),
+                  ? Radius.circular(Dimens.radiusMedium)
+                  : Radius.circular(Dimens.radiusZero),
               bottomLeft: (activeIndex == index || index == 0)
-                  ? Radius.circular(8)
-                  : Radius.circular(0),
+                  ? Radius.circular(Dimens.radiusMedium)
+                  : Radius.circular(Dimens.radiusZero),
               topRight: (activeIndex == index || index == count - 1)
-                  ? Radius.circular(8)
-                  : Radius.circular(0),
+                  ? Radius.circular(Dimens.radiusMedium)
+                  : Radius.circular(Dimens.radiusZero),
               bottomRight: (activeIndex == index || index == count - 1)
-                  ? Radius.circular(8)
-                  : Radius.circular(0),
+                  ? Radius.circular(Dimens.radiusMedium)
+                  : Radius.circular(Dimens.radiusZero),
             ),
           ),
         );
