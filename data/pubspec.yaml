@@ -15,7 +15,7 @@ dependencies:
   domain:
     path: ../domain
   cupertino_icons: 1.0.8
-  dio: 5.7.0
+  dio: 5.8.0+1
   flutter:
     sdk: flutter
   shared_preferences: 2.3.5
