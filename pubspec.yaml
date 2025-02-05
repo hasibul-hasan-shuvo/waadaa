@@ -1,6 +1,6 @@
 name: waadaa
 description: "A Flutter template using Clean Architecture and MVVM with Repository and Use case pattern"
-publish_to: 'none'
+publish_to: "none"
 
 version: 1.0.0+1
 
