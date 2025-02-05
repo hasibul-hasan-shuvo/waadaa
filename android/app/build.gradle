@@ -40,25 +40,25 @@ android {
     productFlavors {
     create("flavor_dev") {
         dimension = "env"
-        resValue("string", "app_name", "Waada Dev")
+        resValue("string", "app_name", "Waadaa Dev")
         applicationIdSuffix = ".dev"
     }
 
     create("flavor_staging") {
         dimension = "env"
-        resValue("string", "app_name", "Waada Staging")
+        resValue("string", "app_name", "Waadaa Staging")
         applicationIdSuffix = ".staging"
     }
 
      create("flavor_test") {
         dimension = "env"
-        resValue("string", "app_name", "Waada Test")
+        resValue("string", "app_name", "Waadaa Test")
         applicationIdSuffix = ".test"
     }
 
     create("flavor_prod") {
         dimension = "env"
-        resValue("string", "app_name", "Waada")
+        resValue("string", "app_name", "Waadaa")
     }
 }
 }
