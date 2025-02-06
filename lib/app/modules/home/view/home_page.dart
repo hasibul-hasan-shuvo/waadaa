@@ -5,6 +5,7 @@ import 'package:core/extensions/widget_extension.dart';
 import 'package:core/widgets/buttons/app_primary_button.dart';
 import 'package:core/widgets/buttons/app_secondary_button.dart';
 import 'package:core/widgets/primary_app_bar.dart';
+import 'package:core/widgets/hero_banner_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:waadaa/app/base/base_page.dart';
 import 'package:waadaa/app/extensions/context_extension.dart';
@@ -12,7 +13,7 @@ import 'package:waadaa/app/modules/home/viewmodel/home_state.dart';
 import 'package:waadaa/app/modules/home/viewmodel/home_view_model.dart';
 import 'package:waadaa/app/modules/home/widgets/home_counter_view.dart';
 import 'package:waadaa/app/modules/home/widgets/home_message_view.dart';
-import 'package:waadaa/app/modules/home/widgets/image_slider_view.dart';
+import 'package:waadaa/app/modules/home/widgets/hero_banners_view.dart';
 import 'package:waadaa/app/modules/home/widgets/shop_by_section.dart';
 import 'package:waadaa/app/modules/home/widgets/welcome_reward_view.dart';
 
@@ -54,7 +55,7 @@ class HomePage extends BasePage<HomeViewModel, HomeState> {
     return SingleChildScrollView(
       child: Column(
         children: [
-          ImageSliderView(),
+          HeroBannersView(),
           HomeRewardView(),
           ShopBySection(),
           productListSection(title: "Latest fashion arrivals"),
