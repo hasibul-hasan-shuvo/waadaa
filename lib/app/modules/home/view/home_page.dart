@@ -1,8 +1,6 @@
 import 'dart:developer';
 
 import 'package:cached_network_image/cached_network_image.dart';
-import 'package:core/assets/dimens.dart';
-import 'package:core/extensions/context_extension.dart';
 import 'package:core/extensions/widget_extension.dart';
 import 'package:core/widgets/buttons/app_primary_button.dart';
 import 'package:core/widgets/buttons/app_secondary_button.dart';
@@ -64,22 +62,22 @@ class HomePage extends BasePage<HomeViewModel, HomeState> {
           offerCategorySection(),
           singleBanner(),
           productListSection(title: "Recommended for you"),
-          HomeMessageView(),
-          HomeCounterView(),
-          Center(
-            child: AppPrimaryButton(
-              title: "Increment",
-              onPressed: () =>
-                  context.getViewModel<HomeViewModel>().increment(),
-            ),
-          ),
-          Center(
-            child: AppSecondaryButton(
-              title: "Update message",
-              onPressed: () =>
-                  context.getViewModel<HomeViewModel>().updateMessage(),
-            ),
-          ),
+          // HomeMessageView(),
+          // HomeCounterView(),
+          // Center(
+          //   child: AppPrimaryButton(
+          //     title: "Increment",
+          //     onPressed: () =>
+          //         context.getViewModel<HomeViewModel>().increment(),
+          //   ),
+          // ),
+          // Center(
+          //   child: AppSecondaryButton(
+          //     title: "Update message",
+          //     onPressed: () =>
+          //         context.getViewModel<HomeViewModel>().updateMessage(),
+          //   ),
+          // ),
         ],
       ),
     );

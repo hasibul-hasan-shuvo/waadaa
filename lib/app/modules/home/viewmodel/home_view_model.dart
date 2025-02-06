@@ -11,6 +11,6 @@ class HomeViewModel extends BaseViewModel<HomeState> {
   }
 
   void updateMessage() {
-    updateState(state.updateMessage("This is the message"));
+    updateState(state.updateMessage("On click pressed"));
   }
 }

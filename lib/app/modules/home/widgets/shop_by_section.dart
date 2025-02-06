@@ -1,7 +1,12 @@
+import 'dart:developer';
+
 import 'package:core/assets/app_images.dart';
 import 'package:core/extensions/widget_extension.dart';
 import 'package:core/widgets/images/asset_image_view.dart';
+import 'package:core/widgets/buttons/ripple.dart';
 import 'package:flutter/material.dart';
+import 'package:waadaa/app/extensions/context_extension.dart';
+import 'package:waadaa/app/modules/home/viewmodel/home_view_model.dart';
 
 class ShopBySection extends StatelessWidget {
   const ShopBySection({super.key});
@@ -25,11 +30,13 @@ class ShopBySection extends StatelessWidget {
           Row(
             children: [
               shopItem(
+                context: context,
                 name: "Sale",
                 imgPath: AppImages.iphoneImg,
               ),
-              SizedBox(width: 10),
+              SizedBox(width: 8),
               shopItem(
+                context: context,
                 name: "Overseas",
                 imgPath: AppImages.bagImg,
               ),
@@ -41,13 +48,18 @@ class ShopBySection extends StatelessWidget {
   }
 
   Widget shopItem({
+    required BuildContext context,
     required String name,
     required String imgPath,
   }) {
     return Expanded(
-      child: InkWell(
-        onTap: () {},
+      child: Ripple(
+        onTap: () {
+          log(name);
+          context.getViewModel<HomeViewModel>().updateMessage();
+        },
         child: Container(
+          margin: EdgeInsets.symmetric(vertical: 2, horizontal: 1),
           height: 70,
           decoration: BoxDecoration(
             border: Border.all(

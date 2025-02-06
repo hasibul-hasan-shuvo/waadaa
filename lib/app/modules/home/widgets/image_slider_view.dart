@@ -17,7 +17,6 @@ class _ImageSliderViewState extends State<ImageSliderView> {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        ///10-2, 3:30-6:30
         // SizedBox(
         //   height: 220,
         //   child: CarouselView(
@@ -33,36 +32,31 @@ class _ImageSliderViewState extends State<ImageSliderView> {
         //   ),
         // ),
         CarouselSlider(
-          options: CarouselOptions(
-            height: 220.0,
-            aspectRatio: 2,
-            viewportFraction: 1.0,
-            initialPage: 0,
-            enableInfiniteScroll: true,
-            reverse: false,
-            autoPlay: true,
-            autoPlayInterval: Duration(seconds: 4),
-            autoPlayAnimationDuration: Duration(milliseconds: 800),
-            autoPlayCurve: Curves.fastOutSlowIn,
-            enlargeCenterPage: true,
-            scrollDirection: Axis.horizontal,
-            onPageChanged: (index, reason) {
-              setState(() {
-                currentIndex = index;
-              });
-            },
-          ),
-          items: [1, 2, 3, 4, 5].map((i) {
-            return Builder(
-              builder: (BuildContext context) {
-                return CachedNetworkImage(
-                  imageUrl: 'https://i.imgur.com/DG5yU2k.png',
-                  fit: BoxFit.cover,
-                );
+            options: CarouselOptions(
+              height: 220.0,
+              aspectRatio: 2,
+              viewportFraction: 1.0,
+              initialPage: 0,
+              enableInfiniteScroll: true,
+              reverse: false,
+              autoPlay: true,
+              autoPlayInterval: Duration(seconds: 4),
+              autoPlayAnimationDuration: Duration(milliseconds: 800),
+              autoPlayCurve: Curves.fastOutSlowIn,
+              enlargeCenterPage: true,
+              scrollDirection: Axis.horizontal,
+              onPageChanged: (index, reason) {
+                setState(() {
+                  currentIndex = index;
+                });
               },
-            );
-          }).toList(),
-        ),
+            ),
+            items: List.generate(5, (index) {
+              return CachedNetworkImage(
+                imageUrl: 'https://i.imgur.com/DG5yU2k.png',
+                fit: BoxFit.cover,
+              );
+            })),
         sliderIndicator(
           activeIndex: currentIndex,
           count: 5,
