@@ -3,21 +3,21 @@ import 'package:carousel_slider/carousel_slider.dart';
 import 'package:core/assets/dimens.dart';
 import 'package:flutter/material.dart';
 
-class ImageSlider extends StatefulWidget {
-  const ImageSlider({super.key});
+class ImageSliderView extends StatefulWidget {
+  const ImageSliderView({super.key});
 
   @override
-  State<ImageSlider> createState() => _ImageSliderState();
+  State<ImageSliderView> createState() => _ImageSliderViewState();
 }
 
-class _ImageSliderState extends State<ImageSlider> {
+class _ImageSliderViewState extends State<ImageSliderView> {
   int currentIndex = 0;
 
   @override
   Widget build(BuildContext context) {
     return Column(
       children: [
-        ///10-2, 4:30-6:30
+        ///10-2, 3:30-6:30
         // SizedBox(
         //   height: 220,
         //   child: CarouselView(
@@ -75,24 +75,25 @@ class _ImageSliderState extends State<ImageSlider> {
     return Row(
       mainAxisAlignment: MainAxisAlignment.center,
       children: List.generate(count, (index) {
+        final isActive = index == activeIndex;
         return Container(
           width: Dimens.indicatorWidth,
           height: Dimens.indicatorHeight,
           margin: EdgeInsets.symmetric(vertical: 10.0),
           decoration: BoxDecoration(
             shape: BoxShape.rectangle,
-            color: activeIndex == index ? Colors.black : Colors.white70,
+            color: isActive ? Colors.black : Colors.white70,
             borderRadius: BorderRadius.only(
-              topLeft: (activeIndex == index || index == 0)
+              topLeft: (isActive || index == 0)
                   ? Radius.circular(Dimens.radiusMedium)
                   : Radius.circular(Dimens.radiusZero),
-              bottomLeft: (activeIndex == index || index == 0)
+              bottomLeft: (isActive || index == 0)
                   ? Radius.circular(Dimens.radiusMedium)
                   : Radius.circular(Dimens.radiusZero),
-              topRight: (activeIndex == index || index == count - 1)
+              topRight: (isActive || index == count - 1)
                   ? Radius.circular(Dimens.radiusMedium)
                   : Radius.circular(Dimens.radiusZero),
-              bottomRight: (activeIndex == index || index == count - 1)
+              bottomRight: (isActive || index == count - 1)
                   ? Radius.circular(Dimens.radiusMedium)
                   : Radius.circular(Dimens.radiusZero),
             ),

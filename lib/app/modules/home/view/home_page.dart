@@ -14,7 +14,9 @@ import 'package:waadaa/app/modules/home/viewmodel/home_state.dart';
 import 'package:waadaa/app/modules/home/viewmodel/home_view_model.dart';
 import 'package:waadaa/app/modules/home/widgets/home_counter_view.dart';
 import 'package:waadaa/app/modules/home/widgets/home_message_view.dart';
-import 'package:waadaa/app/modules/home/widgets/image_slider.dart';
+import 'package:waadaa/app/modules/home/widgets/image_slider_view.dart';
+import 'package:waadaa/app/modules/home/widgets/shop_by_section.dart';
+import 'package:waadaa/app/modules/home/widgets/welcome_reward_view.dart';
 
 class HomePage extends BasePage<HomeViewModel, HomeState> {
   const HomePage({super.key});
@@ -54,127 +56,31 @@ class HomePage extends BasePage<HomeViewModel, HomeState> {
     return SingleChildScrollView(
       child: Column(
         children: [
-          ImageSlider(),
-          rewardSection(),
-          shopBySection(),
+          ImageSliderView(),
+          HomeRewardView(),
+          ShopBySection(),
           productListSection(title: "Latest fashion arrivals"),
           singleBanner(),
           offerCategorySection(),
           singleBanner(),
           productListSection(title: "Recommended for you"),
-          // HomeMessageView(),
-          // HomeCounterView(),
-          // Center(
-          //   child: AppPrimaryButton(
-          //     title: "Increment",
-          //     onPressed: () => viewModel.increment(),
-          //   ),
-          // ),
-          // Center(
-          //   child: AppSecondaryButton(
-          //     title: "Update message",
-          //     onPressed: () => viewModel.updateMessage(),
-          //   ),
-          // ),
-        ],
-      ),
-    );
-  }
-
-  Widget rewardSection() {
-    return Container(
-      margin: EdgeInsets.symmetric(horizontal: 15, vertical: 14),
-      padding: EdgeInsets.all(14),
-      width: double.infinity,
-      decoration: BoxDecoration(
-        color: Colors.black,
-        borderRadius: BorderRadius.circular(8),
-      ),
-      child: Text(
-        "Welcome Reward: \$50 off first order",
-        style: TextStyle(
-          color: Colors.white,
-          fontSize: 12,
-        ),
-      ),
-    );
-  }
-
-  Widget shopBySection() {
-    return Container(
-      height: 140,
-      color: Color(0xFFFAF8F1),
-      padding: const EdgeInsets.fromLTRB(15, 12, 0, 12),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Text(
-            "Shop by",
-            style: TextStyle(
-              fontSize: 20,
-              fontWeight: FontWeight.bold,
+          HomeMessageView(),
+          HomeCounterView(),
+          Center(
+            child: AppPrimaryButton(
+              title: "Increment",
+              onPressed: () =>
+                  context.getViewModel<HomeViewModel>().increment(),
             ),
-            textAlign: TextAlign.start,
-          ).paddingOnly(bottom: 10),
-          Expanded(
-            child: ListView.separated(
-              padding: EdgeInsets.zero,
-              clipBehavior: Clip.none,
-              scrollDirection: Axis.horizontal,
-              itemCount: 6,
-              separatorBuilder: (context, index) {
-                return const SizedBox(width: 12.0);
-              },
-              itemBuilder: (BuildContext context, int index) {
-                return shopByItem(
-                  name: "Brands",
-                  imageUrl: (index % 2 == 0)
-                      ? "https://i.imgur.com/ZlueaNs.png"
-                      : "https://s3-alpha-sig.figma.com/img/d6d5/9145/bd196583c6718411d5fcdd7b52bf7d0b?Expires=1739145600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=kQiqX7WzdQDAy~q9xcIZh3UmVO0rp7U0Hjx5jm7PZl9pq5nYzrHLQ0uqc4GecTNtcH0mD3ORAcUI4aVznZjmt8sHUwlBZNqNJweH4Tz2mNXLRv878aOwr8qF2gz8Q884ArcFWKxQc-1byptmMtbLpSy3O46D4BUui~yOIgfIfvEMfGjsYZxTQzK9GMF10yi0VFEvxFmpFc~OV4agbfQri~VpI4y536NBk5uaSZOGy~XRIxgi5-f7WHfLIgqAkgx0Na4EQmomCECbhlPimHViiK5qIDr4ZlRofNGYzZ2LqcBD7Vc5CPfGb81fRAvJyM-fVPT99YS8fU-uWHbsC0k8cw__",
-                );
-              },
+          ),
+          Center(
+            child: AppSecondaryButton(
+              title: "Update message",
+              onPressed: () =>
+                  context.getViewModel<HomeViewModel>().updateMessage(),
             ),
           ),
         ],
-      ),
-    );
-  }
-
-  Widget shopByItem({
-    required String name,
-    required String imageUrl,
-  }) {
-    return InkWell(
-      onTap: () {
-        log(name.toString());
-      },
-      child: Container(
-        width: 180,
-        decoration: BoxDecoration(
-          border: Border.all(
-            color: Color(0xFFDEDEDE), // Border color
-            width: 0.5, // Border width
-          ),
-          borderRadius: BorderRadius.circular(2.0),
-          color: Colors.white,
-        ),
-        child: Row(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Text(
-              name,
-              style: TextStyle(
-                fontSize: 14,
-                fontWeight: FontWeight.bold,
-              ),
-            ).paddingOnly(left: 8, top: 10, right: 5),
-            CachedNetworkImage(
-              imageUrl: imageUrl, // Path to your image
-              height: 200, // Optional: Adjust height
-              fit: BoxFit.fill,
-            ).paddingOnly(top: 7),
-          ],
-        ),
       ),
     );
   }
