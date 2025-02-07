@@ -35,5 +35,6 @@ final _darkColorPalette = ThemeColorExtension(
 
   scrim: Color(0x99000000), // Semi-transparent black
   shadow: Color(0xFF000000), // Black shadows
-  surfaceTint: Color(0xFF8ECAE6), // Light blue tint effect
+  surfaceTint: Color(0xFF8ECAE6),
+  baalsaal: Color(0xFF0A5677), // Light blue tint effect
 );

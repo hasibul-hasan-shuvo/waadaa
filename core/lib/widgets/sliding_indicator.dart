@@ -23,7 +23,7 @@ class SlidingIndicator extends StatelessWidget {
           margin: EdgeInsets.symmetric(vertical: 10.0),
           decoration: BoxDecoration(
             shape: BoxShape.rectangle,
-            color: isActive ? Colors.black : Colors.white70,
+            color: isActive ? Colors.black : Color(0xFFF4F4F4),
             borderRadius: BorderRadius.only(
               topLeft: (isActive || index == 0)
                   ? Radius.circular(Dimens.radiusMedium)
