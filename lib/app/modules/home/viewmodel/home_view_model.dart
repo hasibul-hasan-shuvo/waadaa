@@ -10,6 +10,10 @@ class HomeViewModel extends BaseViewModel<HomeState> {
     updateState(state.increment());
   }
 
+  void updateBannerIndex(int index) {
+    updateState(state.updateHeroBannerIndex(index));
+  }
+
   void updateMessage() {
     updateState(state.updateMessage("On click pressed"));
   }

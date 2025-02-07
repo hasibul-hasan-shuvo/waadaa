@@ -1,20 +1,19 @@
-import 'package:cached_network_image/cached_network_image.dart';
+import 'dart:developer';
+
 import 'package:core/widgets/hero_banner_slider.dart';
+import 'package:core/widgets/images/network_image_view.dart';
 import 'package:core/widgets/sliding_indicator.dart';
 import 'package:flutter/material.dart';
+import 'package:waadaa/app/base/observable_view.dart';
+import 'package:waadaa/app/extensions/context_extension.dart';
+import 'package:waadaa/app/modules/home/viewmodel/home_state.dart';
+import 'package:waadaa/app/modules/home/viewmodel/home_view_model.dart';
 
-class HeroBannersView extends StatefulWidget {
+class HeroBannersView extends ObservableView<HomeViewModel, HomeState, int> {
   const HeroBannersView({super.key});
 
   @override
-  State<HeroBannersView> createState() => _HeroBannersViewState();
-}
-
-class _HeroBannersViewState extends State<HeroBannersView> {
-  int currentIndex = 0;
-
-  @override
-  Widget build(BuildContext context) {
+  Widget body(BuildContext context, int state) {
     return Column(
       children: [
         // SizedBox(
@@ -33,22 +32,26 @@ class _HeroBannersViewState extends State<HeroBannersView> {
         // ),
         HeroBannerSlider(
           items: List.generate(5, (index) {
-            return CachedNetworkImage(
+            return NetworkImageView(
               imageUrl: 'https://i.imgur.com/DG5yU2k.png',
               fit: BoxFit.cover,
             );
           }),
           onPageChanged: (index) {
-            setState(() {
-              currentIndex = index;
-            });
+            log("slider index: $index");
+            context.getViewModel<HomeViewModel>().updateBannerIndex(index);
           },
         ),
         SlidingIndicator(
-          activeIndex: currentIndex,
+          activeIndex: state,
           count: 5,
         ),
       ],
     );
+  }
+
+  @override
+  int observeState(state) {
+    return state.heroBannerIndex;
   }
 }
