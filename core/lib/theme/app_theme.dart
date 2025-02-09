@@ -50,6 +50,11 @@ class AppTheme with ChangeNotifier {
         inversePrimary: colors.inversePrimary,
         surfaceTint: colors.surfaceTint,
       ),
+      bottomNavigationBarTheme: BottomNavigationBarThemeData(
+        backgroundColor: colors.surface,
+        selectedItemColor: colors.primary,
+        unselectedItemColor: colors.onSurfaceVariant,
+      ),
     );
   }
 

@@ -19,18 +19,22 @@ class BottomNavbarItem<Identifier extends Enum> {
           'Either iconData or assetIcon must be provided, but not both.',
         );
 
-  BottomNavigationBarItem toBottomNavigationBarItem() {
+  BottomNavigationBarItem toBottomNavigationBarItem(
+    Color iconColor,
+  ) {
     return BottomNavigationBarItem(
       label: label,
       icon: iconData != null
           ? Icon(
               iconData,
               size: Dimens.iconMedium,
+              color: iconColor,
             )
           : AssetImageView(
               fileName: assetIcon!,
               height: Dimens.iconMedium,
               width: Dimens.iconMedium,
+              color: iconColor,
             ),
     );
   }

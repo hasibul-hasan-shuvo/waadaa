@@ -4,13 +4,13 @@ import 'package:flutter/material.dart';
 
 class BottomNavbar<Identifier extends Enum> extends StatelessWidget {
   final BottomNavbarItem selectedItem;
-  final Function(BottomNavbarItem) onItemTap;
+  final Function(BottomNavbarItem) onItemSelect;
   final List<BottomNavbarItem> items;
 
   const BottomNavbar({
     super.key,
     required this.selectedItem,
-    required this.onItemTap,
+    required this.onItemSelect,
     required this.items,
   });
 
@@ -18,14 +18,21 @@ class BottomNavbar<Identifier extends Enum> extends StatelessWidget {
   Widget build(BuildContext context) {
     return BottomNavigationBar(
       type: BottomNavigationBarType.fixed,
-      currentIndex: currentIndex,
-      onTap: (index) => onItemTap(items[index]),
+      currentIndex: _currentIndex,
+      onTap: (index) {
+        if (_currentIndex != index) onItemSelect(items[index]);
+      },
       selectedItemColor: context.colors.primary,
       unselectedItemColor: Colors.grey,
-      items: items.map((item) => item.toBottomNavigationBarItem()).toList(),
+      items: items
+          .map((item) => item.toBottomNavigationBarItem(
+              _isItemSelected(item) ? context.colors.primary : Colors.grey))
+          .toList(),
     );
   }
 
-  int get currentIndex =>
-      items.indexWhere((item) => item.identifier == selectedItem.identifier);
+  int get _currentIndex => items.indexWhere((item) => _isItemSelected(item));
+
+  bool _isItemSelected(BottomNavbarItem item) =>
+      item.identifier == selectedItem.identifier;
 }
