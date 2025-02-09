@@ -8,6 +8,7 @@ class MainState extends BaseState {
   MainState({
     super.status,
     required this.selectedNavbarItem,
+    required this.cachedPages,
   });
 
   MainState.initial()
@@ -15,22 +16,25 @@ class MainState extends BaseState {
           identifier: BottomNavItems.home,
           label: BottomNavItems.home.name,
           iconData: Icons.home_outlined,
-        );
+        ),
+        cachedPages = {};
 
   @override
   MainState copyWith({
     BaseStatus? status,
     BottomNavbarItem? selectedNavbarItem,
+    Map<Enum, Widget>? cachedPages,
   }) {
     return MainState(
       status: status ?? this.status,
       selectedNavbarItem: selectedNavbarItem ?? this.selectedNavbarItem,
+      cachedPages: cachedPages ?? this.cachedPages,
     );
   }
 
   final BottomNavbarItem selectedNavbarItem;
 
-  final Map<Enum, Widget> cachedPages = {};
+  final Map<Enum, Widget> cachedPages;
 
   MainState updateSelectedNavbarItem(BottomNavbarItem newSelectedNavbarItem) {
     return copyWith(selectedNavbarItem: newSelectedNavbarItem);
