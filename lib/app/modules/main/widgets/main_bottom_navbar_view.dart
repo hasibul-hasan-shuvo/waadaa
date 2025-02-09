@@ -23,7 +23,5 @@ class MainBottomNavbarView
   }
 
   @override
-  BottomNavbarItem<Enum> observeState(MainState state) {
-    return state.selectedNavbarItem;
-  }
+  BottomNavbarItem observeState(MainState state) => state.selectedNavbarItem;
 }
