@@ -5,8 +5,6 @@ import 'package:waadaa/app/base/base_status.dart';
 import 'package:waadaa/app/modules/main/models/bottom_nav_items.dart';
 
 class MainState extends BaseState {
-  final BottomNavbarItem selectedNavbarItem;
-
   MainState({
     super.status,
     required this.selectedNavbarItem,
@@ -29,6 +27,10 @@ class MainState extends BaseState {
       selectedNavbarItem: selectedNavbarItem ?? this.selectedNavbarItem,
     );
   }
+
+  final BottomNavbarItem selectedNavbarItem;
+
+  final Map<Enum, Widget> cachedPages = {};
 
   MainState updateSelectedNavbarItem(BottomNavbarItem newSelectedNavbarItem) {
     return copyWith(selectedNavbarItem: newSelectedNavbarItem);
