@@ -25,14 +25,21 @@ class ShopBySection extends StatelessWidget {
             ),
             textAlign: TextAlign.start,
           ).paddingOnly(bottom: 10),
-          Row(
+          GridView(
+            shrinkWrap: true,
+            physics: NeverScrollableScrollPhysics(),
+            gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+              crossAxisCount: 2,
+              childAspectRatio: 2.2,
+              crossAxisSpacing: 6,
+              mainAxisSpacing: 8,
+            ),
             children: [
               shopItem(
                 context: context,
                 name: "Sale",
                 imgPath: AppImages.iphoneImg,
               ),
-              SizedBox(width: 8),
               shopItem(
                 context: context,
                 name: "Overseas",
@@ -50,46 +57,44 @@ class ShopBySection extends StatelessWidget {
     required String name,
     required String imgPath,
   }) {
-    return Expanded(
-      child: Ripple(
-        onTap: () {
-          log(name);
-        },
-        child: Container(
-          margin: EdgeInsets.symmetric(vertical: 2, horizontal: 1),
-          height: 70,
-          decoration: BoxDecoration(
-            border: Border.all(
-              color: Color(0xFFDEDEDE), // Border color
-              width: 0.5, // Border width
+    return Ripple(
+      onTap: () {
+        log(name);
+      },
+      child: Container(
+        margin: EdgeInsets.symmetric(vertical: 2, horizontal: 1),
+        height: 70,
+        decoration: BoxDecoration(
+          border: Border.all(
+            color: Color(0xFFDEDEDE), // Border color
+            width: 0.5, // Border width
+          ),
+          borderRadius: BorderRadius.circular(2.0),
+          color: Colors.white,
+        ),
+        child: Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Expanded(
+              flex: 3,
+              child: Text(
+                name,
+                style: TextStyle(
+                  fontSize: 14,
+                  fontWeight: FontWeight.bold,
+                ),
+                maxLines: 1,
+                overflow: TextOverflow.ellipsis,
+              ).paddingOnly(left: 8, top: 10),
             ),
-            borderRadius: BorderRadius.circular(2.0),
-            color: Colors.white,
-          ),
-          child: Row(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Expanded(
-                flex: 3,
-                child: Text(
-                  name,
-                  style: TextStyle(
-                    fontSize: 14,
-                    fontWeight: FontWeight.bold,
-                  ),
-                  maxLines: 1,
-                  overflow: TextOverflow.ellipsis,
-                ).paddingOnly(left: 8, top: 10),
-              ),
-              Expanded(
-                flex: 5,
-                child: AssetImageView(
-                  fileName: imgPath,
-                  fit: BoxFit.fitHeight,
-                ).paddingOnly(top: 5, right: 12),
-              ),
-            ],
-          ),
+            Expanded(
+              flex: 5,
+              child: AssetImageView(
+                fileName: imgPath,
+                fit: BoxFit.fitHeight,
+              ).paddingOnly(top: 7),
+            ),
+          ],
         ),
       ),
     );
