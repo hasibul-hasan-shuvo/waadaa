@@ -54,6 +54,8 @@ class AppTheme with ChangeNotifier {
         backgroundColor: colors.surface,
         selectedItemColor: colors.primary,
         unselectedItemColor: colors.onSurfaceVariant,
+        selectedLabelStyle: theme.textTheme.labelSmall,
+        unselectedLabelStyle: theme.textTheme.labelSmall,
       ),
     );
   }
