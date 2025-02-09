@@ -16,20 +16,6 @@ class HeroBannersView extends ObservableView<HomeViewModel, HomeState, int> {
   Widget body(BuildContext context, int state) {
     return Column(
       children: [
-        // SizedBox(
-        //   height: 220,
-        //   child: CarouselView(
-        //     scrollDirection: Axis.horizontal,
-        //     itemExtent: double.infinity,
-        //     itemSnapping: true,
-        //     children: List.generate(6, (int index) {
-        //       return Image.asset(
-        //         'assets/images/banner_home.png', // Path to your image
-        //         fit: BoxFit.cover,
-        //       );
-        //     }),
-        //   ),
-        // ),
         HeroBannerSlider(
           items: List.generate(5, (index) {
             return NetworkImageView(
@@ -39,7 +25,7 @@ class HeroBannersView extends ObservableView<HomeViewModel, HomeState, int> {
           }),
           onPageChanged: (index) {
             log("slider index: $index");
-            context.getViewModel<HomeViewModel>().updateBannerIndex(index);
+            context.getViewModel<HomeViewModel>().updateHeroBannerIndex(index);
           },
         ),
         SlidingIndicator(

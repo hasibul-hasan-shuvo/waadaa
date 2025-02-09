@@ -34,9 +34,9 @@ _i174.GetIt $initGetIt(
     environmentFilter,
   );
   gh.factory<_i261.HomeViewModel>(() => _i261.HomeViewModel());
-  gh.factory<_i694.BrandsViewModel>(() => _i694.BrandsViewModel());
-  gh.factory<_i1041.CategoriesViewModel>(() => _i1041.CategoriesViewModel());
   gh.factory<_i128.MyCartViewModel>(() => _i128.MyCartViewModel());
+  gh.factory<_i694.BrandsViewModel>(() => _i694.BrandsViewModel());
   gh.factory<_i890.AccountViewModel>(() => _i890.AccountViewModel());
+  gh.factory<_i1041.CategoriesViewModel>(() => _i1041.CategoriesViewModel());
   return getIt;
 }

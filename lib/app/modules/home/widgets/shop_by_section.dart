@@ -2,11 +2,9 @@ import 'dart:developer';
 
 import 'package:core/assets/app_images.dart';
 import 'package:core/extensions/widget_extension.dart';
-import 'package:core/widgets/images/asset_image_view.dart';
 import 'package:core/widgets/buttons/ripple.dart';
+import 'package:core/widgets/images/asset_image_view.dart';
 import 'package:flutter/material.dart';
-import 'package:waadaa/app/extensions/context_extension.dart';
-import 'package:waadaa/app/modules/home/viewmodel/home_view_model.dart';
 
 class ShopBySection extends StatelessWidget {
   const ShopBySection({super.key});
@@ -56,7 +54,6 @@ class ShopBySection extends StatelessWidget {
       child: Ripple(
         onTap: () {
           log(name);
-          context.getViewModel<HomeViewModel>().updateMessage();
         },
         child: Container(
           margin: EdgeInsets.symmetric(vertical: 2, horizontal: 1),

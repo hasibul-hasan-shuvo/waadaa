@@ -1,16 +1,17 @@
+import 'package:domain/models/category_offer_item.dart';
 import 'package:waadaa/app/base/base_state.dart';
 import 'package:waadaa/app/base/base_status.dart';
 
 class HomeState extends BaseState {
-  String message = '';
   int counter = 0;
   int heroBannerIndex = 0;
+  List<CategoryOfferItem>? categoryOffers;
 
   HomeState({
     super.status,
     this.counter = 0,
-    this.message = '',
     this.heroBannerIndex = 0,
+    this.categoryOffers,
   });
 
   HomeState.initial();
@@ -18,15 +19,15 @@ class HomeState extends BaseState {
   @override
   HomeState copyWith({
     BaseStatus? status,
-    String? message,
     int? counter,
     int? heroBannerIndex,
+    List<CategoryOfferItem>? categoryOffers,
   }) {
     return HomeState(
       status: status ?? this.status,
-      message: message ?? this.message,
       counter: counter ?? this.counter,
       heroBannerIndex: heroBannerIndex ?? this.heroBannerIndex,
+      categoryOffers: categoryOffers ?? this.categoryOffers,
     );
   }
 
@@ -38,7 +39,7 @@ class HomeState extends BaseState {
     return copyWith(heroBannerIndex: index);
   }
 
-  HomeState updateMessage(String message) {
-    return copyWith(message: "$message $counter");
+  HomeState updateCategoryOffers(List<CategoryOfferItem> categoryOffers) {
+    return copyWith(categoryOffers: categoryOffers);
   }
 }
