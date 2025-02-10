@@ -1,5 +1,7 @@
 import 'dart:developer';
 
+import 'package:core/extensions/widget_extension.dart';
+import 'package:core/widgets/buttons/ripple.dart';
 import 'package:core/widgets/images/network_image_view.dart';
 import 'package:flutter/material.dart';
 
@@ -8,7 +10,7 @@ class ProductBox extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return InkWell(
+    return Ripple(
       onTap: () {
         log("product box");
       },
@@ -46,7 +48,7 @@ class ProductBox extends StatelessWidget {
             ),
           ),
         ],
-      ),
+      ).paddingSymmetric(horizontal: 1, vertical: 1),
     );
   }
 }
