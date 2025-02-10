@@ -57,6 +57,27 @@ class AppTheme with ChangeNotifier {
         selectedLabelStyle: theme.textTheme.labelSmall,
         unselectedLabelStyle: theme.textTheme.labelSmall,
       ),
+      navigationBarTheme: NavigationBarThemeData(
+        backgroundColor: colors.surface,
+        indicatorColor: colors.surface,
+        labelBehavior: NavigationDestinationLabelBehavior.alwaysShow,
+        iconTheme: WidgetStateProperty.resolveWith(
+          (resolver) => IconThemeData(
+            color: resolver.contains(WidgetState.selected)
+                ? colors.primary
+                : colors.onSurfaceVariant,
+          ),
+        ),
+        labelTextStyle: WidgetStateTextStyle.resolveWith(
+          (resolver) =>
+              theme.textTheme.labelSmall?.copyWith(
+                color: resolver.contains(WidgetState.selected)
+                    ? colors.primary
+                    : colors.onSurfaceVariant,
+              ) ??
+              TextStyle(color: colors.primary),
+        ),
+      ),
     );
   }
 
