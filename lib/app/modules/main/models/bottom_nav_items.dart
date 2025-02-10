@@ -46,4 +46,6 @@ extension NavItemsExtension on BottomNavItems {
         );
     }
   }
+
+  int get index => BottomNavItems.values.indexOf(this);
 }

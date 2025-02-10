@@ -1,4 +1,3 @@
-import 'package:core/widgets/bottom_navbar/models/bottom_navbar_item.dart';
 import 'package:flutter/material.dart';
 import 'package:waadaa/app/base/observable_view.dart';
 import 'package:waadaa/app/extensions/context_extension.dart';
@@ -12,20 +11,24 @@ import 'package:waadaa/app/modules/main/viewmodel/main_view_model.dart';
 import 'package:waadaa/app/modules/my_cart/view/my_cart_page.dart';
 
 class MainBottomNavSelectedItemPageView
-    extends ObservableView<MainViewModel, MainState, BottomNavbarItem> {
+    extends ObservableView<MainViewModel, MainState, BottomNavItems> {
   const MainBottomNavSelectedItemPageView({super.key});
 
   @override
-  Widget body(BuildContext context, BottomNavbarItem state) {
-    return context
-        .getViewModel<MainViewModel>()
-        .state
-        .cachedPages
-        .putIfAbsent(state.identifier, () => _createPage(state));
+  Widget body(BuildContext context, BottomNavItems state) {
+    var cachedPages = context.getViewModel<MainViewModel>().state.cachedPages;
+    if (cachedPages[state] is SizedBox) {
+      cachedPages[state] = _createPage(state);
+    }
+
+    return IndexedStack(
+      index: state.index,
+      children: cachedPages.values.toList(),
+    );
   }
 
-  Widget _createPage(BottomNavbarItem state) {
-    switch (state.identifier) {
+  Widget _createPage(BottomNavItems state) {
+    switch (state) {
       case BottomNavItems.home:
         return const HomePage();
       case BottomNavItems.categories:
@@ -36,11 +39,10 @@ class MainBottomNavSelectedItemPageView
         return const MyCartPage();
       case BottomNavItems.account:
         return const AccountPage();
-      default:
-        return Container();
     }
   }
 
   @override
-  BottomNavbarItem observeState(MainState state) => state.selectedNavbarItem;
+  BottomNavItems observeState(MainState state) =>
+      state.selectedNavbarItem.identifier as BottomNavItems;
 }

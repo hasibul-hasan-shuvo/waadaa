@@ -17,7 +17,9 @@ class MainState extends BaseState {
           label: BottomNavItems.home.name,
           iconData: Icons.home_outlined,
         ),
-        cachedPages = {};
+        cachedPages = {
+          for (var item in BottomNavItems.values) item: SizedBox.shrink()
+        };
 
   @override
   MainState copyWith({
