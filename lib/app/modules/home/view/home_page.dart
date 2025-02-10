@@ -4,6 +4,7 @@ import 'package:cached_network_image/cached_network_image.dart';
 import 'package:core/extensions/widget_extension.dart';
 import 'package:core/widgets/buttons/app_secondary_button.dart';
 import 'package:core/widgets/primary_app_bar.dart';
+import 'package:core/widgets/product_list_section.dart';
 import 'package:flutter/material.dart';
 import 'package:waadaa/app/base/base_page.dart';
 import 'package:waadaa/app/extensions/context_extension.dart';
@@ -54,100 +55,21 @@ class HomePage extends BasePage<HomeViewModel, HomeState> {
           HeroBannersView(),
           HomeRewardView(),
           ShopBySection(),
-          productListSection(title: "Latest fashion arrivals"),
+          ProductListSection(
+            title: "Latest fashion arrivals",
+            subTitle: "The Nike Dunk Low is an easy score for your wardrobe",
+            viewAllPressed: () {
+              log("view all pressed...");
+            },
+          ),
           singleBanner(),
           offerCategorySection(),
           singleBanner(),
-          productListSection(title: "Recommended for you"),
-        ],
-      ),
-    );
-  }
-
-  Widget productListSection({
-    required String title,
-  }) {
-    return Container(
-      color: Colors.white,
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Text(
-            title,
-            style: TextStyle(
-              fontSize: 20,
-              fontWeight: FontWeight.bold,
-            ),
-          ).paddingOnly(top: 10),
-          Text(
-            "The Nike Dunk Low is an easy score for your wardrobe",
-            style: TextStyle(
-              color: Color(0xFF7A7A7A),
-              fontSize: 12,
-              fontWeight: FontWeight.w400,
-            ),
-          ).paddingOnly(top: 2, bottom: 10),
-          SizedBox(height: 10),
-          GridView.builder(
-            shrinkWrap: true,
-            physics: NeverScrollableScrollPhysics(),
-            itemCount: 4,
-            gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-              crossAxisCount: 2,
-              childAspectRatio: 0.70,
-              crossAxisSpacing: 10,
-              mainAxisSpacing: 10,
-            ),
-            itemBuilder: (context, index) {
-              return productBox();
+          ProductListSection(
+            title: "Recommended for you",
+            viewAllPressed: () {
+              log("view all pressed...");
             },
-          ),
-          AppSecondaryButton(
-            title: "VIEW ALL",
-            onPressed: () {},
-          ).paddingSymmetric(vertical: 10),
-        ],
-      ).paddingSymmetric(horizontal: 15),
-    );
-  }
-
-  Widget productBox() {
-    return InkWell(
-      onTap: () {
-        log("product box");
-      },
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Container(
-            color: Color(0xFFF7F5F2),
-            padding: EdgeInsets.all(20),
-            child: CachedNetworkImage(
-              imageUrl:
-                  "https://s3-alpha-sig.figma.com/img/add3/8874/c14a0cbb4cd437d6779e0a5a18963f63?Expires=1739145600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=EMjRlDWiDiyPGKVql35KLJTc47Dn8b9F28pM7CKF4mWeCv0y~pzzeFC50~dKlMoJExBNqhR~KM8OH~65oIIv45sH7g7AdHU1y8ye9Gd0xjSeAamjxoBwbtSI5t9l4pkU8I918uCBoBVYuwTrfWjGYc63AqRW5og9r4qto~UwcuBl3j~JjldQQUwEfgmwSdtQfpikv8NwXaE0A~KQ1DL1Dus62eWzWT58qS2x-aS3uVVPRfzZezgP6p-yoEXiH33angbh2tH9DVGby~~1vUdD4zKA4znDyItE9jblQuxAKKJvmbsYQ2Mzkx1ohSTXJnHrK-BPg-pSNsqY25B34dB6uw__",
-            ),
-          ),
-          SizedBox(height: 12),
-          Text(
-            "NIKE",
-            style: TextStyle(
-              fontSize: 16,
-              fontWeight: FontWeight.w600,
-            ),
-          ),
-          Text(
-            "Dunks 01, maroon red",
-            style: TextStyle(
-              fontSize: 14,
-              fontWeight: FontWeight.w500,
-            ),
-          ),
-          Text(
-            "TK 12,000",
-            style: TextStyle(
-              fontSize: 14,
-              fontWeight: FontWeight.w400,
-            ),
           ),
         ],
       ),
