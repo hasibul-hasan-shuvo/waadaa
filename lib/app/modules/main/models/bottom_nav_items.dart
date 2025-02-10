@@ -12,7 +12,7 @@ enum BottomNavItems {
 }
 
 extension NavItemsExtension on BottomNavItems {
-  BottomNavbarItem toBottomNavbarItem(BuildContext context) {
+  BottomNavbarItem<BottomNavItems> toBottomNavbarItem(BuildContext context) {
     switch (this) {
       case BottomNavItems.home:
         return BottomNavbarItem(

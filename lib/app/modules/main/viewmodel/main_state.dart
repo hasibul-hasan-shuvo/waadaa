@@ -24,8 +24,8 @@ class MainState extends BaseState {
   @override
   MainState copyWith({
     BaseStatus? status,
-    BottomNavbarItem? selectedNavbarItem,
-    Map<Enum, Widget>? cachedPages,
+    BottomNavbarItem<BottomNavItems>? selectedNavbarItem,
+    Map<BottomNavItems, Widget>? cachedPages,
   }) {
     return MainState(
       status: status ?? this.status,
@@ -34,11 +34,12 @@ class MainState extends BaseState {
     );
   }
 
-  final BottomNavbarItem selectedNavbarItem;
+  final BottomNavbarItem<BottomNavItems> selectedNavbarItem;
 
-  final Map<Enum, Widget> cachedPages;
+  final Map<BottomNavItems, Widget> cachedPages;
 
-  MainState updateSelectedNavbarItem(BottomNavbarItem newSelectedNavbarItem) {
+  MainState updateSelectedNavbarItem(
+      BottomNavbarItem<BottomNavItems> newSelectedNavbarItem) {
     return copyWith(selectedNavbarItem: newSelectedNavbarItem);
   }
 }

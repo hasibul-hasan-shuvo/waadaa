@@ -4,9 +4,9 @@ import 'package:core/widgets/bottom_navbar/models/bottom_navbar_item.dart';
 import 'package:flutter/material.dart';
 
 class BottomNavbar<Identifier extends Enum> extends StatelessWidget {
-  final BottomNavbarItem selectedItem;
-  final Function(BottomNavbarItem) onItemSelect;
-  final List<BottomNavbarItem> items;
+  final BottomNavbarItem<Identifier> selectedItem;
+  final Function(BottomNavbarItem<Identifier>) onItemSelect;
+  final List<BottomNavbarItem<Identifier>> items;
 
   const BottomNavbar({
     super.key,

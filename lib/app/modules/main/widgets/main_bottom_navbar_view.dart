@@ -7,13 +7,13 @@ import 'package:waadaa/app/modules/main/models/bottom_nav_items.dart';
 import 'package:waadaa/app/modules/main/viewmodel/main_state.dart';
 import 'package:waadaa/app/modules/main/viewmodel/main_view_model.dart';
 
-class MainBottomNavbarView
-    extends ObservableView<MainViewModel, MainState, BottomNavbarItem> {
+class MainBottomNavbarView extends ObservableView<MainViewModel, MainState,
+    BottomNavbarItem<BottomNavItems>> {
   const MainBottomNavbarView({super.key});
 
   @override
-  Widget body(BuildContext context, BottomNavbarItem state) {
-    return BottomNavbar(
+  Widget body(BuildContext context, BottomNavbarItem<BottomNavItems> state) {
+    return BottomNavbar<BottomNavItems>(
       selectedItem: state,
       onItemSelect: context.getViewModel<MainViewModel>().onNavItemSelect,
       items: BottomNavItems.values
@@ -23,5 +23,6 @@ class MainBottomNavbarView
   }
 
   @override
-  BottomNavbarItem observeState(MainState state) => state.selectedNavbarItem;
+  BottomNavbarItem<BottomNavItems> observeState(MainState state) =>
+      state.selectedNavbarItem;
 }

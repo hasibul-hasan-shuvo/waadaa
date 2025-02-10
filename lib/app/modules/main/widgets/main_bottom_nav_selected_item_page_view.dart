@@ -44,5 +44,5 @@ class MainBottomNavSelectedItemPageView
 
   @override
   BottomNavItems observeState(MainState state) =>
-      state.selectedNavbarItem.identifier as BottomNavItems;
+      state.selectedNavbarItem.identifier;
 }
