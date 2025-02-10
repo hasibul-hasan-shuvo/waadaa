@@ -26,4 +26,20 @@ class AppNavigator {
   Future navigateToHome() {
     return _router.pushNamed(AppRoutes.home);
   }
+
+  Future navigateToBrands() {
+    return _router.pushNamed(AppRoutes.brands);
+  }
+
+  Future navigateToCategories() {
+    return _router.pushNamed(AppRoutes.categories);
+  }
+
+  Future navigateToMyCart() {
+    return _router.pushNamed(AppRoutes.myCart);
+  }
+
+  Future navigateToAccount() {
+    return _router.pushNamed(AppRoutes.account);
+  }
 }

@@ -8,10 +8,19 @@
 // ignore_for_file: type=lint
 // coverage:ignore-file
 
+// ignore_for_file: no_leading_underscores_for_library_prefixes
 import 'package:get_it/get_it.dart' as _i174;
 import 'package:injectable/injectable.dart' as _i526;
-// ignore_for_file: no_leading_underscores_for_library_prefixes
-import 'package:waadaa/app/modules/home/viewmodel/home_view_model.dart' as _i64;
+import 'package:waadaa/app/modules/account/viewmodel/account_view_model.dart'
+    as _i890;
+import 'package:waadaa/app/modules/brands/viewmodel/brands_view_model.dart'
+    as _i694;
+import 'package:waadaa/app/modules/categories/viewmodel/categories_view_model.dart'
+    as _i1041;
+import 'package:waadaa/app/modules/home/viewmodel/home_view_model.dart'
+    as _i261;
+import 'package:waadaa/app/modules/my_cart/viewmodel/my_cart_view_model.dart'
+    as _i128;
 
 // initializes the registration of main-scope dependencies inside of GetIt
 _i174.GetIt $initGetIt(
@@ -24,6 +33,10 @@ _i174.GetIt $initGetIt(
     environment,
     environmentFilter,
   );
-  gh.factory<_i64.HomeViewModel>(() => _i64.HomeViewModel());
+  gh.factory<_i261.HomeViewModel>(() => _i261.HomeViewModel());
+  gh.factory<_i694.BrandsViewModel>(() => _i694.BrandsViewModel());
+  gh.factory<_i1041.CategoriesViewModel>(() => _i1041.CategoriesViewModel());
+  gh.factory<_i128.MyCartViewModel>(() => _i128.MyCartViewModel());
+  gh.factory<_i890.AccountViewModel>(() => _i890.AccountViewModel());
   return getIt;
 }
