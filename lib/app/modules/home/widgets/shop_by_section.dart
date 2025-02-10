@@ -31,7 +31,7 @@ class ShopBySection extends StatelessWidget {
             gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
               crossAxisCount: 2,
               childAspectRatio: 2.2,
-              crossAxisSpacing: 6,
+              crossAxisSpacing: 7,
               mainAxisSpacing: 8,
             ),
             children: [

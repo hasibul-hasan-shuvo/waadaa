@@ -3,6 +3,7 @@ class Dimens {
 
   // Padding
   static const double paddingZero = 0.0;
+  static const double paddingVerySmall = 4.0;
   static const double paddingSmall = 8.0;
   static const double paddingMedium = 16.0;
   static const double paddingLarge = 24.0;

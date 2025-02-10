@@ -1,7 +1,6 @@
 import 'dart:developer';
 
 import 'package:core/widgets/hero_banner_slider.dart';
-import 'package:core/widgets/images/network_image_view.dart';
 import 'package:core/widgets/sliding_indicator.dart';
 import 'package:flutter/material.dart';
 import 'package:waadaa/app/base/observable_view.dart';
@@ -17,12 +16,7 @@ class HeroBannersView extends ObservableView<HomeViewModel, HomeState, int> {
     return Column(
       children: [
         HeroBannerSlider(
-          items: List.generate(5, (index) {
-            return NetworkImageView(
-              imageUrl: 'https://i.imgur.com/DG5yU2k.png',
-              fit: BoxFit.cover,
-            );
-          }),
+          herroBanners: [],
           onPageChanged: (index) {
             log("slider index: $index");
             context.getViewModel<HomeViewModel>().updateHeroBannerIndex(index);

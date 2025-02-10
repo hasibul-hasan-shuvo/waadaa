@@ -14,6 +14,6 @@ class HomeMessageView extends ObservableView<HomeViewModel, HomeState, String> {
 
   @override
   String observeState(HomeState state) {
-    return state.message;
+    return state.counter.toString();
   }
 }

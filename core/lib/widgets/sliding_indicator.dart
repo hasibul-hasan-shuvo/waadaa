@@ -20,7 +20,7 @@ class SlidingIndicator extends StatelessWidget {
         return Container(
           width: Dimens.indicatorWidth,
           height: Dimens.indicatorHeight,
-          margin: EdgeInsets.symmetric(vertical: 10.0),
+          margin: EdgeInsets.symmetric(vertical: Dimens.paddingSmall),
           decoration: BoxDecoration(
             shape: BoxShape.rectangle,
             color: isActive ? Colors.black : Color(0xFFF4F4F4),
