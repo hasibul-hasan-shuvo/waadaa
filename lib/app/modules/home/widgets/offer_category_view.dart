@@ -3,6 +3,7 @@ import 'package:core/widgets/buttons/app_secondary_button.dart';
 import 'package:domain/models/category_offer_item.dart';
 import 'package:flutter/material.dart';
 import 'package:waadaa/app/base/observable_view.dart';
+import 'package:waadaa/app/extensions/context_extension.dart';
 import 'package:waadaa/app/modules/home/viewmodel/home_state.dart';
 import 'package:waadaa/app/modules/home/viewmodel/home_view_model.dart';
 import 'package:waadaa/app/modules/home/widgets/offer_category_item.dart';
@@ -29,7 +30,7 @@ class OfferCategoryView
           GridView.builder(
             shrinkWrap: true,
             physics: NeverScrollableScrollPhysics(),
-            itemCount: 4,
+            itemCount: state.length,
             gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
               crossAxisCount: 2,
               childAspectRatio: 0.8,
@@ -37,12 +38,14 @@ class OfferCategoryView
               mainAxisSpacing: 10,
             ),
             itemBuilder: (context, index) {
-              return OfferCategoryItem();
+              return OfferCategoryItem(offerItem: state[index]);
             },
           ),
           AppSecondaryButton(
             title: "VIEW ALL",
-            onPressed: () {},
+            onPressed: () {
+              context.getViewModel<HomeViewModel>().fetchCategoryOfferList();
+            },
           ).paddingSymmetric(vertical: 10),
         ],
       ).paddingSymmetric(horizontal: 15),

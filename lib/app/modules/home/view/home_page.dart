@@ -2,7 +2,6 @@ import 'dart:developer';
 
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:core/extensions/widget_extension.dart';
-import 'package:core/widgets/buttons/app_secondary_button.dart';
 import 'package:core/widgets/primary_app_bar.dart';
 import 'package:core/widgets/product_list_section.dart';
 import 'package:flutter/material.dart';
