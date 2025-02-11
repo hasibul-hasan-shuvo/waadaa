@@ -37,7 +37,7 @@ class HeroBannerSlider extends StatelessWidget {
           children: [
             NetworkImageView(
               imageUrl: "https://i.imgur.com/DG5yU2k.png",
-              fit: BoxFit.fill,
+              fit: BoxFit.cover,
             ),
             Container(
               decoration: BoxDecoration(

@@ -1,4 +1,6 @@
-import 'package:data/models/category_offers_response.dart';
+import 'dart:developer';
+
+import 'package:data/models/category_offers_response_model.dart';
 import 'package:data/sources/remote/base/base_remote_data_source.dart';
 import 'package:data/sources/remote/home_remote_data_source.dart';
 import 'package:di/di.dart';
@@ -16,10 +18,12 @@ class HomeRemoteDataSourceImpl extends BaseRemoteDataSource
           "https://admin.dev.waadaa.app/api/configuration/category-offer-carousel-config-list/"),
     );
 
-    final categoryOffers = response.data
-        .map((e) =>
-            CategoryOffersResponseModel.fromJson(e as Map<String, dynamic>))
-        .toList();
+    log("Response data type ------- ${response.data.runtimeType}");
+
+    List<dynamic> data = response.data;
+
+    final List<CategoryOffersResponseModel> categoryOffers =
+        data.map((item) => CategoryOffersResponseModel.fromJson(item)).toList();
 
     return categoryOffers;
   }

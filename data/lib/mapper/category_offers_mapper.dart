@@ -1,4 +1,4 @@
-import 'package:data/models/category_offers_response.dart';
+import 'package:data/models/category_offers_response_model.dart';
 import 'package:domain/models/category_offer_item.dart';
 
 class CategoryOffersMapper {
