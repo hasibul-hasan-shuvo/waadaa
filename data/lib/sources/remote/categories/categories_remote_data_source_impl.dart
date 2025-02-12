@@ -11,15 +11,19 @@ class CategoriesRemoteDataSourceImpl extends BaseRemoteDataSource
   @override
   Future<List<CategoryResponseModel>> getCategoriesFromRemote() async {
     final response = await callApiWithErrorParser(
-      client.get("https://api.dev.waadaa.app/product/api/menues/"),
+      client.get("product/api/menues/"),
     );
 
-    // Ensure that response.data is a List and cast each element properly.
-    final List<dynamic> data = response.data as List<dynamic>;
+    List<CategoryResponseModel> categories = [];
 
-    final categories = data
-        .map((e) => CategoryResponseModel.fromJson(e as Map<String, dynamic>))
-        .toList();
+    // Ensure that response.data is a List and cast each element properly.
+    if (response.data is List) {
+      final List<dynamic> data = response.data;
+
+      categories = data
+          .map((e) => CategoryResponseModel.fromJson(e as Map<String, dynamic>))
+          .toList();
+    }
 
     return categories;
   }
