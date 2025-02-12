@@ -1,4 +1,3 @@
-import 'package:di/configure_dependencies.dart';
 import 'package:di/di.dart';
 import 'package:domain/usecases/category_list_use_case.dart';
 import 'package:waadaa/app/base/base_view_model.dart';
@@ -6,11 +5,19 @@ import 'package:waadaa/app/modules/categories/viewmodel/categories_state.dart';
 
 @injectable
 class CategoriesViewModel extends BaseViewModel<CategoriesState> {
-  CategoriesViewModel() : super(CategoriesState.initial());
+  CategoriesViewModel(this._categoryListUseCase)
+      : super(CategoriesState.initial());
 
-  final CategoryListUseCase _categoryListUseCase = getIt<CategoryListUseCase>();
+  final CategoryListUseCase _categoryListUseCase;
 
-  void getAllCategories() {
-    _categoryListUseCase.call();
+  void updateCategoryTitle(String title) {
+    updateCategoryTitle(title);
+  }
+
+  @override
+  Future<void> onViewReady() async {
+    super.onViewReady();
+
+    state.getAllCategories(await _categoryListUseCase.call());
   }
 }
