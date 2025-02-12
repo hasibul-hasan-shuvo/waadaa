@@ -49,9 +49,9 @@ _i174.GetIt $initGetIt(
       () => _i724.HomeRemoteDataSourceImpl(gh<_i903.NetworkClient>()));
   gh.lazySingleton<_i960.PreferenceManager>(
       () => _i941.PreferenceManagerImpl());
-  gh.lazySingleton<_i485.CategoriesRepository>(
-      () => _i1051.CategoriesRepositoryImpl());
   gh.lazySingleton<_i460.CategoriesRemoteDataSource>(
       () => _i350.CategoriesRemoteDataSourceImpl(gh<_i903.NetworkClient>()));
+  gh.lazySingleton<_i485.CategoriesRepository>(() =>
+      _i1051.CategoriesRepositoryImpl(gh<_i460.CategoriesRemoteDataSource>()));
   return getIt;
 }

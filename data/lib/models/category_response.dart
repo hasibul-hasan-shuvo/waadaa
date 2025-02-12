@@ -1,12 +1,12 @@
-class CategoryResponseModel {
+class CategoryResponse {
   final String id;
   final String name;
   final int level;
   final String slug;
-  final List<CategoryResponseModel> subcategories;
+  final List<CategoryResponse> subcategories;
   final SideMenuResponseModel? sideMenu;
 
-  CategoryResponseModel({
+  CategoryResponse({
     required this.id,
     required this.name,
     required this.level,
@@ -15,17 +15,17 @@ class CategoryResponseModel {
     this.sideMenu,
   });
 
-  factory CategoryResponseModel.fromJson(Map<String, dynamic> json) {
+  factory CategoryResponse.fromJson(Map<String, dynamic> json) {
     // Parse subcategories if available, otherwise use an empty list.
     var subcategoriesJson = json['subcategories'] as List<dynamic>?;
 
-    List<CategoryResponseModel> subcategoriesList = subcategoriesJson != null
+    List<CategoryResponse> subcategoriesList = subcategoriesJson != null
         ? subcategoriesJson
-            .map((item) => CategoryResponseModel.fromJson(item))
+            .map((item) => CategoryResponse.fromJson(item))
             .toList()
         : [];
 
-    return CategoryResponseModel(
+    return CategoryResponse(
       id: json['id'] as String,
       name: json['name'] as String,
       level: json['level'] as int,

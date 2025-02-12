@@ -1,14 +1,14 @@
 import 'package:domain/models/side_menu_model.dart';
 
-class CategoryModel {
+class Category {
   String id;
   String name;
   int level;
   String slug;
-  List<CategoryModel> subcategories;
-  SideMenuModel? sideMenu;
+  List<Category> subcategories;
+  SideMenu? sideMenu;
 
-  CategoryModel({
+  Category({
     required this.id,
     required this.name,
     required this.level,

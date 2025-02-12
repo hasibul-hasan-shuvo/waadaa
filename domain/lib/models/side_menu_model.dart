@@ -1,4 +1,4 @@
-class SideMenuModel {
+class SideMenu {
   String id;
   String? type;
   String title;
@@ -6,7 +6,7 @@ class SideMenuModel {
   String imageUrl;
   String category;
 
-  SideMenuModel({
+  SideMenu({
     required this.id,
     this.type,
     required this.title,

@@ -5,50 +5,35 @@ import 'package:waadaa/app/modules/categories/model/category_ui_model.dart';
 class CategoriesState extends BaseState {
   String categoryTitle = "Categories";
   List<String> subCategoryTitlelist = [];
-  List<CategoryUIModel> categoryModels = [];
+  List<CategoryUIModel> categoryList = [];
 
   CategoriesState({
     super.status,
     required this.categoryTitle,
     required this.subCategoryTitlelist,
-    required this.categoryModels,
+    required this.categoryList,
   });
 
   CategoriesState.initial();
-
-  // CategoriesState.loading(String categoryTitle);
-
-  // CategoriesState.success(
-  //   String categoryTitle,
-  //   List<String> subCategoryTitlelist,
-  //   List<CategoryModel> categoryModels,
-  // );
-
-  // CategoriesState.error(
-  //   String categoryTitle,
-  //   List<String> subCategoryTitlelist,
-  //   List<CategoryModel> categoryModels,
-  //   String message,
-  // );
 
   @override
   CategoriesState copyWith({
     String? categoryTitle,
     List<String>? subCategoryTitlelist,
-    List<CategoryUIModel>? categoryModels,
+    List<CategoryUIModel>? categoryList,
     BaseStatus? status,
   }) {
     return CategoriesState(
       categoryTitle: categoryTitle ?? this.categoryTitle,
       subCategoryTitlelist: subCategoryTitlelist ?? this.subCategoryTitlelist,
-      categoryModels: categoryModels ?? this.categoryModels,
+      categoryList: categoryList ?? this.categoryList,
       status: status ?? this.status,
     );
   }
 
-  CategoriesState getAllCategories(
-      List<CategoryUIModel> categoryModelsFromApi) {
-    return copyWith(categoryModels: categoryModelsFromApi);
+  CategoriesState getAllCategories(List<CategoryUIModel> categoryListFromApi) {
+    categoryListFromApi[0].isSelected = true;
+    return copyWith(categoryList: categoryListFromApi);
   }
 
   CategoriesState updateCategoryTitle(String title) {
@@ -60,7 +45,21 @@ class CategoriesState extends BaseState {
     return copyWith(subCategoryTitlelist: subCategoryTitlelist);
   }
 
-  CategoriesState updateCategoryModels(CategoryUIModel categoryModels) {
-    return copyWith(categoryModels: categoryModels.subcategories);
+  CategoriesState updatecategoryList(CategoryUIModel categoryList) {
+    return copyWith(categoryList: categoryList.subcategories);
+  }
+
+  CategoriesState updateSelectedCategory(CategoryUIModel category) {
+    final updatedCategoryList = categoryList.map((e) {
+      if (e.isSelected) {
+        e.isSelected = false;
+      }
+
+      if (e.id == category.id) {
+        e.isSelected = true;
+      }
+      return e;
+    }).toList();
+    return copyWith(categoryList: updatedCategoryList);
   }
 }

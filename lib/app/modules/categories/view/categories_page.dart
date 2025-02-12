@@ -12,7 +12,9 @@ class CategoriesPage extends BasePage<CategoriesViewModel, CategoriesState> {
   Widget body(BuildContext context) {
     return CustomScrollView(
       slivers: [
-        CategoryListView(),
+        SliverToBoxAdapter(
+          child: CategoryListView(),
+        ),
       ],
     );
   }

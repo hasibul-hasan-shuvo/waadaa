@@ -8,6 +8,7 @@ class CategoryUIModel {
   String slug;
   List<CategoryUIModel> subcategories;
   SideMenuUIModel? sideMenu;
+  bool isSelected;
 
   CategoryUIModel({
     required this.id,
@@ -16,19 +17,20 @@ class CategoryUIModel {
     required this.slug,
     required this.subcategories,
     this.sideMenu,
+    this.isSelected = false,
   });
 
-  factory CategoryUIModel.fromDomain(CategoryModel categoryModel) {
+  factory CategoryUIModel.fromDomain(Category category) {
     return CategoryUIModel(
-      id: categoryModel.id,
-      name: categoryModel.name,
-      level: categoryModel.level,
-      slug: categoryModel.slug,
-      subcategories: categoryModel.subcategories
+      id: category.id,
+      name: category.name,
+      level: category.level,
+      slug: category.slug,
+      subcategories: category.subcategories
           .map((e) => CategoryUIModel.fromDomain(e))
           .toList(),
-      sideMenu: categoryModel.sideMenu != null
-          ? SideMenuUIModel.fromDomain(categoryModel.sideMenu!)
+      sideMenu: category.sideMenu != null
+          ? SideMenuUIModel.fromDomain(category.sideMenu!)
           : null,
     );
   }

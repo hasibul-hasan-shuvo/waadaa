@@ -1,4 +1,5 @@
 import 'package:di/di.dart';
+import 'package:domain/models/category_model.dart';
 import 'package:domain/usecases/category_list_use_case.dart';
 import 'package:waadaa/app/base/base_view_model.dart';
 import 'package:waadaa/app/modules/categories/model/category_ui_model.dart';
@@ -28,7 +29,13 @@ class CategoriesViewModel extends BaseViewModel<CategoriesState> {
     );
   }
 
-  void _handleCategoryListSucessResponse(List<CategoryUIModel> categoryModels) {
-    updateState(state.getAllCategories(categoryModels));
+  void _handleCategoryListSucessResponse(List<Category> categoryList) {
+    updateState(state.getAllCategories(
+      categoryList.map((e) => CategoryUIModel.fromDomain(e)).toList(),
+    ));
+  }
+
+  void updateSelectedCategory(CategoryUIModel category) {
+    updateState(state.updateSelectedCategory(category));
   }
 }
