@@ -1,12 +1,12 @@
 import 'package:core/services/logger_service.dart';
-import 'package:domain/models/category_model.dart';
 import 'package:flutter/material.dart';
 import 'package:waadaa/app/base/observable_view.dart';
+import 'package:waadaa/app/modules/categories/model/category_ui_model.dart';
 import 'package:waadaa/app/modules/categories/viewmodel/categories_state.dart';
 import 'package:waadaa/app/modules/categories/viewmodel/categories_view_model.dart';
 
 class CategoryListView extends ObservableView<CategoriesViewModel,
-    CategoriesState, List<CategoryModel>?> {
+    CategoriesState, List<CategoryUIModel>?> {
   const CategoryListView({
     super.key,
   });
@@ -14,7 +14,7 @@ class CategoryListView extends ObservableView<CategoriesViewModel,
   @override
   Widget body(
     BuildContext context,
-    List<CategoryModel>? state,
+    List<CategoryUIModel>? state,
   ) {
     AppLogger.i("categoryFromView: $state");
     return SliverList.builder(
@@ -32,7 +32,7 @@ class CategoryListView extends ObservableView<CategoriesViewModel,
   }
 
   @override
-  List<CategoryModel>? observeState(CategoriesState state) {
+  List<CategoryUIModel>? observeState(CategoriesState state) {
     return state.categoryModels;
   }
 }

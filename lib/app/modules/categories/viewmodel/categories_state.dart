@@ -1,12 +1,11 @@
-import 'package:core/services/logger_service.dart';
-import 'package:domain/models/category_model.dart';
 import 'package:waadaa/app/base/base_state.dart';
 import 'package:waadaa/app/base/base_status.dart';
+import 'package:waadaa/app/modules/categories/model/category_ui_model.dart';
 
 class CategoriesState extends BaseState {
   String categoryTitle = "Categories";
   List<String> subCategoryTitlelist = [];
-  List<CategoryModel> categoryModels = [];
+  List<CategoryUIModel> categoryModels = [];
 
   CategoriesState({
     super.status,
@@ -36,7 +35,7 @@ class CategoriesState extends BaseState {
   CategoriesState copyWith({
     String? categoryTitle,
     List<String>? subCategoryTitlelist,
-    List<CategoryModel>? categoryModels,
+    List<CategoryUIModel>? categoryModels,
     BaseStatus? status,
   }) {
     return CategoriesState(
@@ -47,12 +46,9 @@ class CategoriesState extends BaseState {
     );
   }
 
-  CategoriesState getAllCategories(List<CategoryModel> categoryModelsFromApi) {
-    AppLogger.i("categoryModelsFromApi: ${categoryModelsFromApi.length}");
-
-    return copyWith(
-      categoryModels: categoryModelsFromApi,
-    );
+  CategoriesState getAllCategories(
+      List<CategoryUIModel> categoryModelsFromApi) {
+    return copyWith(categoryModels: categoryModelsFromApi);
   }
 
   CategoriesState updateCategoryTitle(String title) {
@@ -64,7 +60,7 @@ class CategoriesState extends BaseState {
     return copyWith(subCategoryTitlelist: subCategoryTitlelist);
   }
 
-  CategoriesState updateCategoryModels(CategoryModel categoryModels) {
+  CategoriesState updateCategoryModels(CategoryUIModel categoryModels) {
     return copyWith(categoryModels: categoryModels.subcategories);
   }
 }
