@@ -1,20 +1,27 @@
-import 'package:di/configure_dependencies.dart';
+import 'dart:developer';
+
 import 'package:di/di.dart';
-import 'package:domain/repositories/home_repository.dart';
+import 'package:domain/usecases/hero_banners_use_case.dart';
+import 'package:domain/usecases/category_offers_use_case.dart';
 import 'package:waadaa/app/base/base_view_model.dart';
 import 'package:waadaa/app/modules/home/viewmodel/home_state.dart';
 
 @injectable
 class HomeViewModel extends BaseViewModel<HomeState> {
-  HomeViewModel() : super(HomeState.initial());
+  HomeViewModel(
+    this.heroBannersUseCase,
+    this.categoryOffersUseCase,
+  ) : super(HomeState.initial());
 
-  HomeRepository repository = getIt<HomeRepository>();
+  final HeroBannersUseCase heroBannersUseCase;
+  final CategoryOffersUseCase categoryOffersUseCase;
 
   @override
   void onViewReady() {
     super.onViewReady();
 
-    fetchCategoryOfferList();
+    _fetchHeroBannerList();
+    _fetchCategoryOfferList();
   }
 
   void increment() {
@@ -25,9 +32,33 @@ class HomeViewModel extends BaseViewModel<HomeState> {
     updateState(state.updateHeroBannerIndex(index));
   }
 
-  void fetchCategoryOfferList() async {
-    final categoryOffers = await repository.getCategoryOffers();
+  void _fetchHeroBannerList() {
+    callDataService(
+      heroBannersUseCase.getHomeHeroBanners(),
+      onSuccess: (value) {
+        updateState(state.updateHeroBanners(value));
+      },
+      onStart: () {},
+      onComplete: () {},
+    );
+  }
 
-    updateState(state.updateCategoryOffers(categoryOffers));
+  void _fetchCategoryOfferList() async {
+    callDataService(
+      categoryOffersUseCase.getCategoryOffers(),
+      onSuccess: (value) {
+        updateState(state.updateCategoryOffers(value));
+      },
+      onStart: () {
+        ///start shimmer
+      },
+      onComplete: () {
+        ///stop shimmer
+      },
+    );
+  }
+
+  void onViewAllClicked() {
+    log("view all clicked");
   }
 }

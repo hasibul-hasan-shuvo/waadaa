@@ -44,7 +44,7 @@ class OfferCategoryView
           AppSecondaryButton(
             title: "VIEW ALL",
             onPressed: () {
-              context.getViewModel<HomeViewModel>().fetchCategoryOfferList();
+              context.getViewModel<HomeViewModel>().onViewAllClicked();
             },
           ).paddingSymmetric(vertical: 10),
         ],
