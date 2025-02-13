@@ -1,14 +1,24 @@
 import 'package:carousel_slider/carousel_slider.dart';
+import 'package:core/widgets/slider/slider_controller.dart';
 import 'package:core/widgets/sliding_indicator.dart';
 import 'package:flutter/material.dart';
 
-class HeroBannerSlider extends StatelessWidget {
+class HeroBannerSlider extends StatefulWidget {
   final List<Widget> bannersList;
+  final double sliderHeight;
 
   const HeroBannerSlider({
     super.key,
     required this.bannersList,
+    required this.sliderHeight,
   });
+
+  @override
+  State<HeroBannerSlider> createState() => _HeroBannerSliderState();
+}
+
+class _HeroBannerSliderState extends State<HeroBannerSlider> {
+  SliderController controller = SliderController();
 
   @override
   Widget build(BuildContext context) {
@@ -17,7 +27,7 @@ class HeroBannerSlider extends StatelessWidget {
       children: [
         CarouselSlider(
           options: CarouselOptions(
-            height: 215.0,
+            height: widget.sliderHeight,
             viewportFraction: 1.0,
             initialPage: 0,
             enableInfiniteScroll: true,
@@ -29,15 +39,21 @@ class HeroBannerSlider extends StatelessWidget {
             enlargeCenterPage: true,
             scrollDirection: Axis.horizontal,
             onPageChanged: (index, reason) {
-              //update hero banner index by value notifier
+              controller.updateIndex(index);
             },
           ),
-          items: bannersList,
+          items: widget.bannersList,
         ),
-        SlidingIndicator(
-          activeIndex: 2,
-          count: 5,
-        ),
+        if (widget.bannersList.length > 1)
+          ValueListenableBuilder(
+            valueListenable: controller.selectedIndex,
+            builder: (context, value, child) {
+              return SlidingIndicator(
+                activeIndex: value,
+                count: widget.bannersList.length,
+              );
+            },
+          ),
       ],
     );
   }

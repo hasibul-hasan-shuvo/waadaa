@@ -49,4 +49,5 @@ class Dimens {
   // Widget sizes
   static const double indicatorWidth = 22.0;
   static const double indicatorHeight = 7.0;
+  static const double heroBannerHeight = 215.0;
 }

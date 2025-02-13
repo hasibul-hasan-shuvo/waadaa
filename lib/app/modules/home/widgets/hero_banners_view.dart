@@ -1,3 +1,4 @@
+import 'package:core/assets/dimens.dart';
 import 'package:core/widgets/banner_top_contents.dart';
 import 'package:core/widgets/images/network_image_view.dart';
 import 'package:core/widgets/slider/hero_banner_slider.dart';
@@ -15,6 +16,7 @@ class HeroBannersView
   @override
   Widget body(BuildContext context, List<HeroBannerItem> state) {
     return HeroBannerSlider(
+      sliderHeight: Dimens.heroBannerHeight,
       bannersList: List.generate(
         state.length,
         (index) {
