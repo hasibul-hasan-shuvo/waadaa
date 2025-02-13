@@ -1,3 +1,4 @@
+import 'package:waadaa/app/modules/product/view/product_page.dart';
 import 'package:go_router/go_router.dart';
 import 'package:waadaa/app/modules/account/view/account_page.dart';
 import 'package:waadaa/app/modules/brands/view/brands_page.dart';
@@ -47,6 +48,11 @@ class AppRouter {
       path: _Paths.account,
       name: AppRoutes.account,
       buildPage: (context, state) => const AccountPage(),
+    ),
+    AppRoute(
+      path: _Paths.product,
+      name: AppRoutes.product,
+      buildPage: (context, state) => const ProductPage(),
     ),
   ];
 }

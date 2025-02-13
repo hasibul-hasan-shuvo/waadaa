@@ -23,6 +23,8 @@ import 'package:waadaa/app/modules/main/viewmodel/main_view_model.dart'
     as _i177;
 import 'package:waadaa/app/modules/my_cart/viewmodel/my_cart_view_model.dart'
     as _i128;
+import 'package:waadaa/app/modules/product/viewmodel/product_view_model.dart'
+    as _i770;
 
 // initializes the registration of main-scope dependencies inside of GetIt
 _i174.GetIt $initGetIt(
@@ -38,6 +40,7 @@ _i174.GetIt $initGetIt(
   gh.factory<_i261.HomeViewModel>(() => _i261.HomeViewModel());
   gh.factory<_i128.MyCartViewModel>(() => _i128.MyCartViewModel());
   gh.factory<_i694.BrandsViewModel>(() => _i694.BrandsViewModel());
+  gh.factory<_i770.ProductViewModel>(() => _i770.ProductViewModel());
   gh.factory<_i890.AccountViewModel>(() => _i890.AccountViewModel());
   gh.factory<_i177.MainViewModel>(() => _i177.MainViewModel());
   gh.factory<_i1041.CategoriesViewModel>(() => _i1041.CategoriesViewModel());

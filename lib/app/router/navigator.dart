@@ -46,4 +46,8 @@ class AppNavigator {
   Future navigateToAccount() {
     return _router.pushNamed(AppRoutes.account);
   }
+
+  Future navigateToProduct() {
+    return _router.pushNamed(AppRoutes.product);
+  }
 }
