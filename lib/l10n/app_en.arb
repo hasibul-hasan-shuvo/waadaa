@@ -1,4 +1,9 @@
 {
+  "bottomNavItemHome": "Home",
+  "bottomNavItemCategories": "Categories",
+  "bottomNavItemBrands": "Brands",
+  "bottomNavItemCart": "Cart",
+  "bottomNavItemAccount": "Account",
   "homeTitle": "Home",
   "messageJsonFormatException": "Error parsing JSON",
   "messageNetworkException": "No internet connection",
