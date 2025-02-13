@@ -17,13 +17,15 @@ class ProductBox extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Container(
-            color: Color(0xFFF7F5F2),
-            padding: EdgeInsets.all(20),
-            child: NetworkImageView(
-              imageUrl:
-                  "https://s3-alpha-sig.figma.com/img/add3/8874/c14a0cbb4cd437d6779e0a5a18963f63?Expires=1739145600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=EMjRlDWiDiyPGKVql35KLJTc47Dn8b9F28pM7CKF4mWeCv0y~pzzeFC50~dKlMoJExBNqhR~KM8OH~65oIIv45sH7g7AdHU1y8ye9Gd0xjSeAamjxoBwbtSI5t9l4pkU8I918uCBoBVYuwTrfWjGYc63AqRW5og9r4qto~UwcuBl3j~JjldQQUwEfgmwSdtQfpikv8NwXaE0A~KQ1DL1Dus62eWzWT58qS2x-aS3uVVPRfzZezgP6p-yoEXiH33angbh2tH9DVGby~~1vUdD4zKA4znDyItE9jblQuxAKKJvmbsYQ2Mzkx1ohSTXJnHrK-BPg-pSNsqY25B34dB6uw__",
-              fit: BoxFit.cover,
+          Flexible(
+            child: Container(
+              color: Color(0xFFF7F5F2),
+              padding: EdgeInsets.all(20),
+              child: NetworkImageView(
+                imageUrl:
+                "https://s3-alpha-sig.figma.com/img/add3/8874/c14a0cbb4cd437d6779e0a5a18963f63?Expires=1739145600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=EMjRlDWiDiyPGKVql35KLJTc47Dn8b9F28pM7CKF4mWeCv0y~pzzeFC50~dKlMoJExBNqhR~KM8OH~65oIIv45sH7g7AdHU1y8ye9Gd0xjSeAamjxoBwbtSI5t9l4pkU8I918uCBoBVYuwTrfWjGYc63AqRW5og9r4qto~UwcuBl3j~JjldQQUwEfgmwSdtQfpikv8NwXaE0A~KQ1DL1Dus62eWzWT58qS2x-aS3uVVPRfzZezgP6p-yoEXiH33angbh2tH9DVGby~~1vUdD4zKA4znDyItE9jblQuxAKKJvmbsYQ2Mzkx1ohSTXJnHrK-BPg-pSNsqY25B34dB6uw__",
+                fit: BoxFit.cover,
+              ),
             ),
           ),
           SizedBox(height: 12),
