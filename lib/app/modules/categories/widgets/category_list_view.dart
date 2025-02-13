@@ -31,7 +31,7 @@ class CategoryListView extends ObservableView<CategoriesViewModel,
           return GestureDetector(
             onTap: () {
               final viewModel = context.getViewModel<CategoriesViewModel>();
-              viewModel.updateSelectedCategory(category);
+              viewModel.selectedCategory(category);
             },
             child: ItemCategory(index: index),
           );

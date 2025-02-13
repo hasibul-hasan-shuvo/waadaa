@@ -46,22 +46,8 @@ class CategoriesState extends BaseState {
     return copyWith(subCategoryList: subCategoryList);
   }
 
-  CategoriesState updatecategoryList(CategoryUIModel categoryList) {
-    return copyWith(categoryList: categoryList.subcategories);
-  }
-
-  CategoriesState updateSelectedCategory(CategoryUIModel category) {
-    final updatedCategoryList = categoryList.map((e) {
-      if (e.isSelected) {
-        e.isSelected = false;
-      }
-
-      if (e.id == category.id) {
-        e.isSelected = true;
-      }
-      return e;
-    }).toList();
-
+  CategoriesState updateCategoryList(
+      List<CategoryUIModel> updatedCategoryList) {
     return copyWith(categoryList: updatedCategoryList);
   }
 }

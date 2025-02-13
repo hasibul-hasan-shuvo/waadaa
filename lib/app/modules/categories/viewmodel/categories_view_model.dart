@@ -36,11 +36,22 @@ class CategoriesViewModel extends BaseViewModel<CategoriesState> {
     );
   }
 
-  void updateSelectedCategory(CategoryUIModel category) {
+  void selectedCategory(CategoryUIModel category) {
+    final updatedCategoryList = state.categoryList.map((e) {
+      if (e.isSelected) {
+        e.isSelected = false;
+      }
+
+      if (e.id == category.id) {
+        e.isSelected = true;
+      }
+      return e;
+    }).toList();
+
+    updateState(state.updateCategoryList(updatedCategoryList));
+
     /// update sub category list
     updateState(state.updateSubCategoryList(category.subcategories));
-
-    updateState(state.updateSelectedCategory(category));
   }
 
   void updateCategoryTitle(String title) {
