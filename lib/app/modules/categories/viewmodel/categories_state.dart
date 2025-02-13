@@ -4,13 +4,13 @@ import 'package:waadaa/app/modules/categories/model/category_ui_model.dart';
 
 class CategoriesState extends BaseState {
   String categoryTitle = "Categories";
-  List<String> subCategoryTitlelist = [];
+  List<CategoryUIModel> subCategoryList = [];
   List<CategoryUIModel> categoryList = [];
 
   CategoriesState({
     super.status,
     required this.categoryTitle,
-    required this.subCategoryTitlelist,
+    required this.subCategoryList,
     required this.categoryList,
   });
 
@@ -19,13 +19,13 @@ class CategoriesState extends BaseState {
   @override
   CategoriesState copyWith({
     String? categoryTitle,
-    List<String>? subCategoryTitlelist,
+    List<CategoryUIModel>? subCategoryList,
     List<CategoryUIModel>? categoryList,
     BaseStatus? status,
   }) {
     return CategoriesState(
       categoryTitle: categoryTitle ?? this.categoryTitle,
-      subCategoryTitlelist: subCategoryTitlelist ?? this.subCategoryTitlelist,
+      subCategoryList: subCategoryList ?? this.subCategoryList,
       categoryList: categoryList ?? this.categoryList,
       status: status ?? this.status,
     );
@@ -40,9 +40,10 @@ class CategoriesState extends BaseState {
     return copyWith(categoryTitle: title);
   }
 
-  CategoriesState updateSubCategoryTitleList(
-      List<String> subCategoryTitlelist) {
-    return copyWith(subCategoryTitlelist: subCategoryTitlelist);
+  CategoriesState updateSubCategoryList(
+    List<CategoryUIModel> subCategoryList,
+  ) {
+    return copyWith(subCategoryList: subCategoryList);
   }
 
   CategoriesState updatecategoryList(CategoryUIModel categoryList) {
@@ -60,6 +61,7 @@ class CategoriesState extends BaseState {
       }
       return e;
     }).toList();
+
     return copyWith(categoryList: updatedCategoryList);
   }
 }

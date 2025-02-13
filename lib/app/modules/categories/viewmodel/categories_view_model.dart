@@ -12,10 +12,6 @@ class CategoriesViewModel extends BaseViewModel<CategoriesState> {
 
   final CategoryListUseCase _categoryListUseCase;
 
-  void updateCategoryTitle(String title) {
-    updateCategoryTitle(title);
-  }
-
   @override
   Future<void> onViewReady() async {
     super.onViewReady();
@@ -33,9 +29,21 @@ class CategoriesViewModel extends BaseViewModel<CategoriesState> {
     updateState(state.getAllCategories(
       categoryList.map((e) => CategoryUIModel.fromDomain(e)).toList(),
     ));
+
+    updateState(
+      state.updateSubCategoryList(
+          CategoryUIModel.fromDomain(categoryList[0]).subcategories),
+    );
   }
 
   void updateSelectedCategory(CategoryUIModel category) {
+    /// update sub category list
+    updateState(state.updateSubCategoryList(category.subcategories));
+
     updateState(state.updateSelectedCategory(category));
+  }
+
+  void updateCategoryTitle(String title) {
+    updateCategoryTitle(title);
   }
 }

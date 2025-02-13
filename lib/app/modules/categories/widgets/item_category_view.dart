@@ -1,14 +1,13 @@
 import 'package:core/assets/dimens.dart';
-import 'package:core/services/logger_service.dart';
 import 'package:flutter/material.dart';
 import 'package:waadaa/app/base/observable_view.dart';
 import 'package:waadaa/app/extensions/context_extension.dart';
 import 'package:waadaa/app/modules/categories/viewmodel/categories_state.dart';
 import 'package:waadaa/app/modules/categories/viewmodel/categories_view_model.dart';
 
-class CategoryItem
+class ItemCategory
     extends ObservableView<CategoriesViewModel, CategoriesState, bool> {
-  const CategoryItem({
+  const ItemCategory({
     super.key,
     required this.index,
   });
@@ -18,22 +17,22 @@ class CategoryItem
   @override
   Widget body(BuildContext context, bool state) {
     final viewModel = context.getViewModel<CategoriesViewModel>();
-    AppLogger.d(
-        'CategoryItem build ${viewModel.state.categoryList[index].name}.}');
-    return DecoratedBox(
+    return Container(
+      padding: const EdgeInsets.symmetric(horizontal: Dimens.paddingMedium),
       decoration: BoxDecoration(
         border: Border(
           bottom: BorderSide(
-            color: state ? Colors.grey : Colors.transparent,
+            color: state ? Colors.black : Colors.grey.shade100,
             width: 2,
           ),
         ),
       ),
-      child: Container(
-        padding: const EdgeInsets.all(Dimens.paddingSmall),
-        margin: const EdgeInsets.only(right: Dimens.marginSmall),
-        child: Text(
-          viewModel.state.categoryList[index].name,
+      alignment: Alignment.center,
+      child: Text(
+        viewModel.state.categoryList[index].name,
+        style: TextStyle(
+          color: state ? Colors.black : Colors.grey.shade600,
+          fontWeight: FontWeight.w500,
         ),
       ),
     );

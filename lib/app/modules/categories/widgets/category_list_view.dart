@@ -1,3 +1,4 @@
+import 'package:core/assets/dimens.dart';
 import 'package:flutter/material.dart';
 import 'package:waadaa/app/base/observable_view.dart';
 import 'package:waadaa/app/extensions/context_extension.dart';
@@ -17,8 +18,9 @@ class CategoryListView extends ObservableView<CategoriesViewModel,
     BuildContext context,
     List<CategoryUIModel> state,
   ) {
-    return SizedBox(
-      height: 40,
+    return Container(
+      height: Dimens.heightMedium,
+      margin: const EdgeInsets.symmetric(horizontal: Dimens.marginSmall),
       child: ListView.builder(
         itemCount: state.length,
         scrollDirection: Axis.horizontal,
@@ -31,7 +33,7 @@ class CategoryListView extends ObservableView<CategoriesViewModel,
               final viewModel = context.getViewModel<CategoriesViewModel>();
               viewModel.updateSelectedCategory(category);
             },
-            child: CategoryItem(index: index),
+            child: ItemCategory(index: index),
           );
         },
       ),

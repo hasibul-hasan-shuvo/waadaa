@@ -1,9 +1,11 @@
+import 'package:core/assets/dimens.dart';
 import 'package:core/extensions/context_extension.dart';
 import 'package:flutter/material.dart';
 import 'package:waadaa/app/base/base_page.dart';
 import 'package:waadaa/app/modules/categories/viewmodel/categories_state.dart';
 import 'package:waadaa/app/modules/categories/viewmodel/categories_view_model.dart';
 import 'package:waadaa/app/modules/categories/widgets/category_list_view.dart';
+import 'package:waadaa/app/modules/categories/widgets/sub_category_list_view.dart';
 
 class CategoriesPage extends BasePage<CategoriesViewModel, CategoriesState> {
   const CategoriesPage({super.key});
@@ -15,6 +17,10 @@ class CategoriesPage extends BasePage<CategoriesViewModel, CategoriesState> {
         SliverToBoxAdapter(
           child: CategoryListView(),
         ),
+        SliverToBoxAdapter(
+          child: SizedBox(height: Dimens.marginSmall),
+        ),
+        SubCategoryListView(),
       ],
     );
   }
