@@ -14,37 +14,35 @@ class BannerButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return OutlinedButton(
-      style: ButtonStyle(
-        padding: WidgetStateProperty.all(
-          EdgeInsets.symmetric(
-            horizontal: Dimens.paddingSmall,
-          ),
-        ),
-        shape: WidgetStateProperty.all(
-          RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(Dimens.radiusSmall),
-          ),
-        ),
-        overlayColor: WidgetStateProperty.all(Colors.white.withAlpha(40)),
-      ),
-      onPressed: onPressed,
-      child: Row(
-        mainAxisSize: MainAxisSize.min,
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          Text(
-            title,
-            style: TextStyle(
-              color: Colors.white,
-              fontSize: 12,
+    return SizedBox(
+      width: 120,
+      child: OutlinedButton(
+        style: ButtonStyle(
+          padding: WidgetStateProperty.all(
+            EdgeInsets.symmetric(
+              horizontal: Dimens.paddingSmall,
             ),
-            maxLines: 1,
-            overflow: TextOverflow.ellipsis,
           ),
-        ],
-      ).paddingSymmetric(
-          vertical: Dimens.paddingVerySmall, horizontal: Dimens.paddingLarge),
+          shape: WidgetStateProperty.all(
+            RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(Dimens.radiusSmall),
+            ),
+          ),
+          overlayColor: WidgetStateProperty.all(Colors.white.withAlpha(40)),
+        ),
+        onPressed: onPressed,
+        child: Text(
+          title,
+          style: TextStyle(
+            color: Colors.white,
+            fontSize: 12,
+          ),
+          maxLines: 1,
+          overflow: TextOverflow.ellipsis,
+        ).paddingSymmetric(
+            vertical: Dimens.paddingVerySmall,
+            horizontal: Dimens.paddingMedium),
+      ),
     );
   }
 }

@@ -38,10 +38,11 @@ _i174.GetIt $initGetIt(
   gh.lazySingleton<_i903.NetworkClient>(() => _i317.DioClient());
   gh.lazySingleton<_i395.HomeLocalDataSource>(
       () => _i471.HomeLocalDataSourceImpl());
-  gh.lazySingleton<_i718.HomeRepository>(() => _i387.HomeRepositoryImpl());
   gh.lazySingleton<_i397.HomeRemoteDataSource>(
       () => _i724.HomeRemoteDataSourceImpl(gh<_i903.NetworkClient>()));
   gh.lazySingleton<_i960.PreferenceManager>(
       () => _i941.PreferenceManagerImpl());
+  gh.lazySingleton<_i718.HomeRepository>(
+      () => _i387.HomeRepositoryImpl(gh<_i397.HomeRemoteDataSource>()));
   return getIt;
 }

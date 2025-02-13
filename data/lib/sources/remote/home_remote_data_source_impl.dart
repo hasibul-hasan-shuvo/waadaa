@@ -12,12 +12,12 @@ class HomeRemoteDataSourceImpl extends BaseRemoteDataSource
   HomeRemoteDataSourceImpl(super.client);
 
   @override
-  Future<List<HeroBannersResponseModel>> getHeroBannersFromRemote() async {
-    final endpoint = EndPoints.heroBanners;
-    var dioCall = client.get(endpoint);
+  Future<List<HeroBannersResponseModel>> getHeroBanners() async {
+    String endpoint = EndPoints.heroBanners;
+    final apiCall = client.get(endpoint);
 
     try {
-      return callApiWithErrorParser(dioCall)
+      return callApiWithErrorParser(apiCall)
           .then((response) => _parseBannersResponse(response));
     } catch (e) {
       rethrow;
@@ -35,13 +35,12 @@ class HomeRemoteDataSourceImpl extends BaseRemoteDataSource
   }
 
   @override
-  Future<List<CategoryOffersResponseModel>>
-      getCategoryOffersFromRemote() async {
+  Future<List<CategoryOffersResponseModel>> getCategoryOffers() async {
     final endpoint = EndPoints.categoryOffersCarousel;
-    var dioCall = client.get(endpoint);
+    var apiCall = client.get(endpoint);
 
     try {
-      return callApiWithErrorParser(dioCall)
+      return callApiWithErrorParser(apiCall)
           .then((response) => _parseCategoryOffersResponse(response));
     } catch (e) {
       rethrow;
