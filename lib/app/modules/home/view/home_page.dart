@@ -1,10 +1,9 @@
 import 'dart:developer';
 
-import 'package:core/widgets/banner_top_contents.dart';
-import 'package:core/widgets/images/network_image_view.dart';
+import 'package:core/assets/app_icons.dart';
+import 'package:core/widgets/images/asset_image_view.dart';
 import 'package:core/widgets/primary_app_bar.dart';
 import 'package:core/widgets/product_list_section.dart';
-import 'package:core/widgets/slider/hero_banner_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:waadaa/app/base/base_page.dart';
 import 'package:waadaa/app/extensions/context_extension.dart';
@@ -27,23 +26,20 @@ class HomePage extends BasePage<HomeViewModel, HomeState> {
       title: (isLoggedIn) ? "Hi Abed" : context.localizations.homeTitle,
       actions: [
         IconButton(
-          icon: const Icon(
-            Icons.search_rounded,
-            color: Colors.black,
+          icon: AssetImageView(
+            fileName: AppIcons.searchIcon,
           ),
           onPressed: () {},
         ),
         IconButton(
-          icon: const Icon(
-            Icons.favorite_border,
-            color: Colors.black,
+          icon: AssetImageView(
+            fileName: AppIcons.favouriteIcon,
           ),
           onPressed: () {},
         ),
         IconButton(
-          icon: const Icon(
-            Icons.notifications_none,
-            color: Colors.black,
+          icon: AssetImageView(
+            fileName: AppIcons.notificationUnreadIcon,
           ),
           onPressed: () {},
         ),
