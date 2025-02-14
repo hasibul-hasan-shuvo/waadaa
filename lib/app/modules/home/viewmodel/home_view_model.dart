@@ -22,6 +22,7 @@ class HomeViewModel extends BaseViewModel<HomeState> {
 
     _fetchHeroBannerList();
     _fetchCategoryOfferList();
+    _fetchOfferBannersList();
   }
 
   void increment() {
@@ -44,6 +45,21 @@ class HomeViewModel extends BaseViewModel<HomeState> {
   }
 
   void _fetchCategoryOfferList() async {
+    callDataService(
+      categoryOffersUseCase.getCategoryOffers(),
+      onSuccess: (value) {
+        updateState(state.updateCategoryOffers(value));
+      },
+      onStart: () {
+        ///start shimmer
+      },
+      onComplete: () {
+        ///stop shimmer
+      },
+    );
+  }
+
+  void _fetchOfferBannersList() async {
     callDataService(
       categoryOffersUseCase.getCategoryOffers(),
       onSuccess: (value) {

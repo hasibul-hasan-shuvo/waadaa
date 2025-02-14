@@ -4,6 +4,7 @@ import 'package:data/sources/remote/home_remote_data_source.dart';
 import 'package:di/di.dart';
 import 'package:domain/models/category_offer_item.dart';
 import 'package:domain/models/hero_banner_item.dart';
+import 'package:domain/models/offer_banner_item.dart';
 import 'package:domain/repositories/home_repository.dart';
 
 @LazySingleton(as: HomeRepository)
@@ -22,6 +23,13 @@ class HomeRepositoryImpl implements HomeRepository {
   @override
   Future<List<CategoryOfferItem>> getCategoryOffers() {
     return _remoteDataSource.getCategoryOffers().then(
+          (value) => CategoryOffersMapper.mapToDomain(value),
+        );
+  }
+
+  @override
+  Future<List<OfferBannerItem>> getOffersConfigList() {
+    return _remoteDataSource.getOffersConfigList().then(
           (value) => CategoryOffersMapper.mapToDomain(value),
         );
   }

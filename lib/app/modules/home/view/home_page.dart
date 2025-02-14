@@ -10,7 +10,7 @@ import 'package:waadaa/app/extensions/context_extension.dart';
 import 'package:waadaa/app/modules/home/viewmodel/home_state.dart';
 import 'package:waadaa/app/modules/home/viewmodel/home_view_model.dart';
 import 'package:waadaa/app/modules/home/widgets/hero_banners_view.dart';
-import 'package:waadaa/app/modules/home/widgets/offer_banner_view.dart';
+import 'package:waadaa/app/modules/home/widgets/offer_exclusive_banner_view.dart';
 import 'package:waadaa/app/modules/home/widgets/offer_category_view.dart';
 import 'package:waadaa/app/modules/home/widgets/shop_by_section.dart';
 import 'package:waadaa/app/modules/home/widgets/welcome_reward_view.dart';
@@ -62,9 +62,9 @@ class HomePage extends BasePage<HomeViewModel, HomeState> {
               log("view all pressed...");
             },
           ),
-          OfferBannerView(),
+          OfferExclusiveBannerView(1),
           OfferCategoryView(),
-          OfferBannerView(),
+          OfferExclusiveBannerView(3),
           ProductListSection(
             title: "Recommended for you",
             viewAllPressed: () {

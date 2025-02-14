@@ -1,4 +1,4 @@
-class HeroBannersResponseModel {
+class HeroBannersResponse {
   String? id;
   String? title;
   String? subtitle;
@@ -12,7 +12,7 @@ class HeroBannersResponseModel {
   String? filePreviewUrl;
   String? brandIconPreviewUrl;
 
-  HeroBannersResponseModel({
+  HeroBannersResponse({
     this.id,
     this.title,
     this.subtitle,
@@ -27,8 +27,8 @@ class HeroBannersResponseModel {
     this.brandIconPreviewUrl,
   });
 
-  factory HeroBannersResponseModel.fromJson(Map<String, dynamic> json) =>
-      HeroBannersResponseModel(
+  factory HeroBannersResponse.fromJson(Map<String, dynamic> json) =>
+      HeroBannersResponse(
         id: json["id"],
         title: json["title"],
         subtitle: json["subtitle"],

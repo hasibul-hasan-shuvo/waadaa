@@ -1,9 +1,9 @@
-import 'package:data/models/category_offers_response_model.dart';
+import 'package:data/models/category_offers_response.dart';
 import 'package:domain/models/category_offer_item.dart';
 
 class CategoryOffersMapper {
   static List<CategoryOfferItem> mapToDomain(
-      List<CategoryOffersResponseModel> responseData) {
+      List<CategoryOffersResponse> responseData) {
     return responseData.map((e) {
       return CategoryOfferItem(
         id: e.id ?? "",

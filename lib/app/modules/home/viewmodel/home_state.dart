@@ -1,5 +1,6 @@
 import 'package:domain/models/category_offer_item.dart';
 import 'package:domain/models/hero_banner_item.dart';
+import 'package:domain/models/offer_banner_item.dart';
 import 'package:waadaa/app/base/base_state.dart';
 import 'package:waadaa/app/base/base_status.dart';
 
@@ -8,6 +9,8 @@ class HomeState extends BaseState {
   int heroBannerIndex = 0;
   List<HeroBannerItem>? heroBanners;
   List<CategoryOfferItem>? categoryOffers;
+  OfferBannerItem? exclusiveBanner;
+  List<OfferBannerItem>? regularBanners;
 
   HomeState({
     super.status,
@@ -15,6 +18,8 @@ class HomeState extends BaseState {
     this.heroBannerIndex = 0,
     this.heroBanners,
     this.categoryOffers,
+    this.exclusiveBanner,
+    this.regularBanners,
   });
 
   HomeState.initial();
@@ -26,6 +31,8 @@ class HomeState extends BaseState {
     int? heroBannerIndex,
     List<HeroBannerItem>? heroBanners,
     List<CategoryOfferItem>? categoryOffers,
+    OfferBannerItem? exclusiveBanner,
+    List<OfferBannerItem>? regularBanners,
   }) {
     return HomeState(
       status: status ?? this.status,
@@ -33,6 +40,8 @@ class HomeState extends BaseState {
       heroBannerIndex: heroBannerIndex ?? this.heroBannerIndex,
       heroBanners: heroBanners ?? this.heroBanners,
       categoryOffers: categoryOffers ?? this.categoryOffers,
+      exclusiveBanner: exclusiveBanner ?? this.exclusiveBanner,
+      regularBanners: regularBanners ?? this.regularBanners,
     );
   }
 
@@ -44,15 +53,19 @@ class HomeState extends BaseState {
     return copyWith(heroBannerIndex: index);
   }
 
-  HomeState updateHomeHeroBanners(List<CategoryOfferItem> categoryOffers) {
-    return copyWith(categoryOffers: categoryOffers);
-  }
-
   HomeState updateHeroBanners(List<HeroBannerItem> heroBanners) {
     return copyWith(heroBanners: heroBanners);
   }
 
   HomeState updateCategoryOffers(List<CategoryOfferItem> categoryOffers) {
     return copyWith(categoryOffers: categoryOffers);
+  }
+
+  HomeState updateExclusiveBanner(OfferBannerItem exclusiveBanner) {
+    return copyWith(exclusiveBanner: exclusiveBanner);
+  }
+
+  HomeState updateRegularBanners(List<OfferBannerItem> regularBanners) {
+    return copyWith(regularBanners: regularBanners);
   }
 }

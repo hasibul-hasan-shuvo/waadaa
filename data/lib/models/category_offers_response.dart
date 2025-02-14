@@ -1,13 +1,4 @@
-import 'dart:convert';
-
-List<CategoryOffersResponseModel> categoryOffersResponseFromJson(String str) =>
-    List<CategoryOffersResponseModel>.from(
-        json.decode(str).map((x) => CategoryOffersResponseModel.fromJson(x)));
-
-String categoryOffersResponseToJson(List<CategoryOffersResponseModel> data) =>
-    json.encode(List<dynamic>.from(data.map((x) => x.toJson())));
-
-class CategoryOffersResponseModel {
+class CategoryOffersResponse {
   String? id;
   String? tagName;
   String? categoryIdAnnotated;
@@ -17,7 +8,7 @@ class CategoryOffersResponseModel {
   String? fileS3Key;
   String? fileExtension;
 
-  CategoryOffersResponseModel({
+  CategoryOffersResponse({
     this.id,
     this.tagName,
     this.categoryIdAnnotated,
@@ -28,8 +19,8 @@ class CategoryOffersResponseModel {
     this.fileExtension,
   });
 
-  factory CategoryOffersResponseModel.fromJson(Map<String, dynamic> json) =>
-      CategoryOffersResponseModel(
+  factory CategoryOffersResponse.fromJson(Map<String, dynamic> json) =>
+      CategoryOffersResponse(
         id: json["id"],
         tagName: json["tag_name"],
         categoryIdAnnotated: json["category_id_annotated"],

@@ -8,4 +8,6 @@ class EndPoints {
       "${adminBaseUrl}api/configuration/hero-banners-config-list/";
   static String categoryOffersCarousel =
       "${adminBaseUrl}api/configuration/category-offer-carousel-config-list/";
+  static String offersConfigList =
+      "${adminBaseUrl}api/configuration/offer-page-config-List/";
 }
