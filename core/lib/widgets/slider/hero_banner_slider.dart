@@ -22,7 +22,6 @@ class _HeroBannerSliderState extends State<HeroBannerSlider> {
 
   @override
   Widget build(BuildContext context) {
-    //TODO: add sliding indicator
     return Column(
       children: [
         CarouselSlider(

@@ -22,8 +22,7 @@ class ProductBox extends StatelessWidget {
               color: Color(0xFFF7F5F2),
               padding: EdgeInsets.all(20),
               child: NetworkImageView(
-                imageUrl:
-                "https://s3-alpha-sig.figma.com/img/add3/8874/c14a0cbb4cd437d6779e0a5a18963f63?Expires=1739145600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=EMjRlDWiDiyPGKVql35KLJTc47Dn8b9F28pM7CKF4mWeCv0y~pzzeFC50~dKlMoJExBNqhR~KM8OH~65oIIv45sH7g7AdHU1y8ye9Gd0xjSeAamjxoBwbtSI5t9l4pkU8I918uCBoBVYuwTrfWjGYc63AqRW5og9r4qto~UwcuBl3j~JjldQQUwEfgmwSdtQfpikv8NwXaE0A~KQ1DL1Dus62eWzWT58qS2x-aS3uVVPRfzZezgP6p-yoEXiH33angbh2tH9DVGby~~1vUdD4zKA4znDyItE9jblQuxAKKJvmbsYQ2Mzkx1ohSTXJnHrK-BPg-pSNsqY25B34dB6uw__",
+                imageUrl: "https://s3-alpha-sig.figma.com/img/add3/8874/c14a0cbb4cd437d6779e0a5a18963f63?Expires=1740355200&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=Gi4a8u-9uWwD6afP9kbKm32eIlvXWYMfi0bZKNtp8nlda-gYwuugvRYlLxLpUpLJEVxjWgWXrHKR8TxY-B69cf2z5UIf4bU9zJX1e8jc71l6QaGBzFIdm6Evv-AZsVcv6Q5-CgR~qRyCTTM8dOgSJRN4u~ZRmP8FIfzQPKwy1JXovfX077Np3tKYiqaNKWBZXw7EiwXA6DEMF2ATjBnqpCBjpkqzmfGNVVKBmlg2k23AMMlKqY5FqGerRopWaj3tI7XaNqeKdUw46tBY8UJuCdmU~zBVT73AeHpVjmj-49y7T2EhIcRjKZDrUdjcPPQD~k3o6tzejpnB90DO8vRO5A__",
                 fit: BoxFit.cover,
               ),
             ),
