@@ -18,21 +18,21 @@ class HeroBannersView
     return HeroBannerSlider(
       sliderHeight: Dimens.heroBannerHeight,
       bannersList: List.generate(
-        state.length,
+        5,
         (index) {
           return Stack(
             children: [
               NetworkImageView(
-                imageUrl: state[index].imageUrl,
+                imageUrl: "https://i.imgur.com/DG5yU2k.png",
                 fit: BoxFit.cover,
               ),
               BlackLinearGradient(),
-              BannerTopContents(
-                title: state[index].title,
-                subTitle: state[index].subTitle,
-                actionTitle: state[index].actionTitle,
-                actionPressed: () {},
-              ),
+              // BannerTopContents(
+              //   title: state[index].title,
+              //   subTitle: state[index].subTitle,
+              //   actionTitle: state[index].actionTitle,
+              //   actionPressed: () {},
+              // ),
             ],
           );
         },
