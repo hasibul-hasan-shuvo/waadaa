@@ -2,6 +2,7 @@ import 'package:core/assets/dimens.dart';
 import 'package:core/widgets/banner_top_contents.dart';
 import 'package:core/widgets/images/network_image_view.dart';
 import 'package:core/widgets/slider/hero_banner_slider.dart';
+import 'package:core/widgets/slider/slider_indicators_position.dart';
 import 'package:domain/models/hero_banner_item.dart';
 import 'package:flutter/material.dart';
 import 'package:waadaa/app/base/observable_view.dart';
@@ -17,22 +18,23 @@ class HeroBannersView
   Widget body(BuildContext context, List<HeroBannerItem> state) {
     return HeroBannerSlider(
       sliderHeight: Dimens.heroBannerHeight,
+      indicatorsPosition: SliderIndicatorsPosition.insideBottom,
       bannersList: List.generate(
-        5,
+        state.length,
         (index) {
           return Stack(
             children: [
               NetworkImageView(
-                imageUrl: "https://i.imgur.com/DG5yU2k.png",
+                imageUrl: state[index].imageUrl,
                 fit: BoxFit.cover,
               ),
               BlackLinearGradient(),
-              // BannerTopContents(
-              //   title: state[index].title,
-              //   subTitle: state[index].subTitle,
-              //   actionTitle: state[index].actionTitle,
-              //   actionPressed: () {},
-              // ),
+              BannerTopContents(
+                title: state[index].title,
+                subTitle: state[index].subTitle,
+                actionTitle: state[index].actionTitle,
+                actionPressed: () {},
+              ),
             ],
           );
         },

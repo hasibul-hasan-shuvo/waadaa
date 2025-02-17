@@ -22,6 +22,8 @@ import 'package:waadaa/app/modules/categories/viewmodel/categories_view_model.da
     as _i1041;
 import 'package:waadaa/app/modules/home/viewmodel/home_view_model.dart'
     as _i261;
+import 'package:waadaa/app/modules/main/viewmodel/main_view_model.dart'
+    as _i177;
 import 'package:waadaa/app/modules/my_cart/viewmodel/my_cart_view_model.dart'
     as _i128;
 
@@ -40,6 +42,7 @@ _i174.GetIt $initGetIt(
   gh.factory<_i694.BrandsViewModel>(() => _i694.BrandsViewModel());
   gh.factory<_i890.AccountViewModel>(() => _i890.AccountViewModel());
   gh.factory<_i1041.CategoriesViewModel>(() => _i1041.CategoriesViewModel());
+  gh.factory<_i177.MainViewModel>(() => _i177.MainViewModel());
   gh.factory<_i261.HomeViewModel>(() => _i261.HomeViewModel(
         gh<_i224.HeroBannersUseCase>(),
         gh<_i199.CategoryOffersUseCase>(),

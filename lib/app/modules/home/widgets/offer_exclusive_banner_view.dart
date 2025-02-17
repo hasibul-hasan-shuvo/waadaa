@@ -2,6 +2,7 @@ import 'package:core/assets/dimens.dart';
 import 'package:core/widgets/banner_top_contents.dart';
 import 'package:core/widgets/images/network_image_view.dart';
 import 'package:core/widgets/slider/hero_banner_slider.dart';
+import 'package:core/widgets/slider/slider_indicators_position.dart';
 import 'package:domain/models/offer_banner_item.dart';
 import 'package:flutter/material.dart';
 import 'package:waadaa/app/base/observable_view.dart';
@@ -17,6 +18,7 @@ class OfferExclusiveBannerView
   Widget body(BuildContext context, OfferBannerItem state) {
     return HeroBannerSlider(
       sliderHeight: Dimens.offerBannerHeight,
+      indicatorsPosition: SliderIndicatorsPosition.insideTop,
       bannersList: [
         Stack(
           children: [
