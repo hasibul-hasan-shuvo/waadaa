@@ -3,6 +3,7 @@ part of 'router.dart';
 class AppRoutes {
   AppRoutes._();
 
+  static const String main = 'main';
   static const String home = 'home';
   static const String brands = 'brands';
   static const String categories = 'categories';
@@ -13,6 +14,7 @@ class AppRoutes {
 class _Paths {
   _Paths._();
 
+  static const String main = '/main';
   static const String home = '/home';
   static const String brands = '/brands';
   static const String categories = '/categories';

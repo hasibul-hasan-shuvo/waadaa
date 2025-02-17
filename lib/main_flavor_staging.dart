@@ -5,7 +5,7 @@ import 'package:waadaa/app/main.dart';
 
 void main() {
   BuildConfig.init(
-    envType: Environment.dev,
+    envType: Environment.staging,
     envConfig: EnvironmentConfig(
       appName: const String.fromEnvironment('appName'),
       baseUrl: const String.fromEnvironment('baseUrl'),

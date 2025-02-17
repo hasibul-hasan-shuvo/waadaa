@@ -23,6 +23,10 @@ class AppNavigator {
     return _instance!;
   }
 
+  Future navigateToMain() {
+    return _router.pushNamed(AppRoutes.main);
+  }
+
   Future navigateToHome() {
     return _router.pushNamed(AppRoutes.home);
   }

@@ -1,5 +1,10 @@
 {
   "homeTitle": "Hi there!",
+  "bottomNavItemHome": "Home",
+  "bottomNavItemCategories": "Categories",
+  "bottomNavItemBrands": "Brands",
+  "bottomNavItemCart": "Cart",
+  "bottomNavItemAccount": "Account",
   "messageJsonFormatException": "Error parsing JSON",
   "messageNetworkException": "No internet connection",
   "messageNotFoundException": "Data not found",

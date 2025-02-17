@@ -1,9 +1,10 @@
-import 'package:waadaa/app/modules/account/view/account_page.dart';
-import 'package:waadaa/app/modules/my_cart/view/my_cart_page.dart';
-import 'package:waadaa/app/modules/categories/view/categories_page.dart';
-import 'package:waadaa/app/modules/brands/view/brands_page.dart';
 import 'package:go_router/go_router.dart';
+import 'package:waadaa/app/modules/account/view/account_page.dart';
+import 'package:waadaa/app/modules/brands/view/brands_page.dart';
+import 'package:waadaa/app/modules/categories/view/categories_page.dart';
 import 'package:waadaa/app/modules/home/view/home_page.dart';
+import 'package:waadaa/app/modules/main/view/main_page.dart';
+import 'package:waadaa/app/modules/my_cart/view/my_cart_page.dart';
 import 'package:waadaa/app/router/route.dart';
 
 part 'routes.dart';
@@ -12,11 +13,16 @@ class AppRouter {
   AppRouter._();
 
   static final GoRouter config = GoRouter(
-    initialLocation: _Paths.home,
+    initialLocation: _Paths.main,
     routes: _routes,
   );
 
   static final List<GoRoute> _routes = [
+    AppRoute(
+      path: _Paths.main,
+      name: AppRoutes.main,
+      buildPage: (context, state) => const MainPage(),
+    ),
     AppRoute(
       path: _Paths.home,
       name: AppRoutes.home,
