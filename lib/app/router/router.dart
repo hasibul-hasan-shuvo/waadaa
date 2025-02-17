@@ -26,7 +26,7 @@ class AppRouter {
     AppRoute(
       path: _Paths.home,
       name: AppRoutes.home,
-      buildPage: (context, state) => HomePage(),
+      buildPage: (context, state) => const HomePage(),
     ),
     AppRoute(
       path: _Paths.brands,
