@@ -12,6 +12,7 @@
 import 'package:domain/repositories/home_repository.dart' as _i718;
 import 'package:domain/usecases/category_offers_use_case.dart' as _i199;
 import 'package:domain/usecases/hero_banners_use_case.dart' as _i224;
+import 'package:domain/usecases/offers_config_use_case.dart' as _i519;
 import 'package:get_it/get_it.dart' as _i174;
 import 'package:injectable/injectable.dart' as _i526;
 
@@ -28,6 +29,8 @@ _i174.GetIt $initGetIt(
   );
   gh.lazySingleton<_i224.HeroBannersUseCase>(
       () => _i224.HeroBannersUseCase(gh<_i718.HomeRepository>()));
+  gh.lazySingleton<_i519.OffersConfigUseCase>(
+      () => _i519.OffersConfigUseCase(gh<_i718.HomeRepository>()));
   gh.lazySingleton<_i199.CategoryOffersUseCase>(
       () => _i199.CategoryOffersUseCase(gh<_i718.HomeRepository>()));
   return getIt;

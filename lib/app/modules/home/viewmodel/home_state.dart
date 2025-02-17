@@ -61,7 +61,7 @@ class HomeState extends BaseState {
     return copyWith(categoryOffers: categoryOffers);
   }
 
-  HomeState updateExclusiveBanner(OfferBannerItem exclusiveBanner) {
+  HomeState updateExclusiveBanner(OfferBannerItem? exclusiveBanner) {
     return copyWith(exclusiveBanner: exclusiveBanner);
   }
 

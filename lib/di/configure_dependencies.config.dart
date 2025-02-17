@@ -11,6 +11,7 @@
 // ignore_for_file: no_leading_underscores_for_library_prefixes
 import 'package:domain/usecases/category_offers_use_case.dart' as _i199;
 import 'package:domain/usecases/hero_banners_use_case.dart' as _i224;
+import 'package:domain/usecases/offers_config_use_case.dart' as _i519;
 import 'package:get_it/get_it.dart' as _i174;
 import 'package:injectable/injectable.dart' as _i526;
 import 'package:waadaa/app/modules/account/viewmodel/account_view_model.dart'
@@ -42,6 +43,7 @@ _i174.GetIt $initGetIt(
   gh.factory<_i261.HomeViewModel>(() => _i261.HomeViewModel(
         gh<_i224.HeroBannersUseCase>(),
         gh<_i199.CategoryOffersUseCase>(),
+        gh<_i519.OffersConfigUseCase>(),
       ));
   return getIt;
 }

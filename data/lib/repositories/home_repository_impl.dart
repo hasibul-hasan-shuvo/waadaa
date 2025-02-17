@@ -1,5 +1,6 @@
 import 'package:data/mapper/category_offers_mapper.dart';
 import 'package:data/mapper/hero_banners_mapper.dart';
+import 'package:data/mapper/offer_banners_mapper.dart';
 import 'package:data/sources/remote/home_remote_data_source.dart';
 import 'package:di/di.dart';
 import 'package:domain/models/category_offer_item.dart';
@@ -30,7 +31,7 @@ class HomeRepositoryImpl implements HomeRepository {
   @override
   Future<List<OfferBannerItem>> getOffersConfigList() {
     return _remoteDataSource.getOffersConfigList().then(
-          (value) => CategoryOffersMapper.mapToDomain(value),
+          (value) => OfferBannersMapper.mapToDomain(value),
         );
   }
 }

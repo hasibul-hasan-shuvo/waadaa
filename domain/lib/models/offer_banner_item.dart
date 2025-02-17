@@ -6,6 +6,7 @@ class OfferBannerItem {
   final String actionUrl;
   final String fgImageUrl;
   final String bgImageUrl;
+  final String tagName;
 
   OfferBannerItem({
     required this.id,
@@ -15,5 +16,6 @@ class OfferBannerItem {
     required this.actionUrl,
     required this.fgImageUrl,
     required this.bgImageUrl,
+    required this.tagName,
   });
 }
