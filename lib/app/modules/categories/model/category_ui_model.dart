@@ -20,17 +20,17 @@ class CategoryUIModel {
     this.isSelected = false,
   });
 
-  factory CategoryUIModel.fromDomain(Category category) {
+  factory CategoryUIModel.fromCategoryDomain(Category category) {
     return CategoryUIModel(
       id: category.id,
       name: category.name,
       level: category.level,
       slug: category.slug,
       subcategories: category.subcategories
-          .map((e) => CategoryUIModel.fromDomain(e))
+          .map((e) => CategoryUIModel.fromCategoryDomain(e))
           .toList(),
       sideMenu: category.sideMenu != null
-          ? SideMenuUIModel.fromDomain(category.sideMenu!)
+          ? SideMenuUIModel.fromSideMenuDomain(category.sideMenu!)
           : null,
     );
   }

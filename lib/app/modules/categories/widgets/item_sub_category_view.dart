@@ -14,7 +14,7 @@ class ItemSubCategoryView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       padding: EdgeInsets.symmetric(horizontal: Dimens.paddingMedium),
-      height: Dimens.heightMedium,
+      height: Dimens.heightTabBar,
       decoration: BoxDecoration(
         border: Border(
           bottom: BorderSide(

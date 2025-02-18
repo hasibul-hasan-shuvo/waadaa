@@ -1,7 +1,8 @@
 import 'package:core/assets/dimens.dart';
-import 'package:core/extensions/context_extension.dart';
+import 'package:core/widgets/primary_app_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:waadaa/app/base/base_page.dart';
+import 'package:waadaa/app/extensions/context_extension.dart';
 import 'package:waadaa/app/modules/categories/viewmodel/categories_state.dart';
 import 'package:waadaa/app/modules/categories/viewmodel/categories_view_model.dart';
 import 'package:waadaa/app/modules/categories/widgets/category_list_view.dart';
@@ -27,24 +28,9 @@ class CategoriesPage extends BasePage<CategoriesViewModel, CategoriesState> {
 
   @override
   PreferredSizeWidget? appBar(BuildContext context) {
-    return AppBar(
-      title: Text(
-        "Categories",
-        style: context.textTheme.titleLarge?.copyWith(
-          fontWeight: FontWeight.w500,
-        ),
-      ),
-      centerTitle: false,
-      leading: IconButton(
-        icon: Icon(Icons.arrow_back),
-        onPressed: () => Navigator.pop(context),
-      ),
-      shape: Border(
-        bottom: BorderSide(
-          color: context.colors.primary.withAlpha(50),
-          width: 2,
-        ),
-      ),
+    return PrimaryAppBar(
+      title: context.localizations.categories,
+      isBackButtonEnabled: true,
       actions: [
         IconButton(
           icon: Icon(Icons.search),

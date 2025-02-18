@@ -55,9 +55,5 @@ class Dimens {
   static const double spacingExtraLarge = 32.0;
 
   // Hight
-  static const double heightZero = 0.0;
-  static const double heightSmall = 40.0;
-  static const double heightMedium = 48.0;
-  static const double heightLarge = 56.0;
-  static const double heightExtraLarge = 64.0;
+  static const double heightTabBar = 52.0;
 }

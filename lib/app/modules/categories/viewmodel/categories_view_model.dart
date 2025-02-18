@@ -15,24 +15,24 @@ class CategoriesViewModel extends BaseViewModel<CategoriesState> {
   @override
   Future<void> onViewReady() async {
     super.onViewReady();
-    getCategories();
+    _getCategories();
   }
 
-  void getCategories() {
+  void _getCategories() {
     callDataService(
       _categoryListUseCase.getCategories(),
-      onSuccess: _handleCategoryListSucessResponse,
+      onSuccess: _handleCategoryListSuccessResponse,
     );
   }
 
-  void _handleCategoryListSucessResponse(List<Category> categoryList) {
-    updateState(state.getAllCategories(
-      categoryList.map((e) => CategoryUIModel.fromDomain(e)).toList(),
+  void _handleCategoryListSuccessResponse(List<Category> categoryList) {
+    updateState(state.updateAllCategories(
+      categoryList.map((e) => CategoryUIModel.fromCategoryDomain(e)).toList(),
     ));
 
     updateState(
       state.updateSubCategoryList(
-          CategoryUIModel.fromDomain(categoryList[0]).subcategories),
+          CategoryUIModel.fromCategoryDomain(categoryList[0]).subcategories),
     );
   }
 
@@ -54,7 +54,7 @@ class CategoriesViewModel extends BaseViewModel<CategoriesState> {
     updateState(state.updateSubCategoryList(category.subcategories));
   }
 
-  void updateCategoryTitle(String title) {
-    updateCategoryTitle(title);
+  void updateNavigationTitle(String title) {
+    updateState(state.updateNavigationTitle(title));
   }
 }

@@ -17,14 +17,14 @@ class SideMenuUIModel {
     required this.category,
   });
 
-  factory SideMenuUIModel.fromDomain(SideMenu SideMenu) {
+  factory SideMenuUIModel.fromSideMenuDomain(SideMenu sideMenu) {
     return SideMenuUIModel(
-      id: SideMenu.id,
-      type: SideMenu.type,
-      title: SideMenu.title,
-      targetUrl: SideMenu.targetUrl,
-      imageUrl: SideMenu.imageUrl,
-      category: SideMenu.category,
+      id: sideMenu.id,
+      type: sideMenu.type,
+      title: sideMenu.title,
+      targetUrl: sideMenu.targetUrl,
+      imageUrl: sideMenu.imageUrl,
+      category: sideMenu.category,
     );
   }
 }

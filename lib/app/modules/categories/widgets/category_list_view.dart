@@ -19,7 +19,7 @@ class CategoryListView extends ObservableView<CategoriesViewModel,
     List<CategoryUIModel> state,
   ) {
     return Container(
-      height: Dimens.heightMedium,
+      height: Dimens.heightTabBar,
       margin: const EdgeInsets.symmetric(horizontal: Dimens.marginSmall),
       child: ListView.builder(
         itemCount: state.length,

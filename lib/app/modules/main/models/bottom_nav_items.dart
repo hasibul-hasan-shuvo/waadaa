@@ -17,31 +17,31 @@ extension NavItemsExtension on BottomNavItems {
       case BottomNavItems.home:
         return BottomNavbarItem(
           identifier: BottomNavItems.home,
-          label: context.localizations.bottomNavItemHome,
+          label: context.localizations.home,
           assetIcon: AppIcons.home,
         );
       case BottomNavItems.categories:
         return BottomNavbarItem(
           identifier: BottomNavItems.categories,
-          label: context.localizations.bottomNavItemCategories,
+          label: context.localizations.categories,
           assetIcon: AppIcons.categories,
         );
       case BottomNavItems.brands:
         return BottomNavbarItem(
           identifier: BottomNavItems.brands,
-          label: context.localizations.bottomNavItemBrands,
+          label: context.localizations.brands,
           assetIcon: AppIcons.brands,
         );
       case BottomNavItems.cart:
         return BottomNavbarItem(
           identifier: BottomNavItems.cart,
-          label: context.localizations.bottomNavItemCart,
+          label: context.localizations.cart,
           assetIcon: AppIcons.cart,
         );
       case BottomNavItems.account:
         return BottomNavbarItem(
           identifier: BottomNavItems.account,
-          label: context.localizations.bottomNavItemAccount,
+          label: context.localizations.account,
           assetIcon: AppIcons.account,
         );
     }

@@ -19,8 +19,11 @@ class SubCategoryListView extends ObservableView<CategoriesViewModel,
     return SliverList.builder(
       itemCount: state.length,
       itemBuilder: (context, index) {
-        return ItemSubCategoryView(
-          state: state[index],
+        return GestureDetector(
+          onTap: () {},
+          child: ItemSubCategoryView(
+            state: state[index],
+          ),
         );
       },
     );

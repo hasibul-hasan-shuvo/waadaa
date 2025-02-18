@@ -31,12 +31,13 @@ class CategoriesState extends BaseState {
     );
   }
 
-  CategoriesState getAllCategories(List<CategoryUIModel> categoryListFromApi) {
+  CategoriesState updateAllCategories(
+      List<CategoryUIModel> categoryListFromApi) {
     categoryListFromApi[0].isSelected = true;
     return copyWith(categoryList: categoryListFromApi);
   }
 
-  CategoriesState updateCategoryTitle(String title) {
+  CategoriesState updateNavigationTitle(String title) {
     return copyWith(categoryTitle: title);
   }
 
