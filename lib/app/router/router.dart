@@ -9,6 +9,7 @@ import 'package:waadaa/app/modules/main/view/main_page.dart';
 import 'package:waadaa/app/modules/my_cart/view/my_cart_page.dart';
 import 'package:waadaa/app/modules/page_not_found/view/page_not_found_page.dart';
 import 'package:waadaa/app/modules/product/view/product_page.dart';
+import 'package:waadaa/app/modules/product/view/product_page.dart';
 import 'package:waadaa/app/router/route.dart';
 
 part 'routes.dart';
@@ -71,7 +72,7 @@ class AppRouter {
         String? id = state.pathParameters['id'];
 
         if (id.isNullOrEmpty) {
-          return PageNotFoundPage();
+          return const PageNotFoundPage();
         }
 
         return ProductPage(id: id!);
