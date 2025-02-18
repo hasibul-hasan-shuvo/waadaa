@@ -47,6 +47,10 @@ class AppNavigator {
     return _router.pushNamed(AppRoutes.account);
   }
 
+  Future navigateToPageNotFound() {
+    return _router.pushReplacementNamed(AppRoutes.pageNotFound);
+  }
+
   Future navigateToProduct() {
     return _router.pushNamed(AppRoutes.product);
   }

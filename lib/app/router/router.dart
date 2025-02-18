@@ -1,11 +1,13 @@
-import 'package:waadaa/app/modules/product/view/product_page.dart';
+import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
+import 'package:waadaa/app/modules/product/view/product_page.dart';
 import 'package:waadaa/app/modules/account/view/account_page.dart';
 import 'package:waadaa/app/modules/brands/view/brands_page.dart';
 import 'package:waadaa/app/modules/categories/view/categories_page.dart';
 import 'package:waadaa/app/modules/home/view/home_page.dart';
 import 'package:waadaa/app/modules/main/view/main_page.dart';
 import 'package:waadaa/app/modules/my_cart/view/my_cart_page.dart';
+import 'package:waadaa/app/modules/page_not_found/view/page_not_found_page.dart';
 import 'package:waadaa/app/router/route.dart';
 
 part 'routes.dart';
@@ -16,7 +18,14 @@ class AppRouter {
   static final GoRouter config = GoRouter(
     initialLocation: _Paths.main,
     routes: _routes,
+    errorPageBuilder: _errorPageBuilder,
   );
+
+  static Page _errorPageBuilder(BuildContext context, GoRouterState state) {
+    return MaterialPage(
+      child: const PageNotFoundPage(),
+    );
+  }
 
   static final List<GoRoute> _routes = [
     AppRoute(
@@ -27,7 +36,7 @@ class AppRouter {
     AppRoute(
       path: _Paths.home,
       name: AppRoutes.home,
-      buildPage: (context, state) => HomePage(),
+      buildPage: (context, state) => const HomePage(),
     ),
     AppRoute(
       path: _Paths.brands,
@@ -48,6 +57,11 @@ class AppRouter {
       path: _Paths.account,
       name: AppRoutes.account,
       buildPage: (context, state) => const AccountPage(),
+    ),
+    AppRoute(
+      path: _Paths.pageNotFound,
+      name: AppRoutes.pageNotFound,
+      buildPage: (context, state) => const PageNotFoundPage(),
     ),
     AppRoute(
       path: _Paths.product,
