@@ -9,11 +9,9 @@ abstract class ObservableView<ViewModel extends BaseViewModel<ViewState>,
 
   @override
   Widget build(BuildContext context) {
-    return RepaintBoundary(
-      child: BlocSelector<ViewModel, ViewState, SelectedState>(
-        selector: observeState,
-        builder: body,
-      ),
+    return BlocSelector<ViewModel, ViewState, SelectedState>(
+      selector: observeState,
+      builder: body,
     );
   }
 

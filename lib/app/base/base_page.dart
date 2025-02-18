@@ -18,42 +18,40 @@ abstract class BasePage<ViewModel extends BaseViewModel<ViewState>,
   Widget build(BuildContext context) {
     return BlocProvider(
       create: _onCreateBlocProvider,
-      child: Builder(
-        builder: (BuildContext context) {
-          return AnnotatedRegion(
-            value: systemUiOverlayStyle ??
-                context.theme.appBarTheme.systemOverlayStyle ??
-                SystemUiOverlayStyle(
-                  statusBarColor: statusBarColor(context),
-                  statusBarIconBrightness: Brightness.light,
-                  statusBarBrightness: Brightness.light,
-                ),
-            child: Material(
-              color: Colors.transparent,
-              child: Scaffold(
-                backgroundColor: pageBackgroundColor(context),
-                key: GlobalKey<ScaffoldState>(),
-                appBar: appBar(context),
-                floatingActionButton: floatingActionButton(context),
-                bottomNavigationBar: bottomNavigationBar(context),
-                drawer: drawer(context),
-                bottomSheet: _bottomSheet(context),
-                body: SafeArea(
-                  top: useTopSafeArea,
-                  bottom: useBottomSafeArea,
-                  child: GestureDetector(
-                    onTap: _onTapGestureDetector,
-                    child: BlocListener<ViewModel, ViewState>(
-                      listener: _listener,
-                      child: body(context),
-                    ),
+      child: Builder(builder: (BuildContext context) {
+        return AnnotatedRegion(
+          value: systemUiOverlayStyle ??
+              context.theme.appBarTheme.systemOverlayStyle ??
+              SystemUiOverlayStyle(
+                statusBarColor: statusBarColor(context),
+                statusBarIconBrightness: Brightness.light,
+                statusBarBrightness: Brightness.light,
+              ),
+          child: Material(
+            color: Colors.transparent,
+            child: Scaffold(
+              backgroundColor: pageBackgroundColor(context),
+              key: GlobalKey<ScaffoldState>(),
+              appBar: appBar(context),
+              floatingActionButton: floatingActionButton(context),
+              bottomNavigationBar: bottomNavigationBar(context),
+              drawer: drawer(context),
+              bottomSheet: _bottomSheet(context),
+              body: SafeArea(
+                top: useTopSafeArea,
+                bottom: useBottomSafeArea,
+                child: GestureDetector(
+                  onTap: _onTapGestureDetector,
+                  child: BlocListener<ViewModel, ViewState>(
+                    listener: _listener,
+                    child: body(context),
                   ),
                 ),
               ),
             ),
-          );
-        },
-      ),
+          ),
+        );
+      }),
     );
   }
 

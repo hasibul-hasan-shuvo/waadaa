@@ -141,6 +141,8 @@ app.*.symbols
 
 .conf
 
+.conf
+
 lib/presentation/localization/generated/*
 
 !.fvm/fvm_config.json

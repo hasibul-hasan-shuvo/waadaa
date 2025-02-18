@@ -1,6 +1,5 @@
 class Dimens {
   Dimens._();
-
   // Padding
   static const double paddingZero = 0.0;
   static const double paddingSmall = 8.0;
@@ -57,10 +56,4 @@ class Dimens {
 
   // Hight
   static const double heightTabBar = 52.0;
-
-  // Widget sizes
-  static const double indicatorWidth = 22.0;
-  static const double indicatorHeight = 7.0;
-  static const double heroBannerHeight = 215.0;
-  static const double offerBannerHeight = 160.0;
 }

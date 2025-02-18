@@ -46,8 +46,4 @@ class AppNavigator {
   Future navigateToAccount() {
     return _router.pushNamed(AppRoutes.account);
   }
-
-  Future navigateToPageNotFound() {
-    return _router.pushReplacementNamed(AppRoutes.pageNotFound);
-  }
 }

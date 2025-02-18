@@ -24,8 +24,6 @@ import 'package:waadaa/app/modules/main/viewmodel/main_view_model.dart'
     as _i177;
 import 'package:waadaa/app/modules/my_cart/viewmodel/my_cart_view_model.dart'
     as _i128;
-import 'package:waadaa/app/modules/page_not_found/viewmodel/page_not_found_view_model.dart'
-    as _i394;
 
 // initializes the registration of main-scope dependencies inside of GetIt
 _i174.GetIt $initGetIt(
@@ -45,6 +43,5 @@ _i174.GetIt $initGetIt(
   gh.factory<_i177.MainViewModel>(() => _i177.MainViewModel());
   gh.factory<_i1041.CategoriesViewModel>(
       () => _i1041.CategoriesViewModel(gh<_i322.CategoryListUseCase>()));
-  gh.factory<_i394.PageNotFoundViewModel>(() => _i394.PageNotFoundViewModel());
   return getIt;
 }
