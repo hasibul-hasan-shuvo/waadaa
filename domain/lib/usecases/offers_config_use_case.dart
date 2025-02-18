@@ -1,5 +1,6 @@
 import 'package:di/di.dart';
 import 'package:domain/models/offer_banner_item.dart';
+import 'package:domain/models/offer_banners.dart';
 import 'package:domain/repositories/home_repository.dart';
 
 @lazySingleton
@@ -8,8 +9,7 @@ class OffersConfigUseCase {
 
   OffersConfigUseCase(this._homeRepository);
 
-  Future<(List<OfferBannerItem>, OfferBannerItem?)>
-      getOffersConfigList() async {
+  Future<OfferBanners> getOffersConfigList() async {
     List<OfferBannerItem> regularBanners = [];
     OfferBannerItem? exclusiveBanner;
 
@@ -23,6 +23,9 @@ class OffersConfigUseCase {
       }
     }
 
-    return (regularBanners, exclusiveBanner); // Return as a tuple
+    return OfferBanners(
+      regularBanners: regularBanners,
+      exclusiveBanner: exclusiveBanner,
+    ); // Return as a tuple
   }
 }

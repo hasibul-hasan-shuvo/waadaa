@@ -65,8 +65,8 @@ class HomeViewModel extends BaseViewModel<HomeState> {
     callDataService(
       offersConfigUseCase.getOffersConfigList(),
       onSuccess: (value) {
-        state.updateRegularBanners(value.$1);
-        state.updateExclusiveBanner(value.$2);
+        state.updateRegularBanners(value.regularBanners);
+        state.updateExclusiveBanner(value.exclusiveBanner);
       },
       onStart: () {
         ///start shimmer
