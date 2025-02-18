@@ -2,7 +2,7 @@ import 'package:carousel_slider/carousel_slider.dart';
 import 'package:core/assets/dimens.dart';
 import 'package:core/widgets/slider/slider_controller.dart';
 import 'package:core/widgets/slider/slider_indicators_position.dart';
-import 'package:core/widgets/sliding_indicator.dart';
+import 'package:core/widgets/slider/sliding_indicator.dart';
 import 'package:flutter/material.dart';
 
 class HeroBannerSlider extends StatefulWidget {
