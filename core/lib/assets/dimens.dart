@@ -1,5 +1,6 @@
 class Dimens {
   Dimens._();
+
   // Padding
   static const double paddingZero = 0.0;
   static const double paddingSmall = 8.0;
@@ -53,4 +54,10 @@ class Dimens {
   static const double spacingMedium = 16.0;
   static const double spacingLarge = 24.0;
   static const double spacingExtraLarge = 32.0;
+
+  // Widget sizes
+  static const double indicatorWidth = 22.0;
+  static const double indicatorHeight = 7.0;
+  static const double heroBannerHeight = 215.0;
+  static const double offerBannerHeight = 160.0;
 }
