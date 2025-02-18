@@ -42,10 +42,10 @@ _i174.GetIt $initGetIt(
   gh.factory<_i261.HomeViewModel>(() => _i261.HomeViewModel());
   gh.factory<_i128.MyCartViewModel>(() => _i128.MyCartViewModel());
   gh.factory<_i694.BrandsViewModel>(() => _i694.BrandsViewModel());
-  gh.factory<_i770.ProductViewModel>(() => _i770.ProductViewModel());
   gh.factory<_i890.AccountViewModel>(() => _i890.AccountViewModel());
   gh.factory<_i177.MainViewModel>(() => _i177.MainViewModel());
   gh.factory<_i1041.CategoriesViewModel>(() => _i1041.CategoriesViewModel());
   gh.factory<_i394.PageNotFoundViewModel>(() => _i394.PageNotFoundViewModel());
+  gh.factory<_i770.ProductViewModel>(() => _i770.ProductViewModel());
   return getIt;
 }
