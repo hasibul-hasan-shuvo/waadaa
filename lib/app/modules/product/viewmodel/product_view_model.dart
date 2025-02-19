@@ -5,4 +5,8 @@ import 'package:waadaa/app/modules/product/viewmodel/product_state.dart';
 @injectable
 class ProductViewModel extends BaseViewModel<ProductState> {
   ProductViewModel() : super(ProductState.initial());
+
+  void setId(String id) {
+    updateState(state.setId(id));
+  }
 }
