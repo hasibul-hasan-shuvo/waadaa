@@ -5,23 +5,23 @@ import 'package:core/widgets/slider/slider_indicators_position.dart';
 import 'package:core/widgets/slider/sliding_indicator.dart';
 import 'package:flutter/material.dart';
 
-class HeroBannerSlider extends StatefulWidget {
-  final List<Widget> bannersList;
+class AppSlider extends StatefulWidget {
+  final List<Widget> itemList;
   final double sliderHeight;
   final SliderIndicatorsPosition indicatorsPosition;
 
-  const HeroBannerSlider({
+  const AppSlider({
     super.key,
-    required this.bannersList,
+    required this.itemList,
     required this.sliderHeight,
     required this.indicatorsPosition,
   });
 
   @override
-  State<HeroBannerSlider> createState() => _HeroBannerSliderState();
+  State<AppSlider> createState() => _AppSliderState();
 }
 
-class _HeroBannerSliderState extends State<HeroBannerSlider> {
+class _AppSliderState extends State<AppSlider> {
   SliderController controller = SliderController();
 
   @override
@@ -43,15 +43,15 @@ class _HeroBannerSliderState extends State<HeroBannerSlider> {
           controller.updateIndex(index);
         },
       ),
-      items: widget.bannersList,
+      items: widget.itemList,
     );
-    Widget indicators = widget.bannersList.length > 1
+    Widget indicators = widget.itemList.length > 1
         ? ValueListenableBuilder(
             valueListenable: controller.selectedIndex,
             builder: (context, value, child) {
               return SlidingIndicator(
                 activeIndex: value,
-                count: widget.bannersList.length,
+                count: widget.itemList.length,
               );
             },
           )

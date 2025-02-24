@@ -1,7 +1,7 @@
 import 'package:core/assets/dimens.dart';
 import 'package:core/widgets/banner_top_contents.dart';
 import 'package:core/widgets/images/network_image_view.dart';
-import 'package:core/widgets/slider/hero_banner_slider.dart';
+import 'package:core/widgets/slider/app_slider.dart';
 import 'package:core/widgets/slider/slider_indicators_position.dart';
 import 'package:domain/models/offer_banner_item.dart';
 import 'package:flutter/material.dart';
@@ -16,10 +16,10 @@ class OfferExclusiveBannerView
 
   @override
   Widget body(BuildContext context, OfferBannerItem state) {
-    return HeroBannerSlider(
+    return AppSlider(
       sliderHeight: Dimens.offerBannerHeight,
       indicatorsPosition: SliderIndicatorsPosition.insideTop,
-      bannersList: [
+      itemList: [
         Stack(
           children: [
             NetworkImageView(
