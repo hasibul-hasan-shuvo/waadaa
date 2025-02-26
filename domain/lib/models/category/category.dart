@@ -1,4 +1,4 @@
-import 'package:domain/models/side_menu.dart';
+import 'package:domain/models/category/side_menu.dart';
 
 class Category {
   String id;
