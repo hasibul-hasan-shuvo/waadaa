@@ -1,5 +1,6 @@
 import 'package:domain/models/category/category.dart';
 import 'package:domain/models/product/product_image.dart';
+import 'package:domain/models/product/product_type.dart';
 import 'package:domain/models/product/product_variant.dart';
 import 'package:domain/models/product/variants.dart';
 
@@ -29,7 +30,7 @@ class Product {
   final String name;
   final String description;
   final bool isOverseas;
-  final String productType;
+  final ProductType productType;
   final String manufacturer;
   final String warrantyPolicy;
   final String returnPolicy;
