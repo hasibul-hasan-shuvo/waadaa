@@ -1,5 +1,7 @@
 import 'package:data/models/master_product_response.dart';
 import 'package:data/sources/remote/base/base_remote_data_source.dart';
+import 'package:data/sources/remote/clients/end_points.dart';
+import 'package:data/sources/remote/clients/models/NetworkResponse.dart';
 import 'package:data/sources/remote/product/product_remote_data_source.dart';
 import 'package:di/di.dart';
 
@@ -10,7 +12,16 @@ class ProductRemoteDataSourceImpl extends BaseRemoteDataSource
 
   @override
   Future<MasterProductResponse> getProductById(String id) {
-    // TODO: implement getProductById
-    throw UnimplementedError();
+    try {
+      final apiCall = client.get('${EndPoints.product}/$id/');
+
+      return callApiWithErrorParser(apiCall).then(_parseProductResponse);
+    } catch (_) {
+      rethrow;
+    }
+  }
+
+  MasterProductResponse _parseProductResponse(NetworkResponse response) {
+    return MasterProductResponse.fromJson(response.data);
   }
 }
