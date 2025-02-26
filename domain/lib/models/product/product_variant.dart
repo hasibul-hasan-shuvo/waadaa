@@ -21,7 +21,7 @@ class ProductVariant {
   final List<ProductVariantAttribute> attributeValues;
   final String waadaaSku;
   final String currency;
-  final int retailPrice;
+  final double retailPrice;
   final String description;
   final int estimatedDeliveryTime;
   final bool isWaadaaApproved;

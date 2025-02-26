@@ -100,7 +100,7 @@ class ProductVariantResponse {
   List<ProductVariantAttributeResponse>? attributeValues;
   String? waadaaSku;
   String? currency;
-  int? retailPrice;
+  double? retailPrice;
   String? description;
   int? estimatedDeliveryTime;
   bool? isWaadaaApproved;
@@ -112,10 +112,10 @@ class ProductVariantResponse {
 }
 
 class ProductVariantAttributeResponse {
-  ProductVariantAttributeResponse.fromJson(Map<String, String> json) {
-    if (json.values.isNotEmpty) {
+  ProductVariantAttributeResponse.fromJson(Map<String, dynamic> json) {
+    if (json.isNotEmpty) {
       name = json.keys.first;
-      value = json.values.first;
+      value = json.values.first.toString();
     } else {
       name = '';
       value = '';
