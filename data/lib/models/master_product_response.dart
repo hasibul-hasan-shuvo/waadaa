@@ -93,8 +93,13 @@ class ProductVariantResponse {
     attributeValue = json['attribute_value'] != null
         ? json['attribute_value'].cast<String>()
         : [];
-    colorImages =
-        json['color_images'] != null ? json['color_images'].cast<String>() : [];
+    colorImages = [];
+
+    if (json['color_images'] != null) {
+      json['color_images'].forEach((v) {
+        colorImages?.add(v['url']);
+      });
+    }
   }
   String? id;
   List<ProductVariantAttributeResponse>? attributeValues;
