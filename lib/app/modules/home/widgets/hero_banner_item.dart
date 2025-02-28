@@ -1,0 +1,38 @@
+import 'package:core/widgets/banner_top_contents.dart';
+import 'package:core/widgets/images/network_image_view.dart';
+import 'package:flutter/material.dart';
+import 'package:waadaa/app/modules/home/widgets/black_linear_gradient.dart';
+
+class HeroBannerWidget extends StatelessWidget {
+  final String imageUrl;
+  final String title;
+  final String subTitle;
+  final String actionTitle;
+
+  const HeroBannerWidget({
+    super.key,
+    required this.imageUrl,
+    required this.title,
+    required this.subTitle,
+    required this.actionTitle,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Stack(
+      children: [
+        NetworkImageView(
+          imageUrl: imageUrl,
+          fit: BoxFit.cover,
+        ),
+        BlackLinearGradient(),
+        BannerTopContents(
+          title: title,
+          subTitle: subTitle,
+          actionTitle: actionTitle,
+          actionPressed: () {},
+        ),
+      ],
+    );
+  }
+}
