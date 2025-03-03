@@ -10,5 +10,9 @@
   "messageNotFoundException": "Data not found",
   "messageServiceUnavailableException": "Server isn't responding",
   "messageTimeoutException": "Request timeout",
-  "messageUnauthorizedException": "Unauthorized access"
+  "messageUnauthorizedException": "Unauthorized access",
+  "shopByTitle": "Shop By",
+  "saleTitle": "Sale",
+  "overseasTitle": "Overseas",
+  "latestProductTitle": "Latest fashion arrivals"
 }

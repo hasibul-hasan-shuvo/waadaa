@@ -1,10 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:waadaa/app/base/observable_view.dart';
+import 'package:waadaa/app/modules/home/viewmodel/home_state.dart';
+import 'package:waadaa/app/modules/home/viewmodel/home_view_model.dart';
 
-class HomeRewardView extends StatelessWidget {
+class HomeRewardView extends ObservableView<HomeViewModel, HomeState, String> {
   const HomeRewardView({super.key});
 
   @override
-  Widget build(BuildContext context) {
+  Widget body(BuildContext context, String state) {
     return Container(
       margin: EdgeInsets.symmetric(horizontal: 15, vertical: 14),
       padding: EdgeInsets.all(14),
@@ -14,7 +17,7 @@ class HomeRewardView extends StatelessWidget {
         borderRadius: BorderRadius.circular(8),
       ),
       child: Text(
-        "Welcome Reward: \$50 off first order",
+        state,
         style: TextStyle(
           color: Colors.white,
           fontSize: 12,
@@ -22,5 +25,10 @@ class HomeRewardView extends StatelessWidget {
         ),
       ),
     );
+  }
+
+  @override
+  String observeState(HomeState state) {
+    return state.rewardText ?? "";
   }
 }

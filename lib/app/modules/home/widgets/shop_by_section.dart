@@ -5,6 +5,7 @@ import 'package:core/extensions/widget_extension.dart';
 import 'package:core/widgets/buttons/ripple.dart';
 import 'package:core/widgets/images/asset_image_view.dart';
 import 'package:flutter/material.dart';
+import 'package:waadaa/app/extensions/context_extension.dart';
 
 class ShopBySection extends StatelessWidget {
   const ShopBySection({super.key});
@@ -18,7 +19,7 @@ class ShopBySection extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(
-            "Shop by",
+            context.localizations.shopByTitle,
             style: TextStyle(
               fontSize: 20,
               fontWeight: FontWeight.bold,
@@ -37,12 +38,12 @@ class ShopBySection extends StatelessWidget {
             children: [
               shopItem(
                 context: context,
-                name: "Sale",
+                name: context.localizations.saleTitle,
                 imgPath: AppImages.iphoneImg,
               ),
               shopItem(
                 context: context,
-                name: "Overseas",
+                name: context.localizations.overseasTitle,
                 imgPath: AppImages.bagImg,
               ),
             ],

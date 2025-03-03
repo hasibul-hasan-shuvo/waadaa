@@ -4,6 +4,8 @@ import 'package:di/di.dart';
 import 'package:domain/usecases/hero_banners_use_case.dart';
 import 'package:domain/usecases/category_offers_use_case.dart';
 import 'package:domain/usecases/offers_config_use_case.dart';
+import 'package:domain/usecases/welcome_reward_use_case.dart';
+import 'package:domain/usecases/latest_products_use_case.dart';
 import 'package:waadaa/app/base/base_view_model.dart';
 import 'package:waadaa/app/modules/home/viewmodel/home_state.dart';
 
@@ -13,11 +15,15 @@ class HomeViewModel extends BaseViewModel<HomeState> {
     this.heroBannersUseCase,
     this.categoryOffersUseCase,
     this.offersConfigUseCase,
+    this.welcomeRewardUseCase,
+    this.latestProductsUseCase,
   ) : super(HomeState.initial());
 
   final HeroBannersUseCase heroBannersUseCase;
   final CategoryOffersUseCase categoryOffersUseCase;
   final OffersConfigUseCase offersConfigUseCase;
+  final WelcomeRewardUseCase welcomeRewardUseCase;
+  final LatestProductsUseCase latestProductsUseCase;
 
   @override
   void onViewReady() {
@@ -26,10 +32,8 @@ class HomeViewModel extends BaseViewModel<HomeState> {
     _fetchHeroBannerList();
     _fetchCategoryOfferList();
     _fetchOfferBannersList();
-  }
-
-  void increment() {
-    updateState(state.increment());
+    _fetchRewardText();
+    _fetchLatestProducts();
   }
 
   void updateHeroBannerIndex(int index) {
@@ -73,6 +77,29 @@ class HomeViewModel extends BaseViewModel<HomeState> {
       },
       onComplete: () {
         ///stop shimmer
+      },
+    );
+  }
+
+  _fetchRewardText() {
+    print("Fetching reward");
+    callDataService(
+      welcomeRewardUseCase.getWelcomeReward(),
+      onSuccess: (value) {
+        print(value);
+        state.updateRewardText(value);
+      },
+    );
+  }
+
+  void _fetchLatestProducts() async {
+    ///separate one response model to two different states
+    callDataService(
+      latestProductsUseCase.getLatestProducts(),
+      onSuccess: (value) {
+        print("abed -----------------");
+        print(value);
+        state.updateLatestProducts(value);
       },
     );
   }

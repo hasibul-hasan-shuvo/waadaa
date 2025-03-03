@@ -11,7 +11,9 @@
 // ignore_for_file: no_leading_underscores_for_library_prefixes
 import 'package:domain/usecases/category_offers_use_case.dart' as _i199;
 import 'package:domain/usecases/hero_banners_use_case.dart' as _i224;
+import 'package:domain/usecases/latest_products_use_case.dart' as _i728;
 import 'package:domain/usecases/offers_config_use_case.dart' as _i519;
+import 'package:domain/usecases/welcome_reward_use_case.dart' as _i241;
 import 'package:get_it/get_it.dart' as _i174;
 import 'package:injectable/injectable.dart' as _i526;
 import 'package:waadaa/app/modules/account/viewmodel/account_view_model.dart'
@@ -41,12 +43,14 @@ _i174.GetIt $initGetIt(
   gh.factory<_i128.MyCartViewModel>(() => _i128.MyCartViewModel());
   gh.factory<_i694.BrandsViewModel>(() => _i694.BrandsViewModel());
   gh.factory<_i890.AccountViewModel>(() => _i890.AccountViewModel());
-  gh.factory<_i1041.CategoriesViewModel>(() => _i1041.CategoriesViewModel());
   gh.factory<_i177.MainViewModel>(() => _i177.MainViewModel());
+  gh.factory<_i1041.CategoriesViewModel>(() => _i1041.CategoriesViewModel());
   gh.factory<_i261.HomeViewModel>(() => _i261.HomeViewModel(
         gh<_i224.HeroBannersUseCase>(),
         gh<_i199.CategoryOffersUseCase>(),
         gh<_i519.OffersConfigUseCase>(),
+        gh<_i241.WelcomeRewardUseCase>(),
+        gh<_i728.LatestProductsUseCase>(),
       ));
   return getIt;
 }

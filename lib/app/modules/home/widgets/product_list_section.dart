@@ -1,17 +1,20 @@
 import 'package:core/extensions/widget_extension.dart';
 import 'package:core/widgets/buttons/app_secondary_button.dart';
 import 'package:core/widgets/product_box.dart';
+import 'package:domain/models/product_model.dart';
 import 'package:flutter/material.dart';
 
 class ProductListSection extends StatelessWidget {
   final String title;
   final String? subTitle;
+  final List<ProductModel> products;
   final Function() viewAllPressed;
 
   const ProductListSection({
     super.key,
     required this.title,
     this.subTitle,
+    required this.products,
     required this.viewAllPressed,
   });
 
@@ -42,7 +45,7 @@ class ProductListSection extends StatelessWidget {
           GridView.builder(
             shrinkWrap: true,
             physics: NeverScrollableScrollPhysics(),
-            itemCount: 4,
+            itemCount: products.length,
             gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
               crossAxisCount: 2,
               childAspectRatio: 0.70,
@@ -50,7 +53,13 @@ class ProductListSection extends StatelessWidget {
               mainAxisSpacing: 10,
             ),
             itemBuilder: (context, index) {
-              return ProductBox();
+              return ProductBox(
+                name: products[index].name,
+                description: products[index].description,
+                imageUrl: products[index].imageUrl,
+                price: products[index].price,
+                currency: products[index].currency,
+              );
             },
           ),
           AppSecondaryButton(
