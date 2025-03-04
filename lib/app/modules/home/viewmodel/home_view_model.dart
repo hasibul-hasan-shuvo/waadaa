@@ -69,8 +69,8 @@ class HomeViewModel extends BaseViewModel<HomeState> {
     callDataService(
       offersConfigUseCase.getOffersConfigList(),
       onSuccess: (value) {
-        state.updateRegularBanners(value.regularBanners);
-        state.updateExclusiveBanner(value.exclusiveBanner);
+        updateState(state.updateRegularBanners(value.regularBanners));
+        updateState(state.updateExclusiveBanner(value.exclusiveBanner));
       },
       onStart: () {
         ///start shimmer
@@ -86,8 +86,7 @@ class HomeViewModel extends BaseViewModel<HomeState> {
     callDataService(
       welcomeRewardUseCase.getWelcomeReward(),
       onSuccess: (value) {
-        print(value);
-        state.updateRewardText(value);
+        updateState(state.updateRewardText(value));
       },
     );
   }
@@ -97,9 +96,7 @@ class HomeViewModel extends BaseViewModel<HomeState> {
     callDataService(
       latestProductsUseCase.getLatestProducts(),
       onSuccess: (value) {
-        print("abed -----------------");
-        print(value);
-        state.updateLatestProducts(value);
+        updateState(state.updateLatestProducts(value));
       },
     );
   }

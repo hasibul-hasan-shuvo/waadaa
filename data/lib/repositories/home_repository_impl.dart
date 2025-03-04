@@ -43,42 +43,41 @@ class HomeRepositoryImpl implements HomeRepository {
 
   @override
   Future<List<ProductModel>> getLatestProducts() async {
-    await Future.delayed(Duration(seconds: 1));
     return [
       ProductModel(
         id: "1",
         name: "Name",
-        description: "The Nike Dunk Low is an easy score for your wardrobe",
+        description: "Dunks 01, maroon red",
         imageUrl:
-            "https://s3-alpha-sig.figma.com/img/b7fa/1ba1/39595175b7da98ffbb7d72f7e483b55a?Expires=1742169600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=N~j06V8Nk45n93H2Kj5ujegZH1WjMPTYsH8367deGqtoGGumVJ1f-25RNTkCPdGuDKPTxBFKOo7x2zA0NPIBBY2v7R9SbGN~cQjxE93Au3QXSHGIU~huQwmF0jMgiPQzn2ilRhXEUmo8ST3S0jr-Wd5no0pAErtLDzMuVUFlngV8rRF2yHAksS47GwrEZ277JbIT2yz02MMLW67WC2YKFww83ExFejWkKzZM3DaW6fF9ST0CNQbl1C79XRGcEJ7HlLDe5XAjcBcF~FZG~VXYg8EIBwSoNhofSw-WRZc59xoYw5-KXclu~dSYBwNcH9lKWk6yHXYrdbRiRvAvkqEBgA__",
+            "https://s3-alpha-sig.figma.com/img/add3/8874/c14a0cbb4cd437d6779e0a5a18963f63?Expires=1742169600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=ssp9f3D93efxesm6UFvruQs26qk2ZCfY1QMO-YioxubaeFahMinjf7713U7bY99Kvi5sPIPuOS6q1lUgr7fAznNOBVtwEU3qocJJio22T30AEH4Le6rORd8jvlxKtNJky2ivmew4swtMKsjfRFL83VttwOnuz1dkkcca97sHWsTYaQ2D6d-vgHYXSLYemHgeiZP71SkpWEdvIBmC8VKQ2uotOcV1YYb~ImxdRZejJiMd-AN7tEodOcVlpgSxuMt3NzFVTFATa60IkbxrxgIr4BV6jT27MNen~VIevuxlUF6pcMEjjWNkjHlbYjYnw~uYWks99BtP4FpcLLoDtAj-gQ__",
         price: 100,
         currency: "Tk",
       ),
       ProductModel(
         id: "1",
         name: "Name",
-        description: "The Nike Dunk Low is an easy score for your wardrobe",
+        description: "Dunks 01, maroon red",
         imageUrl:
-            "https://s3-alpha-sig.figma.com/img/b7fa/1ba1/39595175b7da98ffbb7d72f7e483b55a?Expires=1742169600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=N~j06V8Nk45n93H2Kj5ujegZH1WjMPTYsH8367deGqtoGGumVJ1f-25RNTkCPdGuDKPTxBFKOo7x2zA0NPIBBY2v7R9SbGN~cQjxE93Au3QXSHGIU~huQwmF0jMgiPQzn2ilRhXEUmo8ST3S0jr-Wd5no0pAErtLDzMuVUFlngV8rRF2yHAksS47GwrEZ277JbIT2yz02MMLW67WC2YKFww83ExFejWkKzZM3DaW6fF9ST0CNQbl1C79XRGcEJ7HlLDe5XAjcBcF~FZG~VXYg8EIBwSoNhofSw-WRZc59xoYw5-KXclu~dSYBwNcH9lKWk6yHXYrdbRiRvAvkqEBgA__",
-        price: 100,
+            "https://s3-alpha-sig.figma.com/img/add3/8874/c14a0cbb4cd437d6779e0a5a18963f63?Expires=1742169600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=ssp9f3D93efxesm6UFvruQs26qk2ZCfY1QMO-YioxubaeFahMinjf7713U7bY99Kvi5sPIPuOS6q1lUgr7fAznNOBVtwEU3qocJJio22T30AEH4Le6rORd8jvlxKtNJky2ivmew4swtMKsjfRFL83VttwOnuz1dkkcca97sHWsTYaQ2D6d-vgHYXSLYemHgeiZP71SkpWEdvIBmC8VKQ2uotOcV1YYb~ImxdRZejJiMd-AN7tEodOcVlpgSxuMt3NzFVTFATa60IkbxrxgIr4BV6jT27MNen~VIevuxlUF6pcMEjjWNkjHlbYjYnw~uYWks99BtP4FpcLLoDtAj-gQ__",
+        price: 110,
         currency: "Tk",
       ),
       ProductModel(
         id: "1",
         name: "Name",
-        description: "The Nike Dunk Low is an easy score for your wardrobe",
+        description: "Dunks 01, maroon red",
         imageUrl:
-            "https://s3-alpha-sig.figma.com/img/b7fa/1ba1/39595175b7da98ffbb7d72f7e483b55a?Expires=1742169600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=N~j06V8Nk45n93H2Kj5ujegZH1WjMPTYsH8367deGqtoGGumVJ1f-25RNTkCPdGuDKPTxBFKOo7x2zA0NPIBBY2v7R9SbGN~cQjxE93Au3QXSHGIU~huQwmF0jMgiPQzn2ilRhXEUmo8ST3S0jr-Wd5no0pAErtLDzMuVUFlngV8rRF2yHAksS47GwrEZ277JbIT2yz02MMLW67WC2YKFww83ExFejWkKzZM3DaW6fF9ST0CNQbl1C79XRGcEJ7HlLDe5XAjcBcF~FZG~VXYg8EIBwSoNhofSw-WRZc59xoYw5-KXclu~dSYBwNcH9lKWk6yHXYrdbRiRvAvkqEBgA__",
-        price: 100,
+            "https://s3-alpha-sig.figma.com/img/add3/8874/c14a0cbb4cd437d6779e0a5a18963f63?Expires=1742169600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=ssp9f3D93efxesm6UFvruQs26qk2ZCfY1QMO-YioxubaeFahMinjf7713U7bY99Kvi5sPIPuOS6q1lUgr7fAznNOBVtwEU3qocJJio22T30AEH4Le6rORd8jvlxKtNJky2ivmew4swtMKsjfRFL83VttwOnuz1dkkcca97sHWsTYaQ2D6d-vgHYXSLYemHgeiZP71SkpWEdvIBmC8VKQ2uotOcV1YYb~ImxdRZejJiMd-AN7tEodOcVlpgSxuMt3NzFVTFATa60IkbxrxgIr4BV6jT27MNen~VIevuxlUF6pcMEjjWNkjHlbYjYnw~uYWks99BtP4FpcLLoDtAj-gQ__",
+        price: 90,
         currency: "Tk",
       ),
       ProductModel(
         id: "1",
         name: "Name",
-        description: "The Nike Dunk Low is an easy score for your wardrobe",
+        description: "The Nike Dunk Low",
         imageUrl:
-            "https://s3-alpha-sig.figma.com/img/b7fa/1ba1/39595175b7da98ffbb7d72f7e483b55a?Expires=1742169600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=N~j06V8Nk45n93H2Kj5ujegZH1WjMPTYsH8367deGqtoGGumVJ1f-25RNTkCPdGuDKPTxBFKOo7x2zA0NPIBBY2v7R9SbGN~cQjxE93Au3QXSHGIU~huQwmF0jMgiPQzn2ilRhXEUmo8ST3S0jr-Wd5no0pAErtLDzMuVUFlngV8rRF2yHAksS47GwrEZ277JbIT2yz02MMLW67WC2YKFww83ExFejWkKzZM3DaW6fF9ST0CNQbl1C79XRGcEJ7HlLDe5XAjcBcF~FZG~VXYg8EIBwSoNhofSw-WRZc59xoYw5-KXclu~dSYBwNcH9lKWk6yHXYrdbRiRvAvkqEBgA__",
-        price: 100,
+            "https://s3-alpha-sig.figma.com/img/add3/8874/c14a0cbb4cd437d6779e0a5a18963f63?Expires=1742169600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=ssp9f3D93efxesm6UFvruQs26qk2ZCfY1QMO-YioxubaeFahMinjf7713U7bY99Kvi5sPIPuOS6q1lUgr7fAznNOBVtwEU3qocJJio22T30AEH4Le6rORd8jvlxKtNJky2ivmew4swtMKsjfRFL83VttwOnuz1dkkcca97sHWsTYaQ2D6d-vgHYXSLYemHgeiZP71SkpWEdvIBmC8VKQ2uotOcV1YYb~ImxdRZejJiMd-AN7tEodOcVlpgSxuMt3NzFVTFATa60IkbxrxgIr4BV6jT27MNen~VIevuxlUF6pcMEjjWNkjHlbYjYnw~uYWks99BtP4FpcLLoDtAj-gQ__",
+        price: 200,
         currency: "Tk",
       ),
     ];
