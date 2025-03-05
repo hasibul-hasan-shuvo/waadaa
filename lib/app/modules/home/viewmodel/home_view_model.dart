@@ -7,6 +7,7 @@ import 'package:domain/usecases/offers_config_use_case.dart';
 import 'package:domain/usecases/welcome_reward_use_case.dart';
 import 'package:domain/usecases/latest_products_use_case.dart';
 import 'package:waadaa/app/base/base_view_model.dart';
+import 'package:waadaa/app/modules/home/models/hero_banner_ui_model.dart';
 import 'package:waadaa/app/modules/home/viewmodel/home_state.dart';
 
 @injectable
@@ -44,7 +45,9 @@ class HomeViewModel extends BaseViewModel<HomeState> {
     callDataService(
       heroBannersUseCase.getHomeHeroBanners(),
       onSuccess: (value) {
-        updateState(state.updateHeroBanners(value));
+        updateState(state.updateHeroBanners(
+          value.map((e) => HeroBannerUiModel.fromHeroBannerDomain(e)).toList(),
+        ));
       },
       onStart: () {
         ///start shimmer

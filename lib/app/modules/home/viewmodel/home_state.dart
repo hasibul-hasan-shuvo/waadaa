@@ -1,14 +1,14 @@
 import 'package:domain/models/category_offer_item.dart';
-import 'package:domain/models/hero_banner_item.dart';
 import 'package:domain/models/offer_banner_item.dart';
 import 'package:domain/models/product_model.dart';
 import 'package:waadaa/app/base/base_state.dart';
 import 'package:waadaa/app/base/base_status.dart';
+import 'package:waadaa/app/modules/home/models/hero_banner_ui_model.dart';
 
 class HomeState extends BaseState {
   String? rewardText;
   int heroBannerIndex = 0;
-  List<HeroBannerItem>? heroBanners;
+  List<HeroBannerUiModel>? heroBanners;
   List<CategoryOfferItem>? categoryOffers;
   OfferBannerItem? exclusiveBanner;
   List<OfferBannerItem>? regularBanners;
@@ -32,7 +32,7 @@ class HomeState extends BaseState {
     BaseStatus? status,
     String? rewardText,
     int? heroBannerIndex,
-    List<HeroBannerItem>? heroBanners,
+    List<HeroBannerUiModel>? heroBanners,
     List<CategoryOfferItem>? categoryOffers,
     OfferBannerItem? exclusiveBanner,
     List<OfferBannerItem>? regularBanners,
@@ -58,7 +58,7 @@ class HomeState extends BaseState {
     return copyWith(heroBannerIndex: index);
   }
 
-  HomeState updateHeroBanners(List<HeroBannerItem> heroBanners) {
+  HomeState updateHeroBanners(List<HeroBannerUiModel> heroBanners) {
     return copyWith(heroBanners: heroBanners);
   }
 

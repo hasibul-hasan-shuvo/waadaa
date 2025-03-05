@@ -14,43 +14,40 @@ class OfferCategoryView
 
   @override
   Widget body(BuildContext context, List<CategoryOfferItem> state) {
-    return Container(
-      color: Colors.white,
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Text(
-            context.localizations.offerCategoriesTitle,
-            style: TextStyle(
-              fontSize: 20,
-              fontWeight: FontWeight.bold,
-            ),
-          ).paddingOnly(top: 10),
-          SizedBox(height: 10),
-          GridView.builder(
-            shrinkWrap: true,
-            physics: NeverScrollableScrollPhysics(),
-            itemCount: state.length,
-            gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-              crossAxisCount: 2,
-              childAspectRatio: 0.8,
-              crossAxisSpacing: 10,
-              mainAxisSpacing: 10,
-            ),
-            itemBuilder: (context, index) {
-              return OfferCategoryItem(offerItem: state[index]);
-            },
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Text(
+          context.localizations.offerCategoriesTitle,
+          style: TextStyle(
+            fontSize: 20,
+            fontWeight: FontWeight.bold,
           ),
-          if (state.isNotEmpty)
-            AppSecondaryButton(
-              title: context.localizations.viewAllText,
-              onPressed: () {
-                context.getViewModel<HomeViewModel>().onViewAllClicked();
-              },
-            ).paddingSymmetric(vertical: 10),
-        ],
-      ).paddingSymmetric(horizontal: 15),
-    );
+        ).paddingOnly(top: 10),
+        SizedBox(height: 10),
+        GridView.builder(
+          shrinkWrap: true,
+          physics: NeverScrollableScrollPhysics(),
+          itemCount: state.length,
+          gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+            crossAxisCount: 2,
+            childAspectRatio: 0.8,
+            crossAxisSpacing: 10,
+            mainAxisSpacing: 10,
+          ),
+          itemBuilder: (context, index) {
+            return OfferCategoryItem(offerItem: state[index]);
+          },
+        ),
+        if (state.isNotEmpty)
+          AppSecondaryButton(
+            title: context.localizations.viewAllText,
+            onPressed: () {
+              context.getViewModel<HomeViewModel>().onViewAllClicked();
+            },
+          ).paddingSymmetric(vertical: 10),
+      ],
+    ).paddingSymmetric(horizontal: 15);
   }
 
   @override

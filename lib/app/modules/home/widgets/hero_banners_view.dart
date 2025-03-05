@@ -1,19 +1,19 @@
 import 'package:core/assets/dimens.dart';
 import 'package:core/widgets/slider/app_slider.dart';
 import 'package:core/widgets/slider/slider_indicators_position.dart';
-import 'package:domain/models/hero_banner_item.dart';
 import 'package:flutter/material.dart';
 import 'package:waadaa/app/base/observable_view.dart';
+import 'package:waadaa/app/modules/home/models/hero_banner_ui_model.dart';
 import 'package:waadaa/app/modules/home/viewmodel/home_state.dart';
 import 'package:waadaa/app/modules/home/viewmodel/home_view_model.dart';
 import 'package:waadaa/app/modules/home/widgets/hero_banner_item.dart';
 
 class HeroBannersView
-    extends ObservableView<HomeViewModel, HomeState, List<HeroBannerItem>> {
+    extends ObservableView<HomeViewModel, HomeState, List<HeroBannerUiModel>> {
   const HeroBannersView({super.key});
 
   @override
-  Widget body(BuildContext context, List<HeroBannerItem> state) {
+  Widget body(BuildContext context, List<HeroBannerUiModel> state) {
     return AppSlider(
       sliderHeight: Dimens.heroBannerHeight,
       indicatorsPosition: SliderIndicatorsPosition.outsideBottom,
@@ -32,7 +32,7 @@ class HeroBannersView
   }
 
   @override
-  List<HeroBannerItem> observeState(state) {
+  List<HeroBannerUiModel> observeState(state) {
     return state.heroBanners ?? [];
   }
 }
