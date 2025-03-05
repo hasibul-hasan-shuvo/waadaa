@@ -33,7 +33,7 @@ class ProductBox extends StatelessWidget {
           Flexible(
             child: Container(
               color: Color(0xFFF7F5F2),
-              padding: EdgeInsets.all(20),
+              padding: EdgeInsets.all(25),
               child: NetworkImageView(
                 imageUrl: imageUrl,
                 fit: BoxFit.cover,

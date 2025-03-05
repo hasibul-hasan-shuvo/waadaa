@@ -23,15 +23,14 @@ class OfferExclusiveBannerView
         Stack(
           children: [
             NetworkImageView(
-              imageUrl:
-                  "https://d12lv4dk0s9jk3.cloudfront.net/special_offer_17392826233823931.jpg",
+              imageUrl: state.bgImageUrl,
               fit: BoxFit.cover,
             ),
             BlackLinearGradient(),
             BannerTopContents(
-              title: "title",
-              subTitle: "subTitle",
-              actionTitle: "actionTitle",
+              title: state.title,
+              subTitle: state.subTitle,
+              actionTitle: state.actionTitle,
               actionPressed: () {},
             ),
           ],

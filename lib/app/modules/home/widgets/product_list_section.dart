@@ -62,10 +62,11 @@ class ProductListSection extends StatelessWidget {
               );
             },
           ),
-          AppSecondaryButton(
-            title: "VIEW ALL",
-            onPressed: viewAllPressed,
-          ).paddingSymmetric(vertical: 10),
+          if (products.isNotEmpty)
+            AppSecondaryButton(
+              title: "VIEW ALL",
+              onPressed: viewAllPressed,
+            ).paddingSymmetric(vertical: 10),
         ],
       ).paddingSymmetric(horizontal: 15),
     );

@@ -20,7 +20,7 @@ class OfferCategoryView
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(
-            "Offer on categories",
+            context.localizations.offerCategoriesTitle,
             style: TextStyle(
               fontSize: 20,
               fontWeight: FontWeight.bold,
@@ -41,12 +41,13 @@ class OfferCategoryView
               return OfferCategoryItem(offerItem: state[index]);
             },
           ),
-          AppSecondaryButton(
-            title: "VIEW ALL",
-            onPressed: () {
-              context.getViewModel<HomeViewModel>().onViewAllClicked();
-            },
-          ).paddingSymmetric(vertical: 10),
+          if (state.isNotEmpty)
+            AppSecondaryButton(
+              title: context.localizations.viewAllText,
+              onPressed: () {
+                context.getViewModel<HomeViewModel>().onViewAllClicked();
+              },
+            ).paddingSymmetric(vertical: 10),
         ],
       ).paddingSymmetric(horizontal: 15),
     );

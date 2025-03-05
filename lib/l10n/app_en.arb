@@ -14,5 +14,7 @@
   "shopByTitle": "Shop By",
   "saleTitle": "Sale",
   "overseasTitle": "Overseas",
-  "latestProductTitle": "Latest fashion arrivals"
+  "latestProductTitle": "Latest fashion arrivals",
+  "offerCategoriesTitle": "Offer on categories",
+  "viewAllText": "VIEW ALL"
 }
