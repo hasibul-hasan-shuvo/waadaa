@@ -3,11 +3,11 @@ import 'dart:developer';
 import 'package:core/extensions/widget_extension.dart';
 import 'package:core/widgets/buttons/ripple.dart';
 import 'package:core/widgets/images/network_image_view.dart';
-import 'package:domain/models/category_offer_item.dart';
 import 'package:flutter/material.dart';
+import 'package:waadaa/app/modules/home/models/category_offer_ui_model.dart';
 
 class OfferCategoryItem extends StatelessWidget {
-  final CategoryOfferItem offerItem;
+  final CategoryOfferUiModel offerItem;
 
   const OfferCategoryItem({super.key, required this.offerItem});
 

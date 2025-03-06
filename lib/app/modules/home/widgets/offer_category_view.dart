@@ -1,19 +1,19 @@
 import 'package:core/extensions/widget_extension.dart';
 import 'package:core/widgets/buttons/app_secondary_button.dart';
-import 'package:domain/models/category_offer_item.dart';
 import 'package:flutter/material.dart';
 import 'package:waadaa/app/base/observable_view.dart';
 import 'package:waadaa/app/extensions/context_extension.dart';
+import 'package:waadaa/app/modules/home/models/category_offer_ui_model.dart';
 import 'package:waadaa/app/modules/home/viewmodel/home_state.dart';
 import 'package:waadaa/app/modules/home/viewmodel/home_view_model.dart';
 import 'package:waadaa/app/modules/home/widgets/offer_category_item.dart';
 
 class OfferCategoryView
-    extends ObservableView<HomeViewModel, HomeState, List<CategoryOfferItem>> {
+    extends ObservableView<HomeViewModel, HomeState, List<CategoryOfferUiModel>> {
   const OfferCategoryView({super.key});
 
   @override
-  Widget body(BuildContext context, List<CategoryOfferItem> state) {
+  Widget body(BuildContext context, List<CategoryOfferUiModel> state) {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
@@ -51,7 +51,7 @@ class OfferCategoryView
   }
 
   @override
-  List<CategoryOfferItem> observeState(HomeState state) {
+  List<CategoryOfferUiModel> observeState(HomeState state) {
     return state.categoryOffers ?? [];
   }
 }

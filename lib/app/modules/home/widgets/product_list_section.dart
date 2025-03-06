@@ -1,13 +1,13 @@
 import 'package:core/extensions/widget_extension.dart';
 import 'package:core/widgets/buttons/app_secondary_button.dart';
 import 'package:core/widgets/product_box.dart';
-import 'package:domain/models/product_model.dart';
 import 'package:flutter/material.dart';
+import 'package:waadaa/app/modules/home/models/product_ui_model.dart';
 
 class ProductListSection extends StatelessWidget {
   final String title;
   final String? subTitle;
-  final List<ProductModel> products;
+  final List<ProductUiModel> products;
   final Function() viewAllPressed;
 
   const ProductListSection({

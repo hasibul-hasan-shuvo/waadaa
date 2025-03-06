@@ -7,7 +7,10 @@ import 'package:domain/usecases/offers_config_use_case.dart';
 import 'package:domain/usecases/welcome_reward_use_case.dart';
 import 'package:domain/usecases/latest_products_use_case.dart';
 import 'package:waadaa/app/base/base_view_model.dart';
+import 'package:waadaa/app/modules/home/models/category_offer_ui_model.dart';
 import 'package:waadaa/app/modules/home/models/hero_banner_ui_model.dart';
+import 'package:waadaa/app/modules/home/models/offer_banner_ui_model.dart';
+import 'package:waadaa/app/modules/home/models/product_ui_model.dart';
 import 'package:waadaa/app/modules/home/viewmodel/home_state.dart';
 
 @injectable
@@ -62,7 +65,11 @@ class HomeViewModel extends BaseViewModel<HomeState> {
     callDataService(
       categoryOffersUseCase.getCategoryOffers(),
       onSuccess: (value) {
-        updateState(state.updateCategoryOffers(value));
+        updateState(state.updateCategoryOffers(
+          value
+              .map((e) => CategoryOfferUiModel.fromCategoryOfferDomain(e))
+              .toList(),
+        ));
       },
     );
   }
@@ -72,8 +79,17 @@ class HomeViewModel extends BaseViewModel<HomeState> {
     callDataService(
       offersConfigUseCase.getOffersConfigList(),
       onSuccess: (value) {
-        updateState(state.updateRegularBanners(value.regularBanners));
-        updateState(state.updateExclusiveBanner(value.exclusiveBanner));
+        updateState(state.updateRegularBanners(
+          value.regularBanners
+              .map((e) => OfferBannerUiModel.fromOfferBannerDomain(e))
+              .toList(),
+        ));
+        updateState(state.updateExclusiveBanner(
+          (value.exclusiveBanner == null)
+              ? null
+              : OfferBannerUiModel.fromOfferBannerDomain(
+                  value.exclusiveBanner!),
+        ));
       },
       onStart: () {
         ///start shimmer
@@ -85,7 +101,6 @@ class HomeViewModel extends BaseViewModel<HomeState> {
   }
 
   _fetchRewardText() {
-    print("Fetching reward");
     callDataService(
       welcomeRewardUseCase.getWelcomeReward(),
       onSuccess: (value) {
@@ -99,7 +114,9 @@ class HomeViewModel extends BaseViewModel<HomeState> {
     callDataService(
       latestProductsUseCase.getLatestProducts(),
       onSuccess: (value) {
-        updateState(state.updateLatestProducts(value));
+        updateState(state.updateLatestProducts(
+          value.map((e) => ProductUiModel.fromProductDomain(e)).toList(),
+        ));
       },
     );
   }
