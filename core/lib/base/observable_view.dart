@@ -1,7 +1,7 @@
+import 'package:core/base/base_state.dart';
+import 'package:core/base/base_view_model.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:waadaa/app/base/base_state.dart';
-import 'package:waadaa/app/base/base_view_model.dart';
 
 abstract class ObservableView<ViewModel extends BaseViewModel<ViewState>,
     ViewState extends BaseState, SelectedState> extends StatelessWidget {

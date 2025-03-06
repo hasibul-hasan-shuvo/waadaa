@@ -1,6 +1,6 @@
+import 'package:core/base/base_view_model.dart';
 import 'package:core/widgets/bottom_navbar/models/bottom_navbar_item.dart';
 import 'package:di/di.dart';
-import 'package:waadaa/app/base/base_view_model.dart';
 import 'package:waadaa/app/modules/main/models/bottom_nav_items.dart';
 import 'package:waadaa/app/modules/main/viewmodel/main_state.dart';
 

@@ -1,8 +1,8 @@
+import 'package:core/base/observable_view.dart';
+import 'package:core/extensions/context_extension.dart';
 import 'package:core/widgets/bottom_navbar/bottom_navbar.dart';
 import 'package:core/widgets/bottom_navbar/models/bottom_navbar_item.dart';
 import 'package:flutter/material.dart';
-import 'package:waadaa/app/base/observable_view.dart';
-import 'package:waadaa/app/extensions/context_extension.dart';
 import 'package:waadaa/app/modules/main/models/bottom_nav_items.dart';
 import 'package:waadaa/app/modules/main/viewmodel/main_state.dart';
 import 'package:waadaa/app/modules/main/viewmodel/main_view_model.dart';
