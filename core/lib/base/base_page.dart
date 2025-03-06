@@ -1,3 +1,6 @@
+import 'package:core/base/base_state.dart';
+import 'package:core/base/base_status.dart';
+import 'package:core/base/base_view_model.dart';
 import 'package:core/extensions/context_extension.dart';
 import 'package:core/localizations/localized_message_resolver.dart';
 import 'package:core/localizations/message_resolver.dart';
@@ -6,9 +9,6 @@ import 'package:di/configure_dependencies.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:waadaa/app/base/base_state.dart';
-import 'package:waadaa/app/base/base_status.dart';
-import 'package:waadaa/app/base/base_view_model.dart';
 
 abstract class BasePage<ViewModel extends BaseViewModel<ViewState>,
     ViewState extends BaseState> extends StatelessWidget {
@@ -18,40 +18,42 @@ abstract class BasePage<ViewModel extends BaseViewModel<ViewState>,
   Widget build(BuildContext context) {
     return BlocProvider(
       create: _onCreateBlocProvider,
-      child: Builder(builder: (BuildContext context) {
-        return AnnotatedRegion(
-          value: systemUiOverlayStyle ??
-              context.theme.appBarTheme.systemOverlayStyle ??
-              SystemUiOverlayStyle(
-                statusBarColor: statusBarColor(context),
-                statusBarIconBrightness: Brightness.light,
-                statusBarBrightness: Brightness.light,
-              ),
-          child: Material(
-            color: Colors.transparent,
-            child: Scaffold(
-              backgroundColor: pageBackgroundColor(context),
-              key: GlobalKey<ScaffoldState>(),
-              appBar: appBar(context),
-              floatingActionButton: floatingActionButton(context),
-              bottomNavigationBar: bottomNavigationBar(context),
-              drawer: drawer(context),
-              bottomSheet: _bottomSheet(context),
-              body: SafeArea(
-                top: useTopSafeArea,
-                bottom: useBottomSafeArea,
-                child: GestureDetector(
-                  onTap: _onTapGestureDetector,
-                  child: BlocListener<ViewModel, ViewState>(
-                    listener: _listener,
-                    child: body(context),
+      child: Builder(
+        builder: (BuildContext context) {
+          return AnnotatedRegion(
+            value: systemUiOverlayStyle ??
+                context.theme.appBarTheme.systemOverlayStyle ??
+                SystemUiOverlayStyle(
+                  statusBarColor: statusBarColor(context),
+                  statusBarIconBrightness: Brightness.light,
+                  statusBarBrightness: Brightness.light,
+                ),
+            child: Material(
+              color: Colors.transparent,
+              child: Scaffold(
+                backgroundColor: pageBackgroundColor(context),
+                key: GlobalKey<ScaffoldState>(),
+                appBar: appBar(context),
+                floatingActionButton: floatingActionButton(context),
+                bottomNavigationBar: bottomNavigationBar(context),
+                drawer: drawer(context),
+                bottomSheet: _bottomSheet(context),
+                body: SafeArea(
+                  top: useTopSafeArea,
+                  bottom: useBottomSafeArea,
+                  child: GestureDetector(
+                    onTap: _onTapGestureDetector,
+                    child: BlocListener<ViewModel, ViewState>(
+                      listener: _listener,
+                      child: body(context),
+                    ),
                   ),
                 ),
               ),
             ),
-          ),
-        );
-      }),
+          );
+        },
+      ),
     );
   }
 

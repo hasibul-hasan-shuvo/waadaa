@@ -1,12 +1,12 @@
 import 'dart:developer';
 
+import 'package:core/base/base_view_model.dart';
 import 'package:di/di.dart';
-import 'package:domain/usecases/hero_banners_use_case.dart';
 import 'package:domain/usecases/category_offers_use_case.dart';
+import 'package:domain/usecases/hero_banners_use_case.dart';
+import 'package:domain/usecases/latest_products_use_case.dart';
 import 'package:domain/usecases/offers_config_use_case.dart';
 import 'package:domain/usecases/welcome_reward_use_case.dart';
-import 'package:domain/usecases/latest_products_use_case.dart';
-import 'package:waadaa/app/base/base_view_model.dart';
 import 'package:waadaa/app/modules/home/models/category_offer_ui_model.dart';
 import 'package:waadaa/app/modules/home/models/hero_banner_ui_model.dart';
 import 'package:waadaa/app/modules/home/models/offer_banner_ui_model.dart';

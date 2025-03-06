@@ -1,5 +1,5 @@
-import 'package:waadaa/app/base/base_state.dart';
-import 'package:waadaa/app/base/base_status.dart';
+import 'package:core/base/base_state.dart';
+import 'package:core/base/base_status.dart';
 import 'package:waadaa/app/modules/home/models/category_offer_ui_model.dart';
 import 'package:waadaa/app/modules/home/models/hero_banner_ui_model.dart';
 import 'package:waadaa/app/modules/home/models/offer_banner_ui_model.dart';

@@ -1,3 +1,5 @@
+import 'package:core/base/base_state.dart';
+import 'package:core/base/base_status.dart';
 import 'package:core/exceptions/api_exception.dart';
 import 'package:core/exceptions/app_exception.dart';
 import 'package:core/exceptions/json_format_exception.dart';
@@ -11,8 +13,6 @@ import 'package:core/localizations/static_message_resolver.dart';
 import 'package:core/services/logger_service.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:waadaa/app/base/base_state.dart';
-import 'package:waadaa/app/base/base_status.dart';
 import 'package:waadaa/app/localizations/json_format_error_localized_message.dart';
 import 'package:waadaa/app/localizations/network_error_localized_message.dart';
 import 'package:waadaa/app/localizations/not_found_localized_message.dart';

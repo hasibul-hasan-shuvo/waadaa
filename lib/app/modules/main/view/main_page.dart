@@ -1,5 +1,5 @@
+import 'package:core/base/base_page.dart';
 import 'package:flutter/material.dart';
-import 'package:waadaa/app/base/base_page.dart';
 import 'package:waadaa/app/modules/main/viewmodel/main_state.dart';
 import 'package:waadaa/app/modules/main/viewmodel/main_view_model.dart';
 import 'package:waadaa/app/modules/main/widgets/main_bottom_nav_selected_item_page_view.dart';

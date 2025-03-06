@@ -1,8 +1,7 @@
 import 'dart:developer';
 
-import 'package:domain/models/product_model.dart';
+import 'package:core/base/observable_view.dart';
 import 'package:flutter/material.dart';
-import 'package:waadaa/app/base/observable_view.dart';
 import 'package:waadaa/app/extensions/context_extension.dart';
 import 'package:waadaa/app/modules/home/models/product_ui_model.dart';
 import 'package:waadaa/app/modules/home/viewmodel/home_state.dart';

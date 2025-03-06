@@ -9,6 +9,7 @@ class AppRoutes {
   static const String categories = 'categories';
   static const String myCart = 'my_cart';
   static const String account = 'account';
+  static const String pageNotFound = 'page_not_found';
 }
 
 class _Paths {
@@ -20,4 +21,5 @@ class _Paths {
   static const String categories = '/categories';
   static const String myCart = '/my_cart';
   static const String account = '/account';
+  static const String pageNotFound = '/page_not_found';
 }

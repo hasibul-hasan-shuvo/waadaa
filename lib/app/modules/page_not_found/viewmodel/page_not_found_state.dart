@@ -1,18 +1,18 @@
 import 'package:core/base/base_state.dart';
 import 'package:core/base/base_status.dart';
 
-class AccountState extends BaseState {
-  AccountState({
+class PageNotFoundState extends BaseState {
+  PageNotFoundState({
     super.status,
   });
 
-  AccountState.initial();
+  PageNotFoundState.initial();
 
   @override
-  AccountState copyWith({
+  PageNotFoundState copyWith({
     BaseStatus? status,
   }) {
-    return AccountState(
+    return PageNotFoundState(
       status: status ?? this.status,
     );
   }
