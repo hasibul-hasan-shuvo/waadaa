@@ -1,3 +1,4 @@
+import 'package:core/base/base_view_model.dart';
 import 'package:di/di.dart';
 import 'package:domain/models/category_model.dart';
 import 'package:domain/usecases/category_list_use_case.dart';

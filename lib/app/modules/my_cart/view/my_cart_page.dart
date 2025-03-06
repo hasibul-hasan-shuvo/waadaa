@@ -1,5 +1,5 @@
+import 'package:core/base/base_page.dart';
 import 'package:flutter/material.dart';
-import 'package:waadaa/app/base/base_page.dart';
 import 'package:waadaa/app/modules/my_cart/viewmodel/my_cart_state.dart';
 import 'package:waadaa/app/modules/my_cart/viewmodel/my_cart_view_model.dart';
 

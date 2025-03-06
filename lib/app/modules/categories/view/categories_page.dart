@@ -1,3 +1,4 @@
+import 'package:core/base/base_page.dart';
 import 'package:core/assets/dimens.dart';
 import 'package:core/widgets/primary_app_bar.dart';
 import 'package:flutter/material.dart';

@@ -1,5 +1,5 @@
-import 'package:waadaa/app/base/base_state.dart';
-import 'package:waadaa/app/base/base_status.dart';
+import 'package:core/base/base_state.dart';
+import 'package:core/base/base_status.dart';
 import 'package:waadaa/app/modules/categories/model/category_ui_model.dart';
 
 class CategoriesState extends BaseState {
