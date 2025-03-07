@@ -43,7 +43,7 @@ void createViewFile(String featureName, String viewPath) {
   final viewFile = File('$viewPath/${featureName}_page.dart');
   viewFile.writeAsStringSync('''
 import 'package:flutter/material.dart';
-import 'package:waadaa/app/base/base_page.dart';
+import 'package:core/base/base_page.dart';
 import 'package:waadaa/app/modules/$featureName/viewmodel/${featureName}_state.dart';
 import 'package:waadaa/app/modules/$featureName/viewmodel/${featureName}_view_model.dart';
 
@@ -64,7 +64,7 @@ void createViewModelFile(String featureName, String viewModelPath) {
   final viewModelFile = File('$viewModelPath/${featureName}_view_model.dart');
   viewModelFile.writeAsStringSync('''
 import 'package:di/di.dart';
-import 'package:waadaa/app/base/base_view_model.dart';
+import 'package:core/base/base_view_model.dart';
 import 'package:waadaa/app/modules/$featureName/viewmodel/${featureName}_state.dart';
 
 @injectable
@@ -77,8 +77,8 @@ class ${_snakeCaseToPascalCase(featureName)}ViewModel extends BaseViewModel<${_s
 void createStateFile(String featureName, String viewModelPath) {
   final stateFile = File('$viewModelPath/${featureName}_state.dart');
   stateFile.writeAsStringSync('''
-import 'package:waadaa/app/base/base_state.dart';
-import 'package:waadaa/app/base/base_status.dart';
+import 'package:core/base/base_state.dart';
+import 'package:core/base/base_status.dart';
 
 class ${_snakeCaseToPascalCase(featureName)}State extends BaseState {
 

@@ -1,6 +1,6 @@
+import 'package:core/base/base_page.dart';
+import 'package:core/extensions/context_extension.dart';
 import 'package:flutter/material.dart';
-import 'package:waadaa/app/base/base_page.dart';
-import 'package:waadaa/app/extensions/context_extension.dart';
 import 'package:waadaa/app/modules/product/viewmodel/product_state.dart';
 import 'package:waadaa/app/modules/product/viewmodel/product_view_model.dart';
 

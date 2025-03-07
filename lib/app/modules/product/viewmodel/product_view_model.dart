@@ -1,7 +1,7 @@
+import 'package:core/base/base_view_model.dart';
 import 'package:di/di.dart';
 import 'package:domain/models/product/product_with_variants_map_table.dart';
 import 'package:domain/usecases/product_by_id_use_case.dart';
-import 'package:waadaa/app/base/base_view_model.dart';
 import 'package:waadaa/app/modules/product/viewmodel/product_state.dart';
 
 @injectable

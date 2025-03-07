@@ -1,8 +1,7 @@
-import 'package:waadaa/app/base/base_state.dart';
-import 'package:waadaa/app/base/base_status.dart';
+import 'package:core/base/base_state.dart';
+import 'package:core/base/base_status.dart';
 
 class PageNotFoundState extends BaseState {
-
   PageNotFoundState({
     super.status,
   });

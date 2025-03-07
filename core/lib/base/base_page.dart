@@ -1,3 +1,6 @@
+import 'package:core/base/base_state.dart';
+import 'package:core/base/base_status.dart';
+import 'package:core/base/base_view_model.dart';
 import 'package:core/extensions/context_extension.dart';
 import 'package:core/localizations/localized_message_resolver.dart';
 import 'package:core/localizations/message_resolver.dart';
@@ -6,9 +9,6 @@ import 'package:di/configure_dependencies.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:waadaa/app/base/base_state.dart';
-import 'package:waadaa/app/base/base_status.dart';
-import 'package:waadaa/app/base/base_view_model.dart';
 
 abstract class BasePage<ViewModel extends BaseViewModel<ViewState>,
     ViewState extends BaseState> extends StatelessWidget {
