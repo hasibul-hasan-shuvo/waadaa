@@ -33,4 +33,6 @@ class OfferBannerUiModel {
       tagName: item.tagName,
     );
   }
+
+  bool get isEmpty => id.isEmpty;
 }

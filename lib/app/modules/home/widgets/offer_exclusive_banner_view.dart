@@ -16,27 +16,29 @@ class OfferExclusiveBannerView
 
   @override
   Widget body(BuildContext context, OfferBannerUiModel state) {
-    return AppSlider(
-      sliderHeight: Dimens.offerBannerHeight,
-      indicatorsPosition: SliderIndicatorsPosition.insideTop,
-      itemList: [
-        Stack(
-          children: [
-            NetworkImageView(
-              imageUrl: state.bgImageUrl,
-              fit: BoxFit.cover,
-            ),
-            BlackLinearGradient(),
-            BannerTopContents(
-              title: state.title,
-              subTitle: state.subTitle,
-              actionTitle: state.actionTitle,
-              actionPressed: () {},
-            ),
-          ],
-        )
-      ],
-    );
+    return state.isEmpty
+        ? SizedBox.shrink()
+        : AppSlider(
+            sliderHeight: Dimens.offerBannerHeight,
+            indicatorsPosition: SliderIndicatorsPosition.insideTop,
+            itemList: [
+              Stack(
+                children: [
+                  NetworkImageView(
+                    imageUrl: state.bgImageUrl,
+                    fit: BoxFit.cover,
+                  ),
+                  BlackLinearGradient(),
+                  BannerTopContents(
+                    title: state.title,
+                    subTitle: state.subTitle,
+                    actionTitle: state.actionTitle,
+                    actionPressed: () {},
+                  ),
+                ],
+              )
+            ],
+          );
   }
 
   @override
