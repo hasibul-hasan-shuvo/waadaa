@@ -13,16 +13,17 @@ class HomeState extends BaseState {
   OfferBannerUiModel? exclusiveBanner;
   List<OfferBannerUiModel>? regularBanners;
   List<ProductUiModel>? latestProducts;
+  bool isHeroBannersLoading = false;
 
   HomeState({
     super.status,
     this.rewardText,
-    this.heroBannerIndex = 0,
     this.heroBanners,
     this.categoryOffers,
     this.exclusiveBanner,
     this.regularBanners,
     this.latestProducts,
+    this.isHeroBannersLoading = false,
   });
 
   HomeState.initial();
@@ -31,31 +32,27 @@ class HomeState extends BaseState {
   HomeState copyWith({
     BaseStatus? status,
     String? rewardText,
-    int? heroBannerIndex,
     List<HeroBannerUiModel>? heroBanners,
     List<CategoryOfferUiModel>? categoryOffers,
     OfferBannerUiModel? exclusiveBanner,
     List<OfferBannerUiModel>? regularBanners,
     List<ProductUiModel>? latestProducts,
+    bool? isHeroBannersLoading,
   }) {
     return HomeState(
       status: status ?? this.status,
       rewardText: rewardText ?? this.rewardText,
-      heroBannerIndex: heroBannerIndex ?? this.heroBannerIndex,
       heroBanners: heroBanners ?? this.heroBanners,
       categoryOffers: categoryOffers ?? this.categoryOffers,
       exclusiveBanner: exclusiveBanner ?? this.exclusiveBanner,
       regularBanners: regularBanners ?? this.regularBanners,
       latestProducts: latestProducts ?? this.latestProducts,
+      isHeroBannersLoading: isHeroBannersLoading ?? this.isHeroBannersLoading,
     );
   }
 
   HomeState updateRewardText(String rewardTxt) {
     return copyWith(rewardText: rewardTxt);
-  }
-
-  HomeState updateHeroBannerIndex(int index) {
-    return copyWith(heroBannerIndex: index);
   }
 
   HomeState updateHeroBanners(List<HeroBannerUiModel> heroBanners) {
@@ -76,5 +73,9 @@ class HomeState extends BaseState {
 
   HomeState updateLatestProducts(List<ProductUiModel> latestProducts) {
     return copyWith(latestProducts: latestProducts);
+  }
+
+  HomeState updateHeroBannersLoading(bool value) {
+    return copyWith(isHeroBannersLoading: value);
   }
 }

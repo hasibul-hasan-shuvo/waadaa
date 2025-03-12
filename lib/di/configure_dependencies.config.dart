@@ -40,7 +40,6 @@ _i174.GetIt $initGetIt(
     environment,
     environmentFilter,
   );
-  gh.factory<MyCartViewModel>(() => MyCartViewModel());
   gh.factory<_i694.BrandsViewModel>(() => _i694.BrandsViewModel());
   gh.factory<_i394.PageNotFoundViewModel>(() => _i394.PageNotFoundViewModel());
   gh.factory<_i890.AccountViewModel>(() => _i890.AccountViewModel());

@@ -9,12 +9,14 @@ class AppSlider extends StatefulWidget {
   final List<Widget> itemList;
   final double sliderHeight;
   final SliderIndicatorsPosition indicatorsPosition;
+  final bool autoSlide;
 
   const AppSlider({
     super.key,
     required this.itemList,
     required this.sliderHeight,
     required this.indicatorsPosition,
+    this.autoSlide = true,
   });
 
   @override
@@ -33,7 +35,7 @@ class _AppSliderState extends State<AppSlider> {
         initialPage: 0,
         enableInfiniteScroll: true,
         reverse: false,
-        autoPlay: true,
+        autoPlay: widget.autoSlide,
         autoPlayInterval: Duration(seconds: 4),
         autoPlayAnimationDuration: Duration(milliseconds: 800),
         autoPlayCurve: Curves.fastOutSlowIn,

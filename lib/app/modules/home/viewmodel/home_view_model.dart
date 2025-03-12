@@ -40,10 +40,6 @@ class HomeViewModel extends BaseViewModel<HomeState> {
     _fetchLatestProducts();
   }
 
-  void updateHeroBannerIndex(int index) {
-    updateState(state.updateHeroBannerIndex(index));
-  }
-
   void _fetchHeroBannerList() {
     callDataService(
       heroBannersUseCase.getHomeHeroBanners(),
@@ -53,10 +49,10 @@ class HomeViewModel extends BaseViewModel<HomeState> {
         ));
       },
       onStart: () {
-        ///start shimmer
+        updateState(state.updateHeroBannersLoading(true));
       },
       onComplete: () {
-        ///stop shimmer
+        updateState(state.updateHeroBannersLoading(false));
       },
     );
   }
