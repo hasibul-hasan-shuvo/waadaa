@@ -38,7 +38,6 @@ class ProductDomainMapper implements Mapper<ProductResponse, Product> {
                   id: category.id ?? '',
                   name: category.name ?? '',
                   level: category.level ?? 0,
-                  slug: '',
                   subcategories: [],
                 ))
             .toList() ??
