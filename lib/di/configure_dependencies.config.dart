@@ -26,8 +26,6 @@ import 'package:waadaa/app/modules/home/viewmodel/home_view_model.dart'
     as _i261;
 import 'package:waadaa/app/modules/main/viewmodel/main_view_model.dart'
     as _i177;
-import 'package:waadaa/app/modules/my_cart/viewmodel/my_cart_view_model.dart'
-    as _i128;
 import 'package:waadaa/app/modules/page_not_found/viewmodel/page_not_found_view_model.dart'
     as _i394;
 
@@ -42,12 +40,12 @@ _i174.GetIt $initGetIt(
     environment,
     environmentFilter,
   );
-  gh.factory<_i128.MyCartViewModel>(() => _i128.MyCartViewModel());
+  gh.factory<MyCartViewModel>(() => MyCartViewModel());
   gh.factory<_i694.BrandsViewModel>(() => _i694.BrandsViewModel());
+  gh.factory<_i394.PageNotFoundViewModel>(() => _i394.PageNotFoundViewModel());
   gh.factory<_i890.AccountViewModel>(() => _i890.AccountViewModel());
   gh.factory<_i177.MainViewModel>(() => _i177.MainViewModel());
   gh.factory<_i1041.CategoriesViewModel>(() => _i1041.CategoriesViewModel());
-  gh.factory<_i394.PageNotFoundViewModel>(() => _i394.PageNotFoundViewModel());
   gh.factory<_i261.HomeViewModel>(() => _i261.HomeViewModel(
         gh<_i224.HeroBannersUseCase>(),
         gh<_i199.CategoryOffersUseCase>(),

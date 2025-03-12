@@ -14,21 +14,23 @@ class HeroBannersView
 
   @override
   Widget body(BuildContext context, List<HeroBannerUiModel> state) {
-    return AppSlider(
-      sliderHeight: Dimens.heroBannerHeight,
-      indicatorsPosition: SliderIndicatorsPosition.outsideBottom,
-      itemList: List.generate(
-        state.length,
-        (index) {
-          return HeroBannerWidget(
-            imageUrl: state[index].imageUrl,
-            title: state[index].title,
-            subTitle: state[index].subTitle,
-            actionTitle: state[index].actionTitle,
-          );
-        },
-      ),
-    );
+    return state.isNotEmpty
+        ? AppSlider(
+            sliderHeight: Dimens.heroBannerHeight,
+            indicatorsPosition: SliderIndicatorsPosition.outsideBottom,
+            itemList: List.generate(
+              state.length,
+              (index) {
+                return HeroBannerWidget(
+                  imageUrl: state[index].imageUrl,
+                  title: state[index].title,
+                  subTitle: state[index].subTitle,
+                  actionTitle: state[index].actionTitle,
+                );
+              },
+            ),
+          )
+        : const SizedBox.shrink();
   }
 
   @override

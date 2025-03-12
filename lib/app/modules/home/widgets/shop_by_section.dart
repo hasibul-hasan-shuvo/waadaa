@@ -29,12 +29,7 @@ class ShopBySection extends StatelessWidget {
           GridView(
             shrinkWrap: true,
             physics: NeverScrollableScrollPhysics(),
-            gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-              crossAxisCount: 2,
-              childAspectRatio: 2.2,
-              crossAxisSpacing: 7,
-              mainAxisSpacing: 8,
-            ),
+            gridDelegate: _gridDelegate,
             children: [
               shopItem(
                 context: context,
@@ -65,14 +60,7 @@ class ShopBySection extends StatelessWidget {
       child: Container(
         margin: EdgeInsets.symmetric(vertical: 2, horizontal: 1),
         height: 70,
-        decoration: BoxDecoration(
-          border: Border.all(
-            color: Color(0xFFDEDEDE), // Border color
-            width: 0.5, // Border width
-          ),
-          borderRadius: BorderRadius.circular(2.0),
-          color: Colors.white,
-        ),
+        decoration: _shopItemBoxDecoration,
         child: Row(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
@@ -100,4 +88,21 @@ class ShopBySection extends StatelessWidget {
       ),
     );
   }
+
+  SliverGridDelegate get _gridDelegate =>
+      SliverGridDelegateWithFixedCrossAxisCount(
+        crossAxisCount: 2,
+        childAspectRatio: 2.2,
+        crossAxisSpacing: 7,
+        mainAxisSpacing: 8,
+      );
+
+  Decoration get _shopItemBoxDecoration => BoxDecoration(
+        border: Border.all(
+          color: Color(0xFFDEDEDE), // Border color
+          width: 0.5, // Border width
+        ),
+        borderRadius: BorderRadius.circular(2.0),
+        color: Colors.white,
+      );
 }

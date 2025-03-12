@@ -16,30 +16,32 @@ class OfferRegularBannersView
 
   @override
   Widget body(BuildContext context, List<OfferBannerUiModel> state) {
-    return AppSlider(
-      sliderHeight: Dimens.offerBannerHeight,
-      indicatorsPosition: SliderIndicatorsPosition.outsideBottom,
-      itemList: List.generate(
-        state.length,
-        (index) {
-          return Stack(
-            children: [
-              NetworkImageView(
-                imageUrl: state[index].bgImageUrl,
-                fit: BoxFit.cover,
-              ),
-              BlackLinearGradient(),
-              BannerTopContents(
-                title: state[index].title,
-                subTitle: state[index].subTitle,
-                actionTitle: state[index].actionTitle,
-                actionPressed: () {},
-              ),
-            ],
-          );
-        },
-      ),
-    );
+    return state.isNotEmpty
+        ? AppSlider(
+            sliderHeight: Dimens.offerBannerHeight,
+            indicatorsPosition: SliderIndicatorsPosition.outsideBottom,
+            itemList: List.generate(
+              state.length,
+              (index) {
+                return Stack(
+                  children: [
+                    NetworkImageView(
+                      imageUrl: state[index].bgImageUrl,
+                      fit: BoxFit.cover,
+                    ),
+                    BlackLinearGradient(),
+                    BannerTopContents(
+                      title: state[index].title,
+                      subTitle: state[index].subTitle,
+                      actionTitle: state[index].actionTitle,
+                      actionPressed: () {},
+                    ),
+                  ],
+                );
+              },
+            ),
+          )
+        : SizedBox.shrink();
   }
 
   @override

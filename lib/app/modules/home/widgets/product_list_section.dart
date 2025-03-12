@@ -2,6 +2,7 @@ import 'package:core/extensions/widget_extension.dart';
 import 'package:core/widgets/buttons/app_secondary_button.dart';
 import 'package:core/widgets/product_box.dart';
 import 'package:flutter/material.dart';
+import 'package:waadaa/app/extensions/context_extension.dart';
 import 'package:waadaa/app/modules/home/models/product_ui_model.dart';
 
 class ProductListSection extends StatelessWidget {
@@ -64,7 +65,7 @@ class ProductListSection extends StatelessWidget {
           ),
           if (products.isNotEmpty)
             AppSecondaryButton(
-              title: "VIEW ALL",
+              title: context.localizations.viewAllText,
               onPressed: viewAllPressed,
             ).paddingSymmetric(vertical: 10),
         ],

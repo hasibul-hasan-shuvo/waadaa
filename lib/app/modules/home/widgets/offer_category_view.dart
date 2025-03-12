@@ -15,41 +15,46 @@ class OfferCategoryView extends ObservableView<HomeViewModel, HomeState,
 
   @override
   Widget body(BuildContext context, List<CategoryOfferUiModel> state) {
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        Text(
-          context.localizations.offerCategoriesTitle,
-          style: TextStyle(
-            fontSize: 20,
-            fontWeight: FontWeight.bold,
-          ),
-        ).paddingOnly(top: 10),
-        SizedBox(height: 10),
-        GridView.builder(
-          shrinkWrap: true,
-          physics: NeverScrollableScrollPhysics(),
-          itemCount: state.length,
-          gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-            crossAxisCount: 2,
-            childAspectRatio: 0.8,
-            crossAxisSpacing: 10,
-            mainAxisSpacing: 10,
-          ),
-          itemBuilder: (context, index) {
-            return OfferCategoryItem(offerItem: state[index]);
-          },
-        ),
-        if (state.isNotEmpty)
-          AppSecondaryButton(
-            title: context.localizations.viewAllText,
-            onPressed: () {
-              context.getViewModel<HomeViewModel>().onViewAllClicked();
-            },
-          ).paddingSymmetric(vertical: 10),
-      ],
-    ).paddingSymmetric(horizontal: 15);
+    return state.isNotEmpty
+        ? Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(
+                context.localizations.offerCategoriesTitle,
+                style: TextStyle(
+                  fontSize: 20,
+                  fontWeight: FontWeight.bold,
+                ),
+              ).paddingOnly(top: 10),
+              SizedBox(height: 10),
+              GridView.builder(
+                shrinkWrap: true,
+                physics: NeverScrollableScrollPhysics(),
+                itemCount: state.length,
+                gridDelegate: _gridDelegate,
+                itemBuilder: (context, index) {
+                  return OfferCategoryItem(offerItem: state[index]);
+                },
+              ),
+              if (state.isNotEmpty)
+                AppSecondaryButton(
+                  title: context.localizations.viewAllText,
+                  onPressed: () {
+                    context.getViewModel<HomeViewModel>().onViewAllClicked();
+                  },
+                ).paddingSymmetric(vertical: 10),
+            ],
+          ).paddingSymmetric(horizontal: 15)
+        : SizedBox.shrink();
   }
+
+  SliverGridDelegate get _gridDelegate =>
+      SliverGridDelegateWithFixedCrossAxisCount(
+        crossAxisCount: 2,
+        childAspectRatio: 0.8,
+        crossAxisSpacing: 10,
+        mainAxisSpacing: 10,
+      );
 
   @override
   List<CategoryOfferUiModel> observeState(HomeState state) {

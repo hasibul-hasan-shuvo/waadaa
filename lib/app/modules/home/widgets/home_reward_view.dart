@@ -8,23 +8,25 @@ class HomeRewardView extends ObservableView<HomeViewModel, HomeState, String> {
 
   @override
   Widget body(BuildContext context, String state) {
-    return Container(
-      margin: EdgeInsets.symmetric(horizontal: 15, vertical: 14),
-      padding: EdgeInsets.all(14),
-      width: double.infinity,
-      decoration: BoxDecoration(
-        color: Colors.black,
-        borderRadius: BorderRadius.circular(8),
-      ),
-      child: Text(
-        state,
-        style: TextStyle(
-          color: Colors.white,
-          fontSize: 12,
-          fontWeight: FontWeight.w500,
-        ),
-      ),
-    );
+    return state.isNotEmpty
+        ? Container(
+            margin: EdgeInsets.symmetric(horizontal: 15, vertical: 14),
+            padding: EdgeInsets.all(14),
+            width: double.infinity,
+            decoration: BoxDecoration(
+              color: Colors.black,
+              borderRadius: BorderRadius.circular(8),
+            ),
+            child: Text(
+              state,
+              style: TextStyle(
+                color: Colors.white,
+                fontSize: 12,
+                fontWeight: FontWeight.w500,
+              ),
+            ),
+          )
+        : SizedBox.shrink();
   }
 
   @override
