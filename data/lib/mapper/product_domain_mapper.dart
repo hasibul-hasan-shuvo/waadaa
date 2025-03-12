@@ -17,11 +17,13 @@ class ProductDomainMapper implements Mapper<ProductResponse, Product> {
     );
 
     List<ProductImage> images = data.images
-            ?.map((image) => ProductImage(
-                  id: image.id ?? '',
-                  isActive: image.isActive ?? false,
-                  url: image.url ?? '',
-                ))
+            ?.map(
+              (image) => ProductImage(
+                id: image.id ?? '',
+                isActive: image.isActive ?? false,
+                url: image.url ?? '',
+              ),
+            )
             .toList() ??
         [];
 
@@ -34,23 +36,26 @@ class ProductDomainMapper implements Mapper<ProductResponse, Product> {
         [];
 
     List<Category> categories = data.categories
-            ?.map((category) => Category(
-                  id: category.id ?? '',
-                  name: category.name ?? '',
-                  level: category.level ?? 0,
-                  slug: '',
-                  subcategories: [],
-                ))
+            ?.map(
+              (category) => Category(
+                id: category.id ?? '',
+                name: category.name ?? '',
+                level: category.level ?? 0,
+                subcategories: [],
+              ),
+            )
             .toList() ??
         [];
 
     List<ProductVariant> variantMappings = data.variantMappings?.map((variant) {
           List<ProductVariantAttribute> attributeValues =
               variant.attributeValues
-                      ?.map((attribute) => ProductVariantAttribute(
-                            name: attribute.name ?? '',
-                            value: attribute.value ?? '',
-                          ))
+                      ?.map(
+                        (attribute) => ProductVariantAttribute(
+                          name: attribute.name ?? '',
+                          value: attribute.value ?? '',
+                        ),
+                      )
                       .toList() ??
                   [];
 
