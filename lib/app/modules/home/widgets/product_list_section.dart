@@ -47,12 +47,7 @@ class ProductListSection extends StatelessWidget {
             shrinkWrap: true,
             physics: NeverScrollableScrollPhysics(),
             itemCount: products.length,
-            gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-              crossAxisCount: 2,
-              childAspectRatio: 0.70,
-              crossAxisSpacing: 10,
-              mainAxisSpacing: 10,
-            ),
+            gridDelegate: _gridDelegate,
             itemBuilder: (context, index) {
               return ProductBox(
                 name: products[index].name,
@@ -72,4 +67,12 @@ class ProductListSection extends StatelessWidget {
       ).paddingSymmetric(horizontal: 15),
     );
   }
+
+  SliverGridDelegate get _gridDelegate =>
+      SliverGridDelegateWithFixedCrossAxisCount(
+        crossAxisCount: 2,
+        childAspectRatio: 0.70,
+        crossAxisSpacing: 10,
+        mainAxisSpacing: 10,
+      );
 }

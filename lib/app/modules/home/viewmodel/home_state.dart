@@ -7,13 +7,16 @@ import 'package:waadaa/app/modules/home/models/product_ui_model.dart';
 
 class HomeState extends BaseState {
   String? rewardText;
-  int heroBannerIndex = 0;
   List<HeroBannerUiModel>? heroBanners;
   List<CategoryOfferUiModel>? categoryOffers;
   OfferBannerUiModel? exclusiveBanner;
   List<OfferBannerUiModel>? regularBanners;
   List<ProductUiModel>? latestProducts;
+  bool isRewardLoading = false;
   bool isHeroBannersLoading = false;
+  bool isOfferBannersLoading = false;
+  bool isCategoryOffersLoading = false;
+  bool isLatestProductsLoading = false;
 
   HomeState({
     super.status,
@@ -23,7 +26,11 @@ class HomeState extends BaseState {
     this.exclusiveBanner,
     this.regularBanners,
     this.latestProducts,
+    this.isRewardLoading = false,
     this.isHeroBannersLoading = false,
+    this.isOfferBannersLoading = false,
+    this.isCategoryOffersLoading = false,
+    this.isLatestProductsLoading = false,
   });
 
   HomeState.initial();
@@ -37,7 +44,11 @@ class HomeState extends BaseState {
     OfferBannerUiModel? exclusiveBanner,
     List<OfferBannerUiModel>? regularBanners,
     List<ProductUiModel>? latestProducts,
+    bool? isRewardLoading,
     bool? isHeroBannersLoading,
+    bool? isOfferBannersLoading,
+    bool? isCategoryOffersLoading,
+    bool? isLatestProductsLoading,
   }) {
     return HomeState(
       status: status ?? this.status,
@@ -47,7 +58,14 @@ class HomeState extends BaseState {
       exclusiveBanner: exclusiveBanner ?? this.exclusiveBanner,
       regularBanners: regularBanners ?? this.regularBanners,
       latestProducts: latestProducts ?? this.latestProducts,
+      isRewardLoading: isRewardLoading ?? this.isRewardLoading,
       isHeroBannersLoading: isHeroBannersLoading ?? this.isHeroBannersLoading,
+      isOfferBannersLoading:
+          isOfferBannersLoading ?? this.isOfferBannersLoading,
+      isCategoryOffersLoading:
+          isCategoryOffersLoading ?? this.isCategoryOffersLoading,
+      isLatestProductsLoading:
+          isLatestProductsLoading ?? this.isLatestProductsLoading,
     );
   }
 
@@ -75,7 +93,23 @@ class HomeState extends BaseState {
     return copyWith(latestProducts: latestProducts);
   }
 
-  HomeState updateHeroBannersLoading(bool value) {
+  HomeState updateIsRewardLoading(bool value) {
+    return copyWith(isRewardLoading: value);
+  }
+
+  HomeState updateIsHeroBannersLoading(bool value) {
     return copyWith(isHeroBannersLoading: value);
+  }
+
+  HomeState updateIsOfferBannersLoading(bool value) {
+    return copyWith(isOfferBannersLoading: value);
+  }
+
+  HomeState updateIsCategoryOffersLoading(bool value) {
+    return copyWith(isCategoryOffersLoading: value);
+  }
+
+  HomeState updateIsLatestProductsLoading(bool value) {
+    return copyWith(isLatestProductsLoading: value);
   }
 }

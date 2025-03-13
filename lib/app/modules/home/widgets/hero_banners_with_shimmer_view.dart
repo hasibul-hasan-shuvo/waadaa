@@ -8,9 +8,9 @@ import 'package:waadaa/app/modules/home/viewmodel/home_state.dart';
 import 'package:waadaa/app/modules/home/viewmodel/home_view_model.dart';
 import 'package:waadaa/app/modules/home/widgets/hero_banners_view.dart';
 
-class HeroBannersViewWithShimmer
+class HeroBannersWithShimmerView
     extends ObservableView<HomeViewModel, HomeState, bool> {
-  const HeroBannersViewWithShimmer({super.key});
+  const HeroBannersWithShimmerView({super.key});
 
   @override
   Widget body(BuildContext context, bool state) {

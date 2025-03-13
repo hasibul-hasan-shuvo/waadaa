@@ -7,8 +7,8 @@ import 'package:core/widgets/images/asset_image_view.dart';
 import 'package:flutter/material.dart';
 import 'package:waadaa/app/extensions/context_extension.dart';
 
-class ShopBySection extends StatelessWidget {
-  const ShopBySection({super.key});
+class ShopBySectionView extends StatelessWidget {
+  const ShopBySectionView({super.key});
 
   @override
   Widget build(BuildContext context) {

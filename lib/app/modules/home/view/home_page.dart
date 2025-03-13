@@ -6,13 +6,13 @@ import 'package:flutter/material.dart';
 import 'package:waadaa/app/extensions/context_extension.dart';
 import 'package:waadaa/app/modules/home/viewmodel/home_state.dart';
 import 'package:waadaa/app/modules/home/viewmodel/home_view_model.dart';
-import 'package:waadaa/app/modules/home/widgets/hero_banners_view_with_shimmer.dart';
-import 'package:waadaa/app/modules/home/widgets/home_reward_view.dart';
-import 'package:waadaa/app/modules/home/widgets/latest_products_view.dart';
-import 'package:waadaa/app/modules/home/widgets/offer_category_view.dart';
-import 'package:waadaa/app/modules/home/widgets/offer_exclusive_banner_view.dart';
-import 'package:waadaa/app/modules/home/widgets/offer_regular_banners_view.dart';
-import 'package:waadaa/app/modules/home/widgets/recommended_products_view.dart';
+import 'package:waadaa/app/modules/home/widgets/hero_banners_with_shimmer_view.dart';
+import 'package:waadaa/app/modules/home/widgets/home_reward_with_shimmer_view.dart';
+import 'package:waadaa/app/modules/home/widgets/latest_products_with_shimmer_view.dart';
+import 'package:waadaa/app/modules/home/widgets/offer_category_with_shimmer_view.dart';
+import 'package:waadaa/app/modules/home/widgets/offer_exclusive_banner_with_shimmer_view.dart';
+import 'package:waadaa/app/modules/home/widgets/offer_regular_banners_with_shimmer_view.dart';
+import 'package:waadaa/app/modules/home/widgets/recommended_products_with_shimmer_view.dart';
 import 'package:waadaa/app/modules/home/widgets/shop_by_section.dart';
 
 class HomePage extends BasePage<HomeViewModel, HomeState> {
@@ -50,14 +50,14 @@ class HomePage extends BasePage<HomeViewModel, HomeState> {
     return SingleChildScrollView(
       child: Column(
         children: [
-          HeroBannersViewWithShimmer(),
-          HomeRewardView(),
-          ShopBySection(),
-          LatestProductsView(),
-          OfferExclusiveBannerView(),
-          OfferCategoryView(),
-          OfferRegularBannersView(),
-          RecommendedProductsView(),
+          HeroBannersWithShimmerView(),
+          HomeRewardWithShimmerView(),
+          ShopBySectionView(),
+          LatestProductsWithShimmerView(),
+          OfferExclusiveBannerWithShimmerView(),
+          OfferCategoryWithShimmerView(),
+          OfferRegularBannersWithShimmerView(),
+          RecommendedProductsWithShimmerView(),
         ],
       ),
     );

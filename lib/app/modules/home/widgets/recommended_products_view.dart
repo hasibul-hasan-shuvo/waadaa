@@ -16,7 +16,7 @@ class RecommendedProductsView
   Widget body(BuildContext context, List<ProductUiModel> state) {
     return state.isNotEmpty
         ? ProductListSection(
-            title: context.localizations.latestProductTitle,
+            title: context.localizations.recommendedForYouTitle,
             // subTitle: "The Nike Dunk Low is an easy score for your wardrobe",
             products: state,
             viewAllPressed: () {

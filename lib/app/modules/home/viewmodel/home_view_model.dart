@@ -49,10 +49,10 @@ class HomeViewModel extends BaseViewModel<HomeState> {
         ));
       },
       onStart: () {
-        updateState(state.updateHeroBannersLoading(true));
+        updateState(state.updateIsHeroBannersLoading(true));
       },
       onComplete: () {
-        updateState(state.updateHeroBannersLoading(false));
+        updateState(state.updateIsHeroBannersLoading(false));
       },
     );
   }
@@ -66,6 +66,12 @@ class HomeViewModel extends BaseViewModel<HomeState> {
               .map((e) => CategoryOfferUiModel.fromCategoryOfferDomain(e))
               .toList(),
         ));
+      },
+      onStart: () {
+        updateState(state.updateIsCategoryOffersLoading(true));
+      },
+      onComplete: () {
+        updateState(state.updateIsCategoryOffersLoading(false));
       },
     );
   }
@@ -88,10 +94,10 @@ class HomeViewModel extends BaseViewModel<HomeState> {
         ));
       },
       onStart: () {
-        ///start shimmer
+        updateState(state.updateIsOfferBannersLoading(true));
       },
       onComplete: () {
-        ///stop shimmer
+        updateState(state.updateIsOfferBannersLoading(false));
       },
     );
   }
@@ -101,6 +107,12 @@ class HomeViewModel extends BaseViewModel<HomeState> {
       welcomeRewardUseCase.getWelcomeReward(),
       onSuccess: (value) {
         updateState(state.updateRewardText(value));
+      },
+      onStart: () {
+        updateState(state.updateIsRewardLoading(true));
+      },
+      onComplete: () {
+        updateState(state.updateIsRewardLoading(false));
       },
     );
   }
@@ -113,6 +125,12 @@ class HomeViewModel extends BaseViewModel<HomeState> {
         updateState(state.updateLatestProducts(
           value.map((e) => ProductUiModel.fromProductDomain(e)).toList(),
         ));
+      },
+      onStart: () {
+        updateState(state.updateIsLatestProductsLoading(true));
+      },
+      onComplete: () {
+        updateState(state.updateIsLatestProductsLoading(false));
       },
     );
   }
