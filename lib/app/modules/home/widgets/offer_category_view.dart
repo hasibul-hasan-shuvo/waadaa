@@ -7,7 +7,7 @@ import 'package:waadaa/app/extensions/context_extension.dart';
 import 'package:waadaa/app/modules/home/models/category_offer_ui_model.dart';
 import 'package:waadaa/app/modules/home/viewmodel/home_state.dart';
 import 'package:waadaa/app/modules/home/viewmodel/home_view_model.dart';
-import 'package:waadaa/app/modules/home/widgets/offer_category_item.dart';
+import 'package:waadaa/app/modules/home/widgets/item_offer_category_widget.dart';
 
 class OfferCategoryView extends ObservableView<HomeViewModel, HomeState,
     List<CategoryOfferUiModel>> {
@@ -33,7 +33,7 @@ class OfferCategoryView extends ObservableView<HomeViewModel, HomeState,
                 itemCount: state.length,
                 gridDelegate: _gridDelegate,
                 itemBuilder: (context, index) {
-                  return OfferCategoryItem(offerItem: state[index]);
+                  return ItemOfferCategoryWidget(offerItem: state[index]);
                 },
               ),
               if (state.isNotEmpty)

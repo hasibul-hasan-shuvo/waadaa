@@ -3,13 +3,13 @@ import 'package:core/widgets/images/network_image_view.dart';
 import 'package:flutter/material.dart';
 import 'package:waadaa/app/modules/home/widgets/black_linear_gradient.dart';
 
-class HeroBannerWidget extends StatelessWidget {
+class ItemHeroBannerWidget extends StatelessWidget {
   final String imageUrl;
   final String title;
   final String subTitle;
   final String actionTitle;
 
-  const HeroBannerWidget({
+  const ItemHeroBannerWidget({
     super.key,
     required this.imageUrl,
     required this.title,

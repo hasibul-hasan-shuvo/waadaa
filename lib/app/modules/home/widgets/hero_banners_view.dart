@@ -6,7 +6,7 @@ import 'package:flutter/material.dart';
 import 'package:waadaa/app/modules/home/models/hero_banner_ui_model.dart';
 import 'package:waadaa/app/modules/home/viewmodel/home_state.dart';
 import 'package:waadaa/app/modules/home/viewmodel/home_view_model.dart';
-import 'package:waadaa/app/modules/home/widgets/hero_banner_item.dart';
+import 'package:waadaa/app/modules/home/widgets/item_hero_banner_widget.dart';
 
 class HeroBannersView
     extends ObservableView<HomeViewModel, HomeState, List<HeroBannerUiModel>> {
@@ -21,7 +21,7 @@ class HeroBannersView
             itemList: List.generate(
               state.length,
               (index) {
-                return HeroBannerWidget(
+                return ItemHeroBannerWidget(
                   imageUrl: state[index].imageUrl,
                   title: state[index].title,
                   subTitle: state[index].subTitle,

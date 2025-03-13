@@ -6,10 +6,10 @@ import 'package:core/widgets/images/network_image_view.dart';
 import 'package:flutter/material.dart';
 import 'package:waadaa/app/modules/home/models/category_offer_ui_model.dart';
 
-class OfferCategoryItem extends StatelessWidget {
+class ItemOfferCategoryWidget extends StatelessWidget {
   final CategoryOfferUiModel offerItem;
 
-  const OfferCategoryItem({super.key, required this.offerItem});
+  const ItemOfferCategoryWidget({super.key, required this.offerItem});
 
   @override
   Widget build(BuildContext context) {
