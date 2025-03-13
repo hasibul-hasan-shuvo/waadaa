@@ -54,6 +54,10 @@ class HomeViewModel extends BaseViewModel<HomeState> {
       onComplete: () {
         updateState(state.updateIsHeroBannersLoading(false));
       },
+      onError: (error) {
+        log(error.toString());
+        updateState(state.updateIsHeroBannersLoading(false));
+      },
     );
   }
 
@@ -71,6 +75,10 @@ class HomeViewModel extends BaseViewModel<HomeState> {
         updateState(state.updateIsCategoryOffersLoading(true));
       },
       onComplete: () {
+        updateState(state.updateIsCategoryOffersLoading(false));
+      },
+      onError: (error) {
+        log(error.toString());
         updateState(state.updateIsCategoryOffersLoading(false));
       },
     );
@@ -99,6 +107,10 @@ class HomeViewModel extends BaseViewModel<HomeState> {
       onComplete: () {
         updateState(state.updateIsOfferBannersLoading(false));
       },
+      onError: (error) {
+        log(error.toString());
+        updateState(state.updateIsOfferBannersLoading(false));
+      },
     );
   }
 
@@ -112,6 +124,10 @@ class HomeViewModel extends BaseViewModel<HomeState> {
         updateState(state.updateIsRewardLoading(true));
       },
       onComplete: () {
+        updateState(state.updateIsRewardLoading(false));
+      },
+      onError: (error) {
+        log(error.toString());
         updateState(state.updateIsRewardLoading(false));
       },
     );
@@ -130,6 +146,10 @@ class HomeViewModel extends BaseViewModel<HomeState> {
         updateState(state.updateIsLatestProductsLoading(true));
       },
       onComplete: () {
+        updateState(state.updateIsLatestProductsLoading(false));
+      },
+      onError: (error) {
+        log(error.toString());
         updateState(state.updateIsLatestProductsLoading(false));
       },
     );
