@@ -16,18 +16,10 @@ class HeroBannersWithShimmerView
   Widget body(BuildContext context, bool state) {
     return state
         ? ShimmerEffectView(
-            child: AppSlider(
-                autoSlide: false,
-                sliderHeight: Dimens.heroBannerHeight,
-                indicatorsPosition: SliderIndicatorsPosition.outsideBottom,
-                itemList: List.generate(
-                  3,
-                  (index) {
-                    return Container(
-                      color: Colors.black,
-                    );
-                  },
-                )),
+            child: Container(
+              height: Dimens.heroBannerHeight,
+              color: Colors.black,
+            ),
           )
         : HeroBannersView();
   }

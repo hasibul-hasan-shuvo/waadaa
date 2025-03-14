@@ -37,6 +37,7 @@ class LatestProductsWithShimmerView
                     );
                   },
                 ),
+                SizedBox(height: 15),
               ],
             ).paddingSymmetric(horizontal: 15),
           )

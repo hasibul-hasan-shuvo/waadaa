@@ -37,6 +37,7 @@ class OfferCategoryWithShimmerView
                     );
                   },
                 ),
+                SizedBox(height: 15),
               ],
             ).paddingSymmetric(horizontal: 15),
           )
