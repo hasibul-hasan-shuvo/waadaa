@@ -1,3 +1,4 @@
+import 'package:core/extensions/context_extension.dart';
 import 'package:flutter/material.dart';
 import 'package:shimmer/shimmer.dart';
 
@@ -12,8 +13,8 @@ class ShimmerEffectView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Shimmer.fromColors(
-      baseColor: Colors.grey[200] ?? Colors.black12,
-      highlightColor: Colors.grey[50] ?? Colors.white12,
+      baseColor: context.colors.outline,
+      highlightColor: context.colors.surface,
       child: child,
     );
   }
