@@ -13,7 +13,7 @@ import 'package:waadaa/app/modules/home/widgets/offer_category_with_shimmer_view
 import 'package:waadaa/app/modules/home/widgets/offer_exclusive_banner_with_shimmer_view.dart';
 import 'package:waadaa/app/modules/home/widgets/offer_regular_banners_with_shimmer_view.dart';
 import 'package:waadaa/app/modules/home/widgets/recommended_products_with_shimmer_view.dart';
-import 'package:waadaa/app/modules/home/widgets/shop_by_section.dart';
+import 'package:waadaa/app/modules/home/widgets/shop_by_section_view.dart';
 
 class HomePage extends BasePage<HomeViewModel, HomeState> {
   const HomePage({super.key});

@@ -1,6 +1,6 @@
-import 'dart:developer';
-
+import 'package:core/extensions/context_extension.dart';
 import 'package:core/extensions/widget_extension.dart';
+import 'package:core/services/logger_service.dart';
 import 'package:core/widgets/buttons/ripple.dart';
 import 'package:core/widgets/images/network_image_view.dart';
 import 'package:flutter/material.dart';
@@ -15,7 +15,7 @@ class ItemOfferCategoryWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Ripple(
       onTap: () {
-        log("category item");
+        AppLogger.d("category item");
       },
       child: Column(
         children: [
@@ -28,10 +28,7 @@ class ItemOfferCategoryWidget extends StatelessWidget {
           SizedBox(height: 12),
           Text(
             offerItem.tagName,
-            style: TextStyle(
-              fontSize: 14,
-              fontWeight: FontWeight.w500,
-            ),
+            style: context.textTheme.bodyMedium,
           ),
         ],
       ).paddingAll(1),

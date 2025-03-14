@@ -1,7 +1,6 @@
-import 'dart:developer';
-
 import 'package:core/assets/app_images.dart';
 import 'package:core/extensions/widget_extension.dart';
+import 'package:core/services/logger_service.dart';
 import 'package:core/widgets/buttons/ripple.dart';
 import 'package:core/widgets/images/asset_image_view.dart';
 import 'package:flutter/material.dart';
@@ -55,7 +54,7 @@ class ShopBySectionView extends StatelessWidget {
   }) {
     return Ripple(
       onTap: () {
-        log(name);
+        AppLogger.d(name);
       },
       child: Container(
         margin: EdgeInsets.symmetric(vertical: 2, horizontal: 1),
