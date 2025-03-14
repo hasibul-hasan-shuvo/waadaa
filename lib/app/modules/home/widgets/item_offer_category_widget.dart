@@ -1,3 +1,4 @@
+import 'package:core/assets/dimens.dart';
 import 'package:core/extensions/context_extension.dart';
 import 'package:core/extensions/widget_extension.dart';
 import 'package:core/services/logger_service.dart';
@@ -25,13 +26,13 @@ class ItemOfferCategoryWidget extends StatelessWidget {
               fit: BoxFit.cover,
             ),
           ),
-          SizedBox(height: 12),
+          SizedBox(height: Dimens.padding12),
           Text(
             offerItem.tagName,
             style: context.textTheme.bodyMedium,
           ),
         ],
-      ).paddingAll(1),
+      ).paddingAll(Dimens.paddingSmall),
     );
   }
 }

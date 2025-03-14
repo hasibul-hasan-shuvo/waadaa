@@ -1,3 +1,5 @@
+import 'package:core/assets/dimens.dart';
+import 'package:core/extensions/context_extension.dart';
 import 'package:core/extensions/widget_extension.dart';
 import 'package:core/widgets/buttons/app_secondary_button.dart';
 import 'package:core/widgets/product_box.dart';
@@ -28,21 +30,14 @@ class ProductListSection extends StatelessWidget {
         children: [
           Text(
             title,
-            style: TextStyle(
-              fontSize: 20,
-              fontWeight: FontWeight.bold,
-            ),
-          ).paddingOnly(top: 10),
+            style: context.textTheme.titleLarge,
+          ).paddingOnly(top: Dimens.padding10),
           if (subTitle != null)
             Text(
               subTitle!,
-              style: TextStyle(
-                color: Color(0xFF7A7A7A),
-                fontSize: 12,
-                fontWeight: FontWeight.w400,
-              ),
-            ).paddingOnly(top: 2, bottom: 10),
-          SizedBox(height: 10),
+              style: context.textTheme.bodySmall,
+            ).paddingOnly(top: Dimens.paddingSmall, bottom: Dimens.padding10),
+          SizedBox(height: Dimens.padding10),
           GridView.builder(
             shrinkWrap: true,
             physics: NeverScrollableScrollPhysics(),
@@ -62,9 +57,9 @@ class ProductListSection extends StatelessWidget {
             AppSecondaryButton(
               title: context.localizations.viewAllText,
               onPressed: viewAllPressed,
-            ).paddingSymmetric(vertical: 10),
+            ).paddingSymmetric(vertical: Dimens.padding10),
         ],
-      ).paddingSymmetric(horizontal: 15),
+      ).paddingSymmetric(horizontal: Dimens.padding15),
     );
   }
 

@@ -1,6 +1,7 @@
-import 'dart:developer';
-
+import 'package:core/assets/dimens.dart';
+import 'package:core/extensions/context_extension.dart';
 import 'package:core/extensions/widget_extension.dart';
+import 'package:core/services/logger_service.dart';
 import 'package:core/widgets/buttons/ripple.dart';
 import 'package:core/widgets/images/network_image_view.dart';
 import 'package:flutter/material.dart';
@@ -25,7 +26,7 @@ class ProductBox extends StatelessWidget {
   Widget build(BuildContext context) {
     return Ripple(
       onTap: () {
-        log("product box");
+        AppLogger.d("product box");
       },
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -40,34 +41,28 @@ class ProductBox extends StatelessWidget {
               ),
             ),
           ),
-          SizedBox(height: 12),
+          SizedBox(height: Dimens.padding12),
           Text(
             name,
-            style: TextStyle(
-              fontSize: 16,
-              fontWeight: FontWeight.w600,
-            ),
+            style: context.textTheme.titleMedium,
             maxLines: 1,
             overflow: TextOverflow.ellipsis,
           ),
           Text(
             description,
-            style: TextStyle(
-              fontSize: 14,
-              fontWeight: FontWeight.w500,
-            ),
+            style: context.textTheme.titleSmall,
             maxLines: 1,
             overflow: TextOverflow.ellipsis,
           ),
           Text(
             "$currency $price",
-            style: TextStyle(
-              fontSize: 14,
-              fontWeight: FontWeight.w400,
-            ),
-          ),
+            style: context.textTheme.titleSmall,
+          )
         ],
-      ).paddingSymmetric(horizontal: 1, vertical: 1),
+      ).paddingSymmetric(
+        horizontal: Dimens.padding1,
+        vertical: Dimens.padding1,
+      ),
     );
   }
 }

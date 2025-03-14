@@ -1,3 +1,4 @@
+import 'package:core/assets/dimens.dart';
 import 'package:core/base/observable_view.dart';
 import 'package:core/widgets/shimmer_effect_view.dart';
 import 'package:flutter/material.dart';
@@ -14,12 +15,15 @@ class HomeRewardWithShimmerView
     return state
         ? ShimmerEffectView(
             child: Container(
-              margin: EdgeInsets.symmetric(horizontal: 15, vertical: 14),
-              padding: EdgeInsets.all(14),
+              margin: EdgeInsets.symmetric(
+                horizontal: Dimens.padding15,
+                vertical: Dimens.padding14,
+              ),
+              padding: EdgeInsets.all(Dimens.padding14),
               width: double.infinity,
               decoration: BoxDecoration(
                 color: Colors.black,
-                borderRadius: BorderRadius.circular(8),
+                borderRadius: BorderRadius.circular(Dimens.radiusMedium),
               ),
             ),
           )

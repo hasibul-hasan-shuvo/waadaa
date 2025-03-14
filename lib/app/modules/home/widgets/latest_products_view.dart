@@ -1,6 +1,5 @@
-import 'dart:developer';
-
 import 'package:core/base/observable_view.dart';
+import 'package:core/services/logger_service.dart';
 import 'package:flutter/material.dart';
 import 'package:waadaa/app/extensions/context_extension.dart';
 import 'package:waadaa/app/modules/home/models/product_ui_model.dart';
@@ -20,7 +19,7 @@ class LatestProductsView
             // subTitle: "The Nike Dunk Low is an easy score for your wardrobe",
             products: state,
             viewAllPressed: () {
-              log("view all pressed...");
+              AppLogger.d("view all pressed...");
             },
           )
         : SizedBox.shrink();

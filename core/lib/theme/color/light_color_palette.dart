@@ -10,7 +10,7 @@ final _lightColorPalette = ThemeColorExtension(
   onPrimaryContainer: Color(0xFF1A1A1A),
   // Dark text on light containers
 
-  secondary: Color(0xFFD4A373),
+  secondary: Color(0xFFFAF8F1),
   // Beige/Brown accent color
   onSecondary: Color(0xFF1A1A1A),
   // Dark text/icons for readability
@@ -59,8 +59,8 @@ final _lightColorPalette = ThemeColorExtension(
 
   scrim: Color(0x99000000),
   // Semi-transparent black
-  shadow: Color(0xFF000000),
+  shadow: Color(0xFFDEDEDE),
   // Standard black shadows
   surfaceTint: Color(0xFFD4A373),
-  baalsaal: Color(0xFF0A5677), // Light blue tint effect
+  example: Color(0xFF0A5677), // Light blue tint effect
 );

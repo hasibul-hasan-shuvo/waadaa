@@ -1,3 +1,4 @@
+import 'package:core/assets/dimens.dart';
 import 'package:core/base/observable_view.dart';
 import 'package:core/extensions/widget_extension.dart';
 import 'package:core/widgets/shimmer_effect_view.dart';
@@ -18,14 +19,14 @@ class RecommendedProductsWithShimmerView
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Container(
-                  width: 120,
-                  height: 25,
+                  width: Dimens.textShimmerWidth,
+                  height: Dimens.textShimmerHeight,
                   decoration: BoxDecoration(
                     color: Colors.black,
-                    borderRadius: BorderRadius.circular(5),
+                    borderRadius: BorderRadius.circular(Dimens.radiusSmall),
                   ),
-                ).paddingOnly(top: 10),
-                SizedBox(height: 10),
+                ).paddingOnly(top: Dimens.padding10),
+                SizedBox(height: Dimens.padding10),
                 GridView.builder(
                   shrinkWrap: true,
                   physics: NeverScrollableScrollPhysics(),
@@ -37,9 +38,9 @@ class RecommendedProductsWithShimmerView
                     );
                   },
                 ),
-                SizedBox(height: 15),
+                SizedBox(height: Dimens.padding15),
               ],
-            ).paddingSymmetric(horizontal: 15),
+            ).paddingSymmetric(horizontal: Dimens.padding15),
           )
         : RecommendedProductsView();
   }

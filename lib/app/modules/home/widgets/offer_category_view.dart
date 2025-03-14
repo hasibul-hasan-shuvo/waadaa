@@ -1,3 +1,4 @@
+import 'package:core/assets/dimens.dart';
 import 'package:core/base/observable_view.dart';
 import 'package:core/extensions/context_extension.dart';
 import 'package:core/extensions/widget_extension.dart';
@@ -21,12 +22,9 @@ class OfferCategoryView extends ObservableView<HomeViewModel, HomeState,
             children: [
               Text(
                 context.localizations.offerCategoriesTitle,
-                style: TextStyle(
-                  fontSize: 20,
-                  fontWeight: FontWeight.bold,
-                ),
-              ).paddingOnly(top: 10),
-              SizedBox(height: 10),
+                style: context.textTheme.titleLarge,
+              ).paddingOnly(top: Dimens.padding10),
+              SizedBox(height: Dimens.padding10),
               GridView.builder(
                 shrinkWrap: true,
                 physics: NeverScrollableScrollPhysics(),
@@ -42,9 +40,9 @@ class OfferCategoryView extends ObservableView<HomeViewModel, HomeState,
                   onPressed: () {
                     context.getViewModel<HomeViewModel>().onViewAllClicked();
                   },
-                ).paddingSymmetric(vertical: 10),
+                ).paddingSymmetric(vertical: Dimens.padding10),
             ],
-          ).paddingSymmetric(horizontal: 15)
+          ).paddingSymmetric(horizontal: Dimens.padding15)
         : SizedBox.shrink();
   }
 

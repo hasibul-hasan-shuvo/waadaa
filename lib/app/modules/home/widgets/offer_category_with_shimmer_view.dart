@@ -1,3 +1,4 @@
+import 'package:core/assets/dimens.dart';
 import 'package:core/base/observable_view.dart';
 import 'package:core/extensions/widget_extension.dart';
 import 'package:core/widgets/shimmer_effect_view.dart';
@@ -14,33 +15,33 @@ class OfferCategoryWithShimmerView
   Widget body(BuildContext context, bool state) {
     return state
         ? ShimmerEffectView(
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Container(
-                  width: 120,
-                  height: 25,
-                  decoration: BoxDecoration(
-                    color: Colors.black,
-                    borderRadius: BorderRadius.circular(5),
-                  ),
-                ).paddingOnly(top: 10),
-                SizedBox(height: 10),
-                GridView.builder(
-                  shrinkWrap: true,
-                  physics: NeverScrollableScrollPhysics(),
-                  itemCount: 2,
-                  gridDelegate: _gridDelegate,
-                  itemBuilder: (context, index) {
-                    return Container(
-                      color: Colors.black,
-                    );
-                  },
-                ),
-                SizedBox(height: 15),
-              ],
-            ).paddingSymmetric(horizontal: 15),
-          )
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Container(
+            width: Dimens.textShimmerWidth,
+            height: Dimens.textShimmerHeight,
+            decoration: BoxDecoration(
+              color: Colors.black,
+              borderRadius: BorderRadius.circular(Dimens.radiusSmall),
+            ),
+          ).paddingOnly(top: Dimens.padding10),
+          SizedBox(height: Dimens.padding10),
+          GridView.builder(
+            shrinkWrap: true,
+            physics: NeverScrollableScrollPhysics(),
+            itemCount: 2,
+            gridDelegate: _gridDelegate,
+            itemBuilder: (context, index) {
+              return Container(
+                color: Colors.black,
+              );
+            },
+          ),
+          SizedBox(height: Dimens.padding15),
+        ],
+      ).paddingSymmetric(horizontal: Dimens.padding15),
+    )
         : OfferCategoryView();
   }
 

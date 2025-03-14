@@ -8,6 +8,12 @@ class Dimens {
   static const double paddingMedium = 16.0;
   static const double paddingLarge = 24.0;
   static const double paddingExtraLarge = 32.0;
+  static const double padding1 = 1.0;
+  static const double padding2 = 2.0;
+  static const double padding10 = 10.0;
+  static const double padding12 = 12.0;
+  static const double padding14 = 14.0;
+  static const double padding15 = 15.0;
   static const double padding20 = 20.0;
 
   // Margin
@@ -36,6 +42,7 @@ class Dimens {
 
   // Radius
   static const double radiusZero = 0.0;
+  static const double radiusVerySmall = 2.0;
   static const double radiusSmall = 4.0;
   static const double radiusMedium = 8.0;
   static const double radiusLarge = 16.0;
@@ -62,4 +69,7 @@ class Dimens {
   static const double indicatorHeight = 7.0;
   static const double heroBannerHeight = 215.0;
   static const double offerBannerHeight = 160.0;
+  static const double shopItemHeight = 70.0;
+  static const double textShimmerWidth = 120.0;
+  static const double textShimmerHeight = 25.0;
 }

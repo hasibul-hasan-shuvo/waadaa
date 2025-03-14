@@ -1,4 +1,6 @@
 import 'package:core/assets/app_images.dart';
+import 'package:core/assets/dimens.dart';
+import 'package:core/extensions/context_extension.dart';
 import 'package:core/extensions/widget_extension.dart';
 import 'package:core/services/logger_service.dart';
 import 'package:core/widgets/buttons/ripple.dart';
@@ -12,19 +14,21 @@ class ShopBySectionView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: Color(0xFFFAF8F1),
-      padding: const EdgeInsets.fromLTRB(15, 12, 15, 12),
+      color: context.colors.secondary,
+      padding: const EdgeInsets.fromLTRB(
+        Dimens.padding15,
+        Dimens.padding12,
+        Dimens.padding15,
+        Dimens.padding12,
+      ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(
             context.localizations.shopByTitle,
-            style: TextStyle(
-              fontSize: 20,
-              fontWeight: FontWeight.bold,
-            ),
+            style: context.textTheme.titleLarge,
             textAlign: TextAlign.start,
-          ).paddingOnly(bottom: 10),
+          ).paddingOnly(bottom: Dimens.padding10),
           GridView(
             shrinkWrap: true,
             physics: NeverScrollableScrollPhysics(),
@@ -57,8 +61,11 @@ class ShopBySectionView extends StatelessWidget {
         AppLogger.d(name);
       },
       child: Container(
-        margin: EdgeInsets.symmetric(vertical: 2, horizontal: 1),
-        height: 70,
+        margin: EdgeInsets.symmetric(
+          vertical: Dimens.padding2,
+          horizontal: Dimens.padding1,
+        ),
+        height: Dimens.shopItemHeight,
         decoration: _shopItemBoxDecoration,
         child: Row(
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -67,20 +74,20 @@ class ShopBySectionView extends StatelessWidget {
               flex: 3,
               child: Text(
                 name,
-                style: TextStyle(
-                  fontSize: 14,
-                  fontWeight: FontWeight.bold,
-                ),
+                style: context.textTheme.labelLarge,
                 maxLines: 1,
                 overflow: TextOverflow.ellipsis,
-              ).paddingOnly(left: 8, top: 10),
+              ).paddingOnly(
+                left: Dimens.paddingSmall,
+                top: Dimens.padding10,
+              ),
             ),
             Expanded(
               flex: 5,
               child: AssetImageView(
                 fileName: imgPath,
                 fit: BoxFit.fitHeight,
-              ).paddingOnly(top: 7),
+              ).paddingOnly(top: Dimens.paddingSmall),
             ),
           ],
         ),
@@ -101,7 +108,7 @@ class ShopBySectionView extends StatelessWidget {
           color: Color(0xFFDEDEDE), // Border color
           width: 0.5, // Border width
         ),
-        borderRadius: BorderRadius.circular(2.0),
+        borderRadius: BorderRadius.circular(Dimens.radiusVerySmall),
         color: Colors.white,
       );
 }

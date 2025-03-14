@@ -30,7 +30,7 @@ class ThemeColorExtension extends ThemeExtension<ThemeColorExtension> {
     required this.onInverseSurface,
     required this.inversePrimary,
     required this.surfaceTint,
-    required this.baalsaal,
+    required this.example,
   });
 
   final Color primary;
@@ -61,7 +61,7 @@ class ThemeColorExtension extends ThemeExtension<ThemeColorExtension> {
   final Color onInverseSurface;
   final Color inversePrimary;
   final Color surfaceTint;
-  final Color baalsaal;
+  final Color example;
 
   @override
   ThemeExtension<ThemeColorExtension> copyWith({
@@ -125,7 +125,7 @@ class ThemeColorExtension extends ThemeExtension<ThemeColorExtension> {
       onInverseSurface: onInverseSurface ?? this.onInverseSurface,
       inversePrimary: inversePrimary ?? this.inversePrimary,
       surfaceTint: surfaceTint ?? this.surfaceTint,
-      baalsaal: baalsaal ?? this.baalsaal,
+      example: baalsaal ?? this.example,
     );
   }
 
@@ -177,7 +177,7 @@ class ThemeColorExtension extends ThemeExtension<ThemeColorExtension> {
           Color.lerp(onInverseSurface, other.onInverseSurface, t)!,
       inversePrimary: Color.lerp(inversePrimary, other.inversePrimary, t)!,
       surfaceTint: Color.lerp(surfaceTint, other.surfaceTint, t)!,
-      baalsaal: Color.lerp(baalsaal, other.baalsaal, t)!,
+      example: Color.lerp(example, other.example, t)!,
     );
   }
 }

@@ -1,4 +1,6 @@
+import 'package:core/assets/dimens.dart';
 import 'package:core/base/observable_view.dart';
+import 'package:core/extensions/context_extension.dart';
 import 'package:flutter/material.dart';
 import 'package:waadaa/app/modules/home/viewmodel/home_state.dart';
 import 'package:waadaa/app/modules/home/viewmodel/home_view_model.dart';
@@ -10,19 +12,20 @@ class HomeRewardView extends ObservableView<HomeViewModel, HomeState, String> {
   Widget body(BuildContext context, String state) {
     return state.isNotEmpty
         ? Container(
-            margin: EdgeInsets.symmetric(horizontal: 15, vertical: 14),
-            padding: EdgeInsets.all(14),
+            margin: EdgeInsets.symmetric(
+              horizontal: Dimens.padding15,
+              vertical: Dimens.padding14,
+            ),
+            padding: EdgeInsets.all(Dimens.padding14),
             width: double.infinity,
             decoration: BoxDecoration(
               color: Colors.black,
-              borderRadius: BorderRadius.circular(8),
+              borderRadius: BorderRadius.circular(Dimens.radiusMedium),
             ),
             child: Text(
               state,
-              style: TextStyle(
+              style: context.textTheme.labelMedium?.copyWith(
                 color: Colors.white,
-                fontSize: 12,
-                fontWeight: FontWeight.w500,
               ),
             ),
           )
