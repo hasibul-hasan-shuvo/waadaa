@@ -1,6 +1,5 @@
-import 'dart:developer';
-
 import 'package:core/base/base_view_model.dart';
+import 'package:core/services/logger_service.dart';
 import 'package:di/di.dart';
 import 'package:domain/usecases/category_offers_use_case.dart';
 import 'package:domain/usecases/hero_banners_use_case.dart';
@@ -49,14 +48,10 @@ class HomeViewModel extends BaseViewModel<HomeState> {
         ));
       },
       onStart: () {
-        updateState(state.updateIsHeroBannersLoading(true));
+        updateState(state.updateHeroBannersLoaderState(true));
       },
       onComplete: () {
-        updateState(state.updateIsHeroBannersLoading(false));
-      },
-      onError: (error) {
-        log(error.toString());
-        updateState(state.updateIsHeroBannersLoading(false));
+        updateState(state.updateHeroBannersLoaderState(false));
       },
     );
   }
@@ -72,14 +67,10 @@ class HomeViewModel extends BaseViewModel<HomeState> {
         ));
       },
       onStart: () {
-        updateState(state.updateIsCategoryOffersLoading(true));
+        updateState(state.updateCategoryOffersLoaderState(true));
       },
       onComplete: () {
-        updateState(state.updateIsCategoryOffersLoading(false));
-      },
-      onError: (error) {
-        log(error.toString());
-        updateState(state.updateIsCategoryOffersLoading(false));
+        updateState(state.updateCategoryOffersLoaderState(false));
       },
     );
   }
@@ -102,14 +93,10 @@ class HomeViewModel extends BaseViewModel<HomeState> {
         ));
       },
       onStart: () {
-        updateState(state.updateIsOfferBannersLoading(true));
+        updateState(state.updateOfferBannersLoaderState(true));
       },
       onComplete: () {
-        updateState(state.updateIsOfferBannersLoading(false));
-      },
-      onError: (error) {
-        log(error.toString());
-        updateState(state.updateIsOfferBannersLoading(false));
+        updateState(state.updateOfferBannersLoaderState(false));
       },
     );
   }
@@ -121,14 +108,10 @@ class HomeViewModel extends BaseViewModel<HomeState> {
         updateState(state.updateRewardText(value));
       },
       onStart: () {
-        updateState(state.updateIsRewardLoading(true));
+        updateState(state.updateRewardLoaderState(true));
       },
       onComplete: () {
-        updateState(state.updateIsRewardLoading(false));
-      },
-      onError: (error) {
-        log(error.toString());
-        updateState(state.updateIsRewardLoading(false));
+        updateState(state.updateRewardLoaderState(false));
       },
     );
   }
@@ -143,19 +126,15 @@ class HomeViewModel extends BaseViewModel<HomeState> {
         ));
       },
       onStart: () {
-        updateState(state.updateIsLatestProductsLoading(true));
+        updateState(state.updateLatestProductsLoaderState(true));
       },
       onComplete: () {
-        updateState(state.updateIsLatestProductsLoading(false));
-      },
-      onError: (error) {
-        log(error.toString());
-        updateState(state.updateIsLatestProductsLoading(false));
+        updateState(state.updateLatestProductsLoaderState(false));
       },
     );
   }
 
   void onViewAllClicked() {
-    log("view all clicked");
+    AppLogger.d("view all clicked");
   }
 }

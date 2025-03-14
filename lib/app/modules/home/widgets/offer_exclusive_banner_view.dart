@@ -43,16 +43,6 @@ class OfferExclusiveBannerView
 
   @override
   OfferBannerUiModel observeState(HomeState state) {
-    return state.exclusiveBanner ??
-        OfferBannerUiModel(
-          id: "",
-          title: "",
-          subTitle: "",
-          actionTitle: "",
-          actionUrl: "",
-          fgImageUrl: "",
-          bgImageUrl: "",
-          tagName: "",
-        );
+    return state.exclusiveBanner ?? OfferBannerUiModel.empty();
   }
 }

@@ -34,5 +34,17 @@ class OfferBannerUiModel {
     );
   }
 
+  OfferBannerUiModel.empty()
+      : this(
+          id: "",
+          title: "",
+          subTitle: "",
+          actionTitle: "",
+          actionUrl: "",
+          fgImageUrl: "",
+          bgImageUrl: "",
+          tagName: "",
+        );
+
   bool get isEmpty => id.isEmpty;
 }

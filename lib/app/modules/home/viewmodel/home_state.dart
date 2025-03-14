@@ -93,23 +93,23 @@ class HomeState extends BaseState {
     return copyWith(latestProducts: latestProducts);
   }
 
-  HomeState updateIsRewardLoading(bool value) {
+  HomeState updateRewardLoaderState(bool value) {
     return copyWith(isRewardLoading: value);
   }
 
-  HomeState updateIsHeroBannersLoading(bool value) {
+  HomeState updateHeroBannersLoaderState(bool value) {
     return copyWith(isHeroBannersLoading: value);
   }
 
-  HomeState updateIsOfferBannersLoading(bool value) {
+  HomeState updateOfferBannersLoaderState(bool value) {
     return copyWith(isOfferBannersLoading: value);
   }
 
-  HomeState updateIsCategoryOffersLoading(bool value) {
+  HomeState updateCategoryOffersLoaderState(bool value) {
     return copyWith(isCategoryOffersLoading: value);
   }
 
-  HomeState updateIsLatestProductsLoading(bool value) {
+  HomeState updateLatestProductsLoaderState(bool value) {
     return copyWith(isLatestProductsLoading: value);
   }
 }
