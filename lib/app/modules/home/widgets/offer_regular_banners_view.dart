@@ -8,7 +8,7 @@ import 'package:flutter/material.dart';
 import 'package:waadaa/app/modules/home/models/offer_banner_ui_model.dart';
 import 'package:waadaa/app/modules/home/viewmodel/home_state.dart';
 import 'package:waadaa/app/modules/home/viewmodel/home_view_model.dart';
-import 'package:waadaa/app/modules/home/widgets/black_linear_gradient.dart';
+import 'package:core/widgets/image_overlay.dart';
 
 class OfferRegularBannersView
     extends ObservableView<HomeViewModel, HomeState, List<OfferBannerUiModel>> {
@@ -29,7 +29,7 @@ class OfferRegularBannersView
                       imageUrl: state[index].bgImageUrl,
                       fit: BoxFit.cover,
                     ),
-                    BlackLinearGradient(),
+                    ImageOverlay(),
                     BannerTopContents(
                       title: state[index].title,
                       subTitle: state[index].subTitle,

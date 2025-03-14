@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class BlackLinearGradient extends StatelessWidget {
-  const BlackLinearGradient({super.key});
+class ImageOverlay extends StatelessWidget {
+  const ImageOverlay({super.key});
 
   @override
   Widget build(BuildContext context) {

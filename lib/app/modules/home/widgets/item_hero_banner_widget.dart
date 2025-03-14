@@ -1,7 +1,7 @@
 import 'package:core/widgets/banner_top_contents.dart';
 import 'package:core/widgets/images/network_image_view.dart';
 import 'package:flutter/material.dart';
-import 'package:waadaa/app/modules/home/widgets/black_linear_gradient.dart';
+import 'package:core/widgets/image_overlay.dart';
 
 class ItemHeroBannerWidget extends StatelessWidget {
   final String imageUrl;
@@ -25,7 +25,7 @@ class ItemHeroBannerWidget extends StatelessWidget {
           imageUrl: imageUrl,
           fit: BoxFit.cover,
         ),
-        BlackLinearGradient(),
+        ImageOverlay(),
         BannerTopContents(
           title: title,
           subTitle: subTitle,
