@@ -12,10 +12,13 @@ class ShimmerEffectView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Shimmer.fromColors(
-      baseColor: context.colors.outline,
-      highlightColor: context.colors.surface,
-      child: child,
+    return IgnorePointer(
+      ignoring: true,
+      child: Shimmer.fromColors(
+        baseColor: context.colors.outline,
+        highlightColor: context.colors.surface,
+        child: child,
+      ),
     );
   }
 }
