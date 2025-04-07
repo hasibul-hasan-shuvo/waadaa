@@ -63,10 +63,14 @@ class NetworkImageView extends StatelessWidget {
         placeholder: (context, url) => AssetImageView(
           fileName: placeHolder,
           fit: BoxFit.cover,
+          height: height,
+          width: width,
         ),
         errorWidget: (context, url, error) => AssetImageView(
           fileName: placeHolder,
           fit: BoxFit.cover,
+          height: height,
+          width: width,
         ),
       ),
     );

@@ -11,6 +11,7 @@ dependencies:
   di:
     path: ../di
   cached_network_image: 3.4.1
+  carousel_slider: 5.0.0
   flutter:
     sdk: flutter
   flutter_bloc: 9.0.0
@@ -19,6 +20,7 @@ dependencies:
   intl: 0.19.0
   logger: 2.5.0
   shimmer: 3.0.0
+  url_launcher: 6.3.1
 
 dev_dependencies:
   build_runner: 2.4.14

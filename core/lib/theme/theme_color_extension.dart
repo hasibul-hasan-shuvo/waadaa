@@ -30,6 +30,7 @@ class ThemeColorExtension extends ThemeExtension<ThemeColorExtension> {
     required this.onInverseSurface,
     required this.inversePrimary,
     required this.surfaceTint,
+    required this.rating,
   });
 
   final Color primary;
@@ -60,6 +61,7 @@ class ThemeColorExtension extends ThemeExtension<ThemeColorExtension> {
   final Color onInverseSurface;
   final Color inversePrimary;
   final Color surfaceTint;
+  final Color rating;
 
   @override
   ThemeExtension<ThemeColorExtension> copyWith({
@@ -91,6 +93,7 @@ class ThemeColorExtension extends ThemeExtension<ThemeColorExtension> {
     Color? onInverseSurface,
     Color? inversePrimary,
     Color? surfaceTint,
+    Color? rating,
   }) {
     return ThemeColorExtension(
       primary: primary ?? this.primary,
@@ -111,7 +114,8 @@ class ThemeColorExtension extends ThemeExtension<ThemeColorExtension> {
       onErrorContainer: onErrorContainer ?? this.onErrorContainer,
       surface: surface ?? this.surface,
       onSurface: onSurface ?? this.onSurface,
-      surfaceContainerHighest: surfaceContainerHighest ?? this.surfaceContainerHighest,
+      surfaceContainerHighest:
+          surfaceContainerHighest ?? this.surfaceContainerHighest,
       onSurfaceVariant: onSurfaceVariant ?? this.onSurfaceVariant,
       outline: outline ?? this.outline,
       outlineVariant: outlineVariant ?? this.outlineVariant,
@@ -121,14 +125,15 @@ class ThemeColorExtension extends ThemeExtension<ThemeColorExtension> {
       onInverseSurface: onInverseSurface ?? this.onInverseSurface,
       inversePrimary: inversePrimary ?? this.inversePrimary,
       surfaceTint: surfaceTint ?? this.surfaceTint,
+      rating: rating ?? this.rating,
     );
   }
 
   @override
   ThemeExtension<ThemeColorExtension> lerp(
-      covariant ThemeExtension<ThemeColorExtension>? other,
-      double t,
-      ) {
+    covariant ThemeExtension<ThemeColorExtension>? other,
+    double t,
+  ) {
     if (other is! ThemeColorExtension) {
       return this;
     }
@@ -137,39 +142,42 @@ class ThemeColorExtension extends ThemeExtension<ThemeColorExtension> {
       primary: Color.lerp(primary, other.primary, t)!,
       onPrimary: Color.lerp(onPrimary, other.onPrimary, t)!,
       primaryContainer:
-      Color.lerp(primaryContainer, other.primaryContainer, t)!,
+          Color.lerp(primaryContainer, other.primaryContainer, t)!,
       onPrimaryContainer:
-      Color.lerp(onPrimaryContainer, other.onPrimaryContainer, t)!,
+          Color.lerp(onPrimaryContainer, other.onPrimaryContainer, t)!,
       secondary: Color.lerp(secondary, other.secondary, t)!,
       onSecondary: Color.lerp(onSecondary, other.onSecondary, t)!,
       secondaryContainer:
-      Color.lerp(secondaryContainer, other.secondaryContainer, t)!,
+          Color.lerp(secondaryContainer, other.secondaryContainer, t)!,
       onSecondaryContainer:
-      Color.lerp(onSecondaryContainer, other.onSecondaryContainer, t)!,
+          Color.lerp(onSecondaryContainer, other.onSecondaryContainer, t)!,
       tertiary: Color.lerp(tertiary, other.tertiary, t)!,
       onTertiary: Color.lerp(onTertiary, other.onTertiary, t)!,
       tertiaryContainer:
-      Color.lerp(tertiaryContainer, other.tertiaryContainer, t)!,
+          Color.lerp(tertiaryContainer, other.tertiaryContainer, t)!,
       onTertiaryContainer:
-      Color.lerp(onTertiaryContainer, other.onTertiaryContainer, t)!,
+          Color.lerp(onTertiaryContainer, other.onTertiaryContainer, t)!,
       error: Color.lerp(error, other.error, t)!,
       onError: Color.lerp(onError, other.onError, t)!,
       errorContainer: Color.lerp(errorContainer, other.errorContainer, t)!,
-      onErrorContainer: Color.lerp(onErrorContainer, other.onErrorContainer, t)!,
+      onErrorContainer:
+          Color.lerp(onErrorContainer, other.onErrorContainer, t)!,
       surface: Color.lerp(surface, other.surface, t)!,
       onSurface: Color.lerp(onSurface, other.onSurface, t)!,
-      surfaceContainerHighest: Color.lerp(surfaceContainerHighest, other.surfaceContainerHighest, t)!,
+      surfaceContainerHighest: Color.lerp(
+          surfaceContainerHighest, other.surfaceContainerHighest, t)!,
       onSurfaceVariant:
-      Color.lerp(onSurfaceVariant, other.onSurfaceVariant, t)!,
+          Color.lerp(onSurfaceVariant, other.onSurfaceVariant, t)!,
       outline: Color.lerp(outline, other.outline, t)!,
       outlineVariant: Color.lerp(outlineVariant, other.outlineVariant, t)!,
       shadow: Color.lerp(shadow, other.shadow, t)!,
       scrim: Color.lerp(scrim, other.scrim, t)!,
       inverseSurface: Color.lerp(inverseSurface, other.inverseSurface, t)!,
       onInverseSurface:
-      Color.lerp(onInverseSurface, other.onInverseSurface, t)!,
+          Color.lerp(onInverseSurface, other.onInverseSurface, t)!,
       inversePrimary: Color.lerp(inversePrimary, other.inversePrimary, t)!,
       surfaceTint: Color.lerp(surfaceTint, other.surfaceTint, t)!,
+      rating: Color.lerp(rating, other.rating, t)!,
     );
   }
 }

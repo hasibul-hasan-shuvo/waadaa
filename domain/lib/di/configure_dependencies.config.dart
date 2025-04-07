@@ -9,6 +9,14 @@
 // coverage:ignore-file
 
 // ignore_for_file: no_leading_underscores_for_library_prefixes
+import 'package:domain/repositories/home_repository.dart' as _i718;
+import 'package:domain/repositories/product_repository.dart' as _i498;
+import 'package:domain/usecases/category_offers_use_case.dart' as _i199;
+import 'package:domain/usecases/hero_banners_use_case.dart' as _i224;
+import 'package:domain/usecases/latest_products_use_case.dart' as _i728;
+import 'package:domain/usecases/offers_config_use_case.dart' as _i519;
+import 'package:domain/usecases/product_by_id_use_case.dart' as _i279;
+import 'package:domain/usecases/welcome_reward_use_case.dart' as _i241;
 import 'package:get_it/get_it.dart' as _i174;
 import 'package:injectable/injectable.dart' as _i526;
 
@@ -18,10 +26,22 @@ _i174.GetIt $initGetIt(
   String? environment,
   _i526.EnvironmentFilter? environmentFilter,
 }) {
-  _i526.GetItHelper(
+  final gh = _i526.GetItHelper(
     getIt,
     environment,
     environmentFilter,
   );
+  gh.lazySingleton<_i224.HeroBannersUseCase>(
+      () => _i224.HeroBannersUseCase(gh<_i718.HomeRepository>()));
+  gh.lazySingleton<_i519.OffersConfigUseCase>(
+      () => _i519.OffersConfigUseCase(gh<_i718.HomeRepository>()));
+  gh.lazySingleton<_i199.CategoryOffersUseCase>(
+      () => _i199.CategoryOffersUseCase(gh<_i718.HomeRepository>()));
+  gh.lazySingleton<_i241.WelcomeRewardUseCase>(
+      () => _i241.WelcomeRewardUseCase(gh<_i718.HomeRepository>()));
+  gh.lazySingleton<_i728.LatestProductsUseCase>(
+      () => _i728.LatestProductsUseCase(gh<_i718.HomeRepository>()));
+  gh.lazySingleton<_i279.ProductByIdUseCase>(
+      () => _i279.ProductByIdUseCase(gh<_i498.ProductRepository>()));
   return getIt;
 }

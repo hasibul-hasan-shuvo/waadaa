@@ -33,8 +33,8 @@ class AppPrimaryButton extends StatelessWidget {
             child: ElevatedButton(
               style: ElevatedButton.styleFrom(
                 padding: EdgeInsets.symmetric(
-                  vertical: Dimens.paddingSmall,
-                  horizontal: Dimens.paddingLarge,
+                  vertical: Dimens.padding12,
+                  horizontal: Dimens.paddingSmall,
                 ),
                 elevation: 0,
                 backgroundColor: context.theme.colorScheme.primary,

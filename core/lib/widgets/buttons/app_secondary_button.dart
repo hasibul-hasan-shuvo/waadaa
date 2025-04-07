@@ -22,8 +22,8 @@ class AppSecondaryButton extends StatelessWidget {
       style: ButtonStyle(
         padding: WidgetStateProperty.all(
           EdgeInsets.symmetric(
-            vertical: icon != null ? Dimens.paddingSmall : Dimens.paddingSmall,
-            horizontal: Dimens.paddingSmall,
+            vertical: icon != null ? Dimens.padding2 : Dimens.paddingVerySmall,
+            horizontal: Dimens.paddingVerySmall,
           ),
         ),
         shape: WidgetStateProperty.all(
@@ -34,19 +34,19 @@ class AppSecondaryButton extends StatelessWidget {
       ),
       onPressed: onPressed,
       child: Row(
-        mainAxisSize: MainAxisSize.min,
+        // mainAxisSize: MainAxisSize.min,
+        mainAxisAlignment: MainAxisAlignment.center,
         children: [
           icon ?? const SizedBox(),
-          Flexible(
-            child: Text(
-              title,
-              style: context.theme.outlinedButtonTheme.style?.textStyle
-                  ?.resolve(onPressed != null
-                      ? {WidgetState.focused}
-                      : {WidgetState.disabled}),
-              maxLines: 1,
-              overflow: TextOverflow.ellipsis,
-            ),
+          Text(
+            title,
+            style: context.textTheme.bodyMedium,
+            // style: context.theme.outlinedButtonTheme.style?.textStyle
+            //     ?.resolve(onPressed != null
+            //         ? {WidgetState.focused}
+            //         : {WidgetState.disabled}),
+            maxLines: 1,
+            overflow: TextOverflow.ellipsis,
           ),
         ],
       ).paddingSymmetric(vertical: Dimens.paddingSmall),

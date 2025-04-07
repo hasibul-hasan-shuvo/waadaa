@@ -50,4 +50,13 @@ class AppNavigator {
   Future navigateToPageNotFound() {
     return _router.pushReplacementNamed(AppRoutes.pageNotFound);
   }
+
+  Future navigateToProduct(String id) {
+    return _router.pushNamed(
+      AppRoutes.product,
+      pathParameters: {
+        'id': id,
+      },
+    );
+  }
 }

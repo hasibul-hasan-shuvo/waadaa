@@ -23,7 +23,7 @@ class PrimaryAppBar extends StatelessWidget implements PreferredSizeWidget {
       automaticallyImplyLeading: isBackButtonEnabled,
       actions: actions,
       iconTheme: context.theme.appBarTheme.iconTheme,
-      centerTitle: true,
+      centerTitle: false,
       title: Text(
         title,
         style: context.theme.appBarTheme.titleTextStyle,

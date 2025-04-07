@@ -1,0 +1,139 @@
+import 'package:carousel_slider/carousel_slider.dart';
+import 'package:core/assets/dimens.dart';
+import 'package:core/widgets/slider/slider_controller.dart';
+import 'package:core/widgets/slider/slider_indicators_position.dart';
+import 'package:core/widgets/slider/sliding_indicator.dart';
+import 'package:flutter/material.dart';
+
+class AppSlider extends StatefulWidget {
+  final List<Widget> itemList;
+  final double sliderHeight;
+  final SliderIndicatorsPosition indicatorsPosition;
+  final bool autoSlide;
+
+  const AppSlider({
+    super.key,
+    required this.itemList,
+    required this.sliderHeight,
+    required this.indicatorsPosition,
+    this.autoSlide = true,
+  });
+
+  @override
+  State<AppSlider> createState() => _AppSliderState();
+}
+
+class _AppSliderState extends State<AppSlider> {
+  SliderController controller = SliderController();
+
+  @override
+  Widget build(BuildContext context) {
+    Widget slider = CarouselSlider(
+      options: CarouselOptions(
+        height: widget.sliderHeight,
+        viewportFraction: 1.0,
+        initialPage: 0,
+        enableInfiniteScroll: true,
+        reverse: false,
+        autoPlay: widget.autoSlide,
+        autoPlayInterval: Duration(seconds: 4),
+        autoPlayAnimationDuration: Duration(milliseconds: 800),
+        autoPlayCurve: Curves.fastOutSlowIn,
+        enlargeCenterPage: true,
+        scrollDirection: Axis.horizontal,
+        onPageChanged: (index, reason) {
+          controller.updateIndex(index);
+        },
+      ),
+      items: widget.itemList,
+    );
+    Widget indicators = widget.itemList.length > 1
+        ? ValueListenableBuilder(
+            valueListenable: controller.selectedIndex,
+            builder: (context, value, child) {
+              return SlidingIndicator(
+                activeIndex: value,
+                count: widget.itemList.length,
+              );
+            },
+          )
+        : SizedBox.shrink();
+
+    switch (widget.indicatorsPosition) {
+      case SliderIndicatorsPosition.outsideTop:
+      case SliderIndicatorsPosition.outsideBottom:
+        return _SliderWithColumn(
+          slider: slider,
+          indicators: indicators,
+          indicatorsPosition: widget.indicatorsPosition,
+        );
+      case SliderIndicatorsPosition.insideTop:
+      case SliderIndicatorsPosition.insideBottom:
+        return _SliderWithStack(
+          slider: slider,
+          indicators: indicators,
+          indicatorsPosition: widget.indicatorsPosition,
+        );
+    }
+  }
+}
+
+class _SliderWithColumn extends StatelessWidget {
+  final Widget slider;
+  final Widget indicators;
+  final SliderIndicatorsPosition indicatorsPosition;
+
+  const _SliderWithColumn({
+    required this.slider,
+    required this.indicators,
+    required this.indicatorsPosition,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      children: [
+        if (indicatorsPosition == SliderIndicatorsPosition.outsideTop)
+          indicators,
+        slider,
+        if (indicatorsPosition == SliderIndicatorsPosition.outsideBottom)
+          indicators,
+      ],
+    );
+  }
+}
+
+class _SliderWithStack extends StatelessWidget {
+  final Widget slider;
+  final Widget indicators;
+  final SliderIndicatorsPosition indicatorsPosition;
+
+  const _SliderWithStack({
+    required this.slider,
+    required this.indicators,
+    required this.indicatorsPosition,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Stack(
+      children: [
+        slider,
+        if (indicatorsPosition == SliderIndicatorsPosition.insideTop)
+          Positioned(
+            top: Dimens.marginSmall,
+            right: Dimens.marginZero,
+            left: Dimens.marginZero,
+            child: indicators,
+          ),
+        if (indicatorsPosition == SliderIndicatorsPosition.insideBottom)
+          Positioned(
+            bottom: Dimens.marginSmall,
+            right: Dimens.marginZero,
+            left: Dimens.marginZero,
+            child: indicators,
+          ),
+      ],
+    );
+  }
+}

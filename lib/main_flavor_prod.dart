@@ -9,6 +9,7 @@ void main() {
     envConfig: EnvironmentConfig(
       appName: const String.fromEnvironment('appName'),
       baseUrl: const String.fromEnvironment('baseUrl'),
+      adminBaseUrl: const String.fromEnvironment('adminBaseUrl'),
     ),
   );
   appMain();

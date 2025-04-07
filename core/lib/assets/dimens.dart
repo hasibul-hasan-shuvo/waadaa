@@ -1,14 +1,24 @@
 class Dimens {
   Dimens._();
+
   // Padding
   static const double paddingZero = 0.0;
+  static const double paddingVerySmall = 4.0;
   static const double paddingSmall = 8.0;
   static const double paddingMedium = 16.0;
   static const double paddingLarge = 24.0;
   static const double paddingExtraLarge = 32.0;
+  static const double padding1 = 1.0;
+  static const double padding2 = 2.0;
+  static const double padding10 = 10.0;
+  static const double padding12 = 12.0;
+  static const double padding14 = 14.0;
+  static const double padding15 = 15.0;
+  static const double padding20 = 20.0;
 
   // Margin
   static const double marginZero = 0.0;
+  static const double marginVerySmall = 4.0;
   static const double marginSmall = 8.0;
   static const double marginMedium = 16.0;
   static const double marginLarge = 24.0;
@@ -33,6 +43,7 @@ class Dimens {
 
   // Radius
   static const double radiusZero = 0.0;
+  static const double radiusVerySmall = 2.0;
   static const double radiusSmall = 4.0;
   static const double radiusMedium = 8.0;
   static const double radiusLarge = 16.0;
@@ -53,4 +64,40 @@ class Dimens {
   static const double spacingMedium = 16.0;
   static const double spacingLarge = 24.0;
   static const double spacingExtraLarge = 32.0;
+
+  // Sizes
+  static const double sizeZero = 0.0;
+  static const double size10 = 10.0;
+  static const double size12 = 12.0;
+  static const double size15 = 15.0;
+  static const double size20 = 20.0;
+  static const double size25 = 25.0;
+  static const double size30 = 30.0;
+  static const double size40 = 40.0;
+  static const double size50 = 50.0;
+  static const double size60 = 60.0;
+  static const double size70 = 70.0;
+  static const double size80 = 80.0;
+  static const double size90 = 90.0;
+  static const double size100 = 100.0;
+  static const double size120 = 120.0;
+  static const double size150 = 150.0;
+  static const double size200 = 200.0;
+  static const double size250 = 250.0;
+  static const double size300 = 300.0;
+  static const double size400 = 400.0;
+  static const double size500 = 500.0;
+  static const double size600 = 600.0;
+  static const double size700 = 700.0;
+  static const double size800 = 800.0;
+  static const double size900 = 900.0;
+
+  // Widget sizes
+  static const double indicatorWidth = 22.0;
+  static const double indicatorHeight = 7.0;
+  static const double heroBannerHeight = 215.0;
+  static const double offerBannerHeight = 160.0;
+  static const double shopItemHeight = 70.0;
+  static const double textShimmerWidth = 120.0;
+  static const double textShimmerHeight = 25.0;
 }
